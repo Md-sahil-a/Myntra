@@ -55,6 +55,7 @@ var anchors_para = [
     ]
     var n = null; 
 
+    //script for media queries
     var value = window.matchMedia("(max-width: 750px)") //FOR TABLET VIEW
       mFunction(value) 
       value.addListener(mFunction) 
@@ -67,7 +68,6 @@ var anchors_para = [
         }
     }
 
-    
     for(let i=0; i<n; i++){
         var asideDiv = document.createElement('div'); //container div for each part 
         asideDiv.setAttribute('class', 'aside_content'); 
