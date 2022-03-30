@@ -1,0 +1,163 @@
+
+/* BANNER SECTION */
+#banner{
+    margin-top: 15rem;
+    width: 100%;
+}
+#banner > div{
+    width: 93%;
+    height: 342px;
+    margin: auto;
+}
+#banner img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+/* MAIN SECTION */
+main{
+    width: 93%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+main > #content{
+    width: 70%;
+}
+main > aside{
+    width: 30%;
+}
+#content_head{
+    margin-top: 2rem;
+}
+#content > #category{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "one two"
+    "three four"
+    "five six";
+    row-gap: 5rem;
+    column-gap: 1rem;
+}
+#category div:nth-child(1){
+    grid-area: one;
+}
+#category div:nth-child(2){
+    grid-area: two;
+}
+#category div:nth-child(3){
+    grid-area: three;
+}
+#category div:nth-child(4){
+    grid-area: four;
+}
+#category div:nth-child(5){
+    grid-area: five;
+}
+#category div:nth-child(6){
+    grid-area: six;
+}
+#category img{
+    width: 100%;
+    transition: 300ms all ease-in-out;
+}
+
+#category > div{
+    overflow: hidden;
+    cursor: pointer;
+}
+#category > div:hover img{
+    transform:  scale(1.08);
+}
+
+/* HOME & LIVING MEGAMENU */
+#megamenu_container{
+    position: relative;
+}
+#megamenu{
+    /* visibility: hidden; */
+    position: absolute; 
+    background-color: #fff;
+    left: 100%;
+    right: 100%;
+    top: 100%;
+    bottom: 100%;
+}
+/* #megamenu_container:hover #megamenu{
+    display: none;
+} */
+
+
+
+/* MAIN ASIDE SECTION */
+aside{
+    color: #626573;
+}
+aside div:nth-child(1){
+    margin-top: 4rem;
+}
+aside >*{
+    width: 70%;
+    margin: auto;
+}
+aside p{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    cursor: pointer;
+}
+aside p:hover{
+    text-decoration: underline;
+}
+aside div h4{
+    margin: 2rem 0;
+    font-size: 1.7rem;
+}
+
+
+
+/* BRAND SECTIONS */
+.wrapper{
+    width: 100%;
+    margin: 7rem auto;
+    background-color: #f0eeef;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: 
+        "top"
+        "bottom"
+    ;
+}
+.wrapper div:nth-child(1){
+    grid-area: top;
+}
+.wrapper div:nth-child(2){
+    grid-area: bottom;
+}
+section:nth-of-type(3) {
+    background-color:unset;
+}
+.wrapper > .container{
+    width: 93%;
+    margin: 0 auto;
+    display: flex;
+}
+.wrapper img{
+    width: 100%;
+    transition: 400ms all ease-in-out;
+}
+.container > div{
+    overflow: hidden;
+    cursor: pointer;
+}
+.container>div:hover img{
+    transform: scale(1.08);
+   
+}
+#featured{
+    display: block;
+    width: 93%;
+    margin: auto;
+}
