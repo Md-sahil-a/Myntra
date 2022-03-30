@@ -12,6 +12,10 @@ body{
     scroll-behavior: smooth;
 }
 
+body img{
+    cursor: pointer;
+}
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -151,7 +155,7 @@ header >* {
     font-size: 2rem;
 }
 #toggle{
-   visibility: hidden;
+   display: none;
 }
 
 
@@ -253,16 +257,19 @@ header >* {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  #topBrand_1 img{
+  #topBrand_1 img, #topBrand_women img{
       width: 100%;
   }
+  #topBrand_women{
+    grid-template-columns: repeat(5, 1fr);
+}
 
 
   /* CATEGORY BAG SECTION */
-  #categoryBag{
+  #categoryBag, .categoryBag_women{
     grid-template-columns: repeat(6, 1fr);
   }
-  #categoryBag img{
+  #categoryBag img, .categoryBag_women img {
       width: 100%;
   }
 
@@ -436,7 +443,6 @@ header >* {
 
   /* MEDIA QUERIES FOR TABLET VIEW */
   @media all and (min-width: 550px) and (max-width: 750px) {
-      
     header{
         justify-content: unset;
         padding: 0 2rem;
@@ -461,6 +467,7 @@ header >* {
     
     #search{
         width: 45%;
+        justify-content: flex-start;
     }
     #search > #search_bar{
         padding-left: 5.5rem;
@@ -470,7 +477,7 @@ header >* {
         background-color: #fff2f4;
     }
     #search #search_icon{
-        left: 4rem;
+        left: 2rem;
     }
     #right_icon{
         width: 28%;
@@ -548,7 +555,65 @@ header >* {
     .slider{
         height: 320px;
     }
-   
+
+
+    /* BRAND DISPLAY 1 */
+    #topBrand_1{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* CATEGORY BAG SECTION */
+    #categoryBag{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* BRAND DISPLAY 2 */
+    .display{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #explore_more :nth-child(4), #explore_more :nth-child(5){
+        display: none;
+    }
+
+    /* BRAND DISPLAY 3 */
+   .h1ForWeb{
+       display: none;
+   }
+  .display ~ .display{
+    display: none;
+}
+
+
+.builder{
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 2.5rem;
+}
+
+/* FOOTER SECTION */
+footer section, footer hr{
+    width: 90%;
+    font-size: 1.3rem;
+}
+#section_2 > div{
+    width: 70%;
+}
+
+
+/* WOMENS_HOMEPAGE */
+#topBrand_women{
+    grid-template-columns: repeat(3, 1fr);
+}
+.categoryBag_women{
+    grid-template-columns: repeat(3, 1fr);
+}
+#explore_more_women :nth-child(4), #explore_more_women :nth-child(5){
+    display: none;
+}
+
+
+.forWeb{
+    display: none;
+}
 }
 
 
