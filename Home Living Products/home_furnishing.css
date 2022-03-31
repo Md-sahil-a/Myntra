@@ -19,7 +19,7 @@
     border: 0.1px solid #F0F0F0;
     float: left;
     margin-left: 10px;
-
+    margin-top: 15rem;
 }
 
 #filter > div{
@@ -68,7 +68,7 @@ div.c {
     width: 78%;
     /* height: 100%; */
     border: 0.1px solid #F0F0F0;
-    margin: 0 auto;
+    margin: 15rem auto;
     float: right;
     display: grid;
     grid-template-columns: repeat(5,1fr);
@@ -146,9 +146,9 @@ div.c {
     margin-bottom: -5px;
 }
 .wishListp:hover {
-    -ms-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+    /* -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1); */
+    transform: scale(0.9);
 }
 
 #container .addToBagp {
@@ -162,9 +162,9 @@ div.c {
     border-radius: 5px;
 }
 .addToBagp:hover {
-    -ms-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+    /* -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1); */
+    transform: scale(0.9);
 }
 
 
