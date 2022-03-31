@@ -1,3 +1,4 @@
+
 // <!-- CATEGORIES DISPALY 1 -->
 var categoryBag = [
     {image_url :'https://bit.ly/3wMvK2N'},
@@ -30,9 +31,6 @@ brandsBag.map(function(element){
     box.append(img); 
     document.getElementById('explore_more_women').append(box)
 })
-
-
-
 
 
   // <------- SLIDER IMAGES -------> //

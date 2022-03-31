@@ -4,15 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>profile</title>
+    <title>Login</title>
+    <link rel="shortcut icon" type="image/png" href="../Common Files/image/favicon.png">
     <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="../Common Files/style.css">
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <div id="boxbody">
+    <!-- HEADER SECTION -->
+    <header>
+        <div id="logo">
+            <img src="../Common Files/image/myntra-removebg-preview.png" alt="">
+        </div>
+        <ul id="nav_bar">
+            <li id="megamenu_container"><a href="/menHomePage.html">men</a></li>
+            <li><a href="/womenHomePage.html">women</a></li>
+            <li><a href="#">kids</a></li>
+            <li><a href="/homeLiving.html">home & living</a></li>
+            <li><a href="#">beauty</a></li>
+            <li id="studio"><a href="#">studio</a><span>new</span></li>
+        </ul> 
+        <div id="search">
+            <input type="text" id="search_bar" placeholder="Search for products, brands and more">
+            <i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
+        </div>
+        <div id="right_icon">
+            <div id="reggDropdown">
+                <!-- DROPDOWN MENU TO FOR LOGIN AND SIGNUP -->
+              <div id="drop">
+                  <a href="profile.html" class="dropList">login</a>
+                  <a href="signup.html" class="dropList">sign up</a>
+              </div>
+              <i class="fa-regular fa-user"></i>
+              <span>profile</span>
+          </div>
+            <div>
+                <i class="fa-regular fa-heart"></i>
+                <span>wishlist</span>
+            </div>
+            <div>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span>bag</span>
+            </div>
+        </div>
 
-        
+                <!-- TOGGLE MENU -->
+                <div id="toggle">
+                    <i class='bx bx-menu dropbtn' onclick="myFunction()"></i>
+                    <div id="myDropdown" class="dropdown-content">
+                        <div class="top">
+                            <a href="/menHomePage.html">men</a>
+                            <a href="/womenHomePage.html">women</a>
+                            <a href="#">kids</a>
+                            <a href="/homeLiving.html">home & living</a>
+                            <a href="#">beauty</a>
+                            <a href="#">studio</a>
+                        </div>
+                        <div class="bottom">
+                            <i class="fa-regular fa-user" id="profile"></i>
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>               
+                    </div>
+                </div>
+    </header>
+
+
+
+
+
+    <div id="boxbody">
         <div class="imgbo">
-                <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2022/3/16/d4edb37c-aee8-4989-86f4-33b117edd4bc1647415464555-Banner_Login-Landing-page--1-.jpg" alt="">
+                <img src="https://bit.ly/3tV4k8R" alt="">
         </div>
 
        <div class="signin">
@@ -34,3 +98,4 @@
 </html>
 
 <script src="profile.js"></script>
+<script src="/Common Files/headerMenu.js"></script>

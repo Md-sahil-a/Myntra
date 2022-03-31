@@ -1,18 +1,31 @@
 
 body{
-    background-color: #fdeeec;
+     background-image: linear-gradient(to left, #fdeeec, #fdeeed, #fdedef, #fdedf1, #fcedf3);
+}
+#search > input{
+    margin-top: unset;
+}
+#search #search_icon{
+    top: 5.6rem;
 }
 #boxbody{
     background-color: white;
     width :400px;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 12.5rem;
 }
 img{
     width: 100%;
 }
+h2{
+    font-size: 2rem;
+}
 h2 span,p{
     color: gray;
+}
+p{
+    margin-top: 1rem;
+    font-size: 1.3rem;
 }
 p span{
     color:#ff3f6c;
@@ -27,6 +40,8 @@ button{
     border: none;
     text-transform: uppercase;
     padding: 12px;
+    margin-top: 2.5rem;
+    cursor: pointer;
 }
 input{
      padding: 10px 145px 10px 20px;
@@ -37,4 +52,12 @@ input{
 }
 h3{
     margin-bottom: -2px;
+}
+
+/* RIGHT SIDE ICONS */
+#right_icon{
+    gap: 0.5rem;
+}
+#right_icon > div{
+    cursor: pointer;    
 }

@@ -154,6 +154,62 @@ header >* {
 #right_icon i{
     font-size: 2rem;
 }
+
+
+/* PROFILE DROPDOWN MENU */
+#reggDropdown{
+    position: relative;
+}
+#reggDropdown > #drop{
+    width: 20rem;
+    height: 0;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    border-radius: 1.5rem;
+    cursor: default;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all 500ms;
+}
+#reggDropdown a{
+    width: 85%;
+    text-decoration: none;
+    color: unset;
+    display: inline-block;
+    text-align: right;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    transition: all 500ms;
+    
+}
+    #reggDropdown:hover #drop{
+        visibility: visible;
+        width: 20rem;
+        height: 15rem;
+    }
+    #reggDropdown > #drop .dropList{
+        font-size: 0;
+    }
+    #reggDropdown:hover > #drop .dropList{
+        font-size: 2rem;
+    }
+
+    #reggDropdown a:hover{
+        background-color: #f8d7cf; 
+    }
+
+
+
+
 #toggle{
    display: none;
 }
@@ -486,6 +542,12 @@ header >* {
         font-size: 1.2rem;
         letter-spacing: 0.5px;
     }
+
+    #reggDropdown > #drop{
+        background-color: #ffc0cb;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+    }
+    
     #toggle{
         visibility: visible;
         width: 7%;
@@ -666,6 +728,8 @@ footer section, footer hr{
     #right_icon{
         display: none;
     }
+
+   /* TOGGLE MENU */
     #toggle{
         visibility: visible;
         width: 7%;
@@ -676,7 +740,7 @@ footer section, footer hr{
         color: var(--primaryColor);
     }
 
-    /* TOGGLE MENU */
+ 
     .dropbtn {
         padding: 16px;
         border: none;
@@ -713,11 +777,15 @@ footer section, footer hr{
           display: flex;
           align-items: center;
           justify-content: space-evenly;
-          font-size: 3rem;
-          padding: 1rem 0;
+          font-size: 2.5rem;
+          padding: 1.5rem 0;
           background-color: #ff9faf;
-
+          color: #52101b;
       }
+
+      .dropdown-content .bottom  i{
+        cursor: pointer;
+    }
       
       .dropdown-content a {
         color: var(--primaryColor);
