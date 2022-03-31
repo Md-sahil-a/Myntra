@@ -1,4 +1,4 @@
-console.log('hello world')
+
   // <!-- COROUSEL SCRIPT -->
   var counter = 1;
   setInterval(function(){
@@ -7,7 +7,7 @@ console.log('hello world')
   if(counter > 4){
       counter = 1;
   }
-  }, 2500);
+  }, 3000);
 
 
 
@@ -66,3 +66,5 @@ function myFunction() {
       }
     }
   }
+
+

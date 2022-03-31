@@ -169,13 +169,13 @@ header >* {
     overflow: hidden;
   }
   
-  .slides{
+  #slides{
     width: 500%;
     height: 374px;
     display: flex;
   }
   
-  .slides input{
+  #slides input{
     display: none;
   }
   
@@ -442,7 +442,9 @@ header >* {
 
 
   /* MEDIA QUERIES FOR TABLET VIEW */
-  @media all and (min-width: 550px) and (max-width: 750px) {
+  @media all and (min-width: 551px) and (max-width: 850px) {
+      
+    /* NAVBAR */
     header{
         justify-content: unset;
         padding: 0 2rem;
@@ -527,6 +529,9 @@ header >* {
           padding: 0 0.5rem;
           background-color: #ffc0cb;
       }
+      .dropdown-content .bottom{
+          display: none;
+      }
       
       .dropdown-content a {
         color: var(--primaryColor);
@@ -554,6 +559,9 @@ header >* {
     /* SLIDER COROUSEL SECTION */
     .slider{
         height: 320px;
+    }
+    .navigation-manual{
+        margin-top: -1rem;
     }
 
 
@@ -610,10 +618,218 @@ footer section, footer hr{
     display: none;
 }
 
-
 .forWeb{
     display: none;
 }
+}
+
+/* MEDIA QUERIES FOR MOBILE VIEW */
+@media all and (max-width : 550px){
+
+    header{
+        justify-content: unset;
+        padding: 0 2rem;
+        background-color: #ffc0cb;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+        justify-content: space-between;
+       
+    }
+    #logo{
+      display: flex;
+      align-items: center;
+      width: 20%;
+    }
+    
+    #logo > img{
+        width: 100%;
+        margin: unset;
+    }
+  
+    header #nav_bar{
+        display: none;
+    }
+    
+    #search{
+        width: 65%;
+        justify-content: flex-start;
+    }
+    #search > #search_bar{
+        padding-left: 5.5rem;
+        background-color: #fae6e9;
+    }
+    #search > #search_bar:focus{
+        background-color: #fff2f4;
+    }
+    #search #search_icon{
+        left: 2rem;
+    }
+    #right_icon{
+        display: none;
+    }
+    #toggle{
+        visibility: visible;
+        width: 7%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 4rem;
+        color: var(--primaryColor);
+    }
+
+    /* TOGGLE MENU */
+    .dropbtn {
+        padding: 16px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: 100%;
+        right: 0%;
+        background-color:  #ff869a; 
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        transition: all 500ms ease-in-out;
+        display: flex;
+        flex-direction: column;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+        border-bottom-right-radius: 2rem;
+        border-bottom-left-radius: 2rem;
+      }
+      .dropdown-content .top{
+          padding: 0 0.5rem 1.3rem;
+          background-color: #ffc0cb;
+      }
+      .dropdown-content .bottom{
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          font-size: 3rem;
+          padding: 1rem 0;
+          background-color: #ff9faf;
+
+      }
+      
+      .dropdown-content a {
+        color: var(--primaryColor);
+        width: 89%;
+        margin: auto;
+        padding: 1.2rem 2rem;
+        text-decoration: none;
+        display: block;
+        font-size:1.6rem;
+        letter-spacing: 0.5px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: right;
+      }
+      
+      .dropdown-content a:hover{
+        background-color: #ffe5e9;
+        border-radius: 1rem;
+      }
+      .show {
+          width: 250px;
+          height: 350px;
+    }
+
+    /* BRAND DISPLAY 1 */
+    #topBrand_1{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* CATEGORY BAG SECTION */
+    #categoryBag{
+        grid-template-columns: repeat(3, 1fr);
+    }
+ 
+    /* BRAND DISPLAY 2 */
+    .display{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #explore_more :nth-child(5){
+        display: none;
+    }
+
+    .container img{
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+
+    /* BRAND DISPLAY 3 */
+    .h1ForWeb{
+        display: none;
+    }
+   .display ~ .display{
+     display: none;
+ }
+
+ .builder{
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2.5rem;
+}
+.builder :nth-child(5){
+    display: none;
+}
+
+    /* FOOTER SECTION */
+    section, hr{
+        width: 90%;
+    }
+    #section_1{
+        flex-direction: column;
+        
+    }
+    #section_1 #left{
+        width: 100%;
+        gap: 1rem;
+    }
+    #section_1 #right{
+        width: 100%;
+        margin-top: 4rem;
+        display: flex;
+        gap: 5rem;
+    }
+    #section_1 #right *{
+        margin: unset;
+    }
+    #section_5, #section_6{
+        display: none;
+    }
+
+
+    /* WOMEN SECTION */
+    #topBrand_women{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .categoryBag_women{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .categoryBag_women :nth-child(4),.categoryBag_women :nth-child(5){
+        display: none;
+    }
+
+     #explore_more_women :nth-child(5){
+        display: none;
+    }
+
+    .forWeb{
+        display: none;
+    }
+    .forMob{
+        display: none
+    }
 }
 
 
