@@ -90,3 +90,11 @@ var anchors_para = [
 
       document.querySelector('aside').append(asideDiv);
   }
+
+//<--------- PRODUCT PAGE HYPERLINK ---------->//
+var z = document.querySelectorAll('img');
+for(let i=0; i<z.length; i++){
+    z[i].addEventListener('click', function(){
+        window.location.href = "/Home Living Products/home_furnishing.html"
+    })
+}

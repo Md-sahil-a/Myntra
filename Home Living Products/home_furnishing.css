@@ -1,136 +1,116 @@
-/* header */
 
-
-
-/* below header */
-/* #openarea {
-    width: 100%;
-    height: 120px;
-    border: 0.1px solid gray;
+*{
+    box-sizing: border-box;
 }
-
-/* main filter */
-
+#wrapper{
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+}
 
 /* filter */
 #filter {
-    width: 15%;
     height: 100%;
-    border: 0.1px solid #F0F0F0;
-    float: left;
-    margin-left: 10px;
+    width: 23%;
+    margin-left: 1rem;
     margin-top: 15rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 1.1rem;
+    padding-bottom: unset;
 }
 
 #filter > div{
     width: 100%;
     height: 100%;
-    border: 0.1px solid #F0F0F0;
-}
-#filter > h3 {
-    padding-left: 25px;
+    border-bottom: 2px solid #efefee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
 }
 
-div.a {
-    font-size: 20px;
+#filter > div > *{
+    width: 90%;
+}
+#filter > div > h3 ~*{
+    display: inline-block;
+}
+input[type="checkbox" i], input[type="radio" i]{
+    cursor: pointer;
+    margin-right: 1.2rem;
+}
+
+#filter h3{
+    margin-bottom: 1.2rem;
+    font-size: 1.8rem;
     font-weight: bold;
-    line-height: 30px;
-    padding-left: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    box-sizing: border-box;
 }
-
-div.b {
-    color: gray;
-    font-size: 20px;
-    line-height: 30px;
-    padding-left: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    box-sizing: border-box;
+#filter h3 ~*{
+    font-size: 1.6rem;
+    color: #282c3f;
+    font-weight: 100;
+    line-height: 3.2rem;
 }
-
-div.c {
-    color: gray;
-    font-size: 20px;
-    line-height: 30px;
-    padding-left: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    box-sizing: border-box;
-}
-
 
 
 /* content */
 #container {
-    width: 78%;
-    /* height: 100%; */
-    border: 0.1px solid #F0F0F0;
-    margin: 15rem auto;
-    float: right;
+    width: 75%;
+    margin-top: 15rem;
     display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: auto;
-    gap: 50px;
-    padding: 0 20px;
-
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 3rem;
+    row-gap: 7rem;
+    padding: 0 2.2rem;
+    font-size: 1.6rem;
 }
 
 #container > div {
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    line-height: 0px;
-    margin-top: 20px;
-    /* margin-left: 20px; */
-    /* padding-left: 10px; */
-    padding-bottom: 5px;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-#container > div:hover {
-    -ms-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-}
 
-#container > div > img {
+#container  img {
     width: 100%;
 }
-#container > div > img + h4{
-    color: black;
-    padding-left: 10px;
+
+#container  p:nth-child(2){
+    color: #505055; 
+    font-size: 1.3rem;
 }
-#container > div > img + h4 + p{
-    color: #aaa;
-    padding-left: 10px;
-    line-height: 20px;
-    margin-top: -10px;
+
+#container .contentBox{
+    padding: 0.7rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap:1.3rem;
+
 }
 
 #container .mixbox {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-weight: bold;
     color: black;
-    padding-left: 10px;
-    padding-right: 30px;
+}
+#container .mixbox p:nth-child(1){
+    font-size: 1.8rem;
 }
 
 #container .strikep {
     text-decoration: line-through;
     color: #aaa;
-    font-size: 15px;
-    font-weight: normal;
-    margin-left: auto;
+    font-size: 1.2rem;
 }
 
 #container .offerp {
-    padding-left: 10px;
-    font-size: 15px;
-    padding-top: 5px;
-    color: rgb(255,174,106);
+    color: #ffae6a;
+    font-size: 1.2rem;
 }
 
 #container .wishListp {
@@ -145,50 +125,90 @@ div.c {
     margin-top: 5px;
     margin-bottom: -5px;
 }
-.wishListp:hover {
-    /* -ms-transform: scale(1.1);
-    -webkit-transform: scale(1.1); */
-    transform: scale(0.9);
-}
 
 #container .addToBagp {
     color: white;
     text-align: center;
-    font-size: 15px;
     background-color: rgb(255,62,108);
-    box-sizing: border-box;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 1.6rem 0;
+    padding-left:2.6rem;
     border-radius: 5px;
 }
-.addToBagp:hover {
-    /* -ms-transform: scale(1.1);
-    -webkit-transform: scale(1.1); */
-    transform: scale(0.9);
+#container .addToBagp::after{
+    content: "→";
+    display: inline-block;
+    font-size: 2.3rem;
+    visibility: hidden;
+    transition: all 300ms;
+}
+#container .addToBagp:hover::after{
+    transform: translateX(1.5rem);
+    visibility: visible;
+}
+
+#container > div:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 
 
-/* #openarea > h3 {
-    text-align: center;
-} */
+/* MEDEIA QUERIES FOR TABLET VIEW */
+@media all and (min-width: 551px) and (max-width: 850px){
+  
+        #wrapper{
+            flex-direction:column;
+        }
+        #filter{
+           display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            width: 95%;
+            margin: 15rem auto 0;
 
-#recmd {
-    /* margin-left: 85%; */
-    padding-right: 60px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+        }
+        #filter > *:hover{
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+            cursor: pointer;
+        }
+
+        #container{
+            width: 95%;
+            margin: auto;
+            margin-top: 3rem;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        #container .addToBagp:hover::after{
+            transform: translateX(1.2rem);
+        } 
 }
 
-#inline {
-    /* margin-left: 85%; */
-    padding-right: 60px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    color: red;
+/* MEDEIA QUERIES FOR MOBILE VIEW */
+@media all and (max-width: 551px){
+  
+    #wrapper{
+        flex-direction:column;
+    }
+    #filter{
+       display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 95%;
+        margin: 15rem auto 0;
+    }
+    #filter > div:nth-child(2), #filter > div:nth-child(5), #filter > div:nth-child(6){
+        display: none;
+    }
+    #filter > *:hover{
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        cursor: pointer;
+    }
+
+    #container{
+        width: 95%;
+        margin: auto;
+        margin-top: 3rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #container .addToBagp:hover::after{
+        transform: translateX(1.2rem);
+    } 
 }
-
-
-
-
 
