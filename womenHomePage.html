@@ -30,10 +30,16 @@
             <i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
         </div>
         <div id="right_icon">
-            <div>
-                <i class="fa-regular fa-user"></i>
-                <span>profile</span>
-            </div>
+            <div id="reggDropdown">
+                <!-- DROPDOWN MENU TO BE CREATED FOR LOGIN AND SIGNUP -->
+              <div id="drop">
+                  <a href="profile.html" class="dropList">login</a>
+                  <a href="signup.html" class="dropList">sign up</a>
+              </div>
+
+              <i class="fa-regular fa-user"></i>
+              <span>profile</span>
+          </div>
             <div>
                 <i class="fa-regular fa-heart"></i>
                 <span>wishlist</span>
@@ -57,7 +63,7 @@
                             <a href="#">studio</a>
                         </div> 
                         <div class="bottom">
-                            <i class="fa-regular fa-user"></i>
+                            <i class="fa-regular fa-user"   id="profile"></i>
                             <i class="fa-regular fa-heart"></i>
                             <i class="fa-solid fa-bag-shopping"></i>
                         </div>              
@@ -262,7 +268,9 @@
 
 
     <script src="./Common Files/women.js"></script>
-    <script src="./Common Files/common.js"></script>
+    <script src="./Common Files/headerMenu.js"></script>
+    <script src="./Common Files/corousel.js"></script>
+    
 
 </body>
 

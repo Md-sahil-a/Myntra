@@ -42,3 +42,10 @@ function checkpass(a){
    return ( userdata[a].password == in_pass)
      
 }
+
+
+
+// HYPERLINKS
+document.getElementById('profile').addEventListener('click', function(){
+  window.location.href = "signup.html"
+})
