@@ -14,6 +14,9 @@
     height: 100%;
     cursor: pointer;
 }
+#banner .forDesk{
+    display: none;
+}
 
 /* MAIN SECTION */
 main{
@@ -160,4 +163,24 @@ section:nth-of-type(3) {
     display: block;
     width: 93%;
     margin: auto;
+}
+
+
+/* MEDIA QUERRIES FOR MOBILE */
+@media all and (max-width : 550px){
+    #banner .forDesk{
+        display: block;
+    }
+    main{
+        width: 90%;
+    }
+    main #content{
+        width: 100%;
+    }
+    main aside{
+        display: none;
+    }
+    .container :nth-child(3){
+        display: none;
+    }
 }

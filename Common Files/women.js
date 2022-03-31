@@ -32,3 +32,56 @@ brandsBag.map(function(element){
 })
 
 
+
+
+
+  // <------- SLIDER IMAGES -------> //
+  var slideImages = [
+    //FOR TABLET & DEKSTOP VIEW
+    [{img_url : "https://bit.ly/3Dj1D46"},
+    {img_url : "https://bit.ly/3wJ6k64"},
+    {img_url : "https://bit.ly/36E3HYr"},
+    {img_url : "https://bit.ly/3uBmOdF"},
+    ],
+
+    //FOR MOBILE VIEW
+    [{img_url : "https://bit.ly/36X3qjg"},
+    {img_url: "https://bit.ly/3DnFd1L"},
+    {img_url: "https://bit.ly/3tVztt3"},
+    {img_url: "https://bit.ly/3iR1aN6"},
+    ]
+  ]
+
+  var z = null; 
+
+    //script for media queries
+    var value = window.matchMedia("(max-width: 550px)") //FOR TABLET VIEW
+      mFunction(value) 
+      value.addListener(mFunction) 
+      function mFunction(value) {
+        if (value.matches) { 
+          z = slideImages[1];
+        } 
+        else {
+          z = slideImages[0]
+        }
+    }
+
+  z.map(function(ele, index){
+    var slideDiv = document.createElement('div');
+    switch(index){
+      case 0 :
+        slideDiv.setAttribute('class', 'slide first');
+        break;
+      default :
+      slideDiv.setAttribute('class', 'slide')
+    }
+   
+    var images = document.createElement('img');
+    images.src = ele.img_url;
+    
+    slideDiv.append(images); 
+    document.getElementById('slides').append(slideDiv)
+  })
+
+
