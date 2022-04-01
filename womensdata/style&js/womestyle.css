@@ -105,9 +105,9 @@ header>* {
 
 #search>#search_bar {
     display: inline-block;
-    width: 70%;
-    height: 0px;
-    /* line-height: 24px; */
+    width: 82%;
+    height: 18px;
+    line-height: 24px;
     padding: 1.5rem;
     padding-left: 5rem;
     background-color: #f5f5f6;

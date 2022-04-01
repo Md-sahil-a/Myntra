@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mens.css" />
+
+</head>
+
+<body>
+
+    <header>
+        <div id="logo">
+            <img src="../Common Files/image/myntra-removebg-preview.png" alt="">
+        </div>
+        <ul id="nav_bar">
+            <li id="megamenu_container"><a href="/menHomePage.html">men</a></li>
+            <li><a href="/womenHomePage.html">women</a></li>
+            <li><a href="#">kids</a></li>
+            <li><a href="/homeLiving.html">home & living</a></li>
+            <li><a href="#">beauty</a></li>
+            <li id="studio"><a href="#">studio</a><span>new</span></li>
+        </ul>
+        <div id="search">
+            <input type="text" id="search_bar" placeholder="Search for products, brands and more">
+            <i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
+        </div>
+        <div id="right_icon">
+            <div id="reggDropdown">
+                <!-- DROPDOWN MENU TO FOR LOGIN AND SIGNUP -->
+                <div id="drop">
+                    <a href="profile.html" class="dropList">login</a>
+                    <a href="signup.html" class="dropList">sign up</a>
+                </div>
+                <i class="fa-regular fa-user"></i>
+                <span>profile</span>
+            </div>
+            <div>
+                <i class="fa-regular fa-heart"></i>
+                <span>wishlist</span>
+            </div>
+            <div>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span>bag</span>
+            </div>
+        </div>
+
+        <!-- TOGGLE MENU -->
+        <div id="toggle">
+            <i class='bx bx-menu dropbtn' onclick="myFunction()"></i>
+            <div id="myDropdown" class="dropdown-content">
+                <div class="top">
+                    <a href="/menHomePage.html">men</a>
+                    <a href="/womenHomePage.html">women</a>
+                    <a href="#">kids</a>
+                    <a href="/homeLiving.html">home & living</a>
+                    <a href="#">beauty</a>
+                    <a href="#">studio</a>
+                </div>
+                <div class="bottom">
+                    <i class="fa-regular fa-user" id="profile"></i>
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div>
+
+        <div>
+            <a>Home /</a>
+            <a>Myntra Fashion Store</a>
+        </div>
+        <div>
+            <a>Myntra Fashion Store</a>
+            <a>- 3384 Items</a>
+        </div>
+        <div id="main">
+            <div id="filter">
+                <div>
+                    <div>
+                        <h3>FILTERS</h3>
+                    </div>
+                    <div>
+                        <h5>CLEAR ALL</h5>
+                    </div>
+                </div>
+                <div class="a">
+                    <input type="radio">
+                    <label>Men</label><br>
+                    <input type="radio">
+                    <label>Women</label><br>
+                    <input type="radio">
+                    <label>Boys</label><br>
+                    <input type="radio">
+                    <label>Girls</label>
+                </div>
+                <div class="b">
+                    <div>
+                        <h5>CATEGORIES</h5>
+                    </div>
+                    <div>
+                        <input type="checkbox"> <label>Tshirts</label><br>
+                        <input type="checkbox"> <label>Shirts</label><br>
+                        <input type="checkbox"> <label>Casual Shoes`</label><br>
+                        <input type="checkbox"> <label>Sweatshirts</label><br>
+                        <input type="checkbox"> <label>Jackets</label><br>
+                        <input type="checkbox"> <label>Trousers</label><br>
+                        <input type="checkbox"> <label>Slippers</label><br>
+                        <input type="checkbox"> <label>Flip Flops</label>
+                    </div>
+                </div>
+                <div class="c">
+                    <div>
+                        <h5>BRAND</h5>
+                    </div>
+                    <div>
+                        <input type="checkbox"><label href="#" class="btn" data-fiilter="u.s. polo assn.">U.S. Polo Assn.</label><br>
+                        <input type="checkbox"><label href="#" class="btn" data-fiilter="roadster">Roadster</label><br>
+                        <input type="checkbox"><label href="#" class="btn" data-fiilter="klotthe">KLOTTHE</label><br>
+                        <input type="checkbox"><label href="#" class="btn" data-fiilter="mast & harbour">Mast & Harbour</label><br>
+                        <input type="checkbox"><label href="#" class="btn" data-fiilter="puma">Puma</label><br>
+                        <input type="checkbox"><label href="#" class="btn" data-fiilter="wrogn">WROGN</label><br>
+                        <input type="checkbox"><label href="#" class="btn" data-fiilter="hrx by hrithik roshan">HRX by Hrithik Roshan</label><br>
+                        <input type="checkbox"><label href="#" class="btn" data-fiilter="flying machine">Flying Machine</label>
+                    </div>
+
+                </div>
+                <div class="d">
+                    <div>
+                        <h5>PRICE</h5>
+                    </div>
+                    <div>
+                        <input type="checkbox"><label>Rs 499 to Rs 1349</label><br>
+                        <input type="checkbox"><label>Rs 1349 to Rs 2199</label><br>
+                        <input type="checkbox"><label>Rs 2199 to Rs 3049</label><br>
+                        <input type="checkbox"><label>Rs 3049 to Rs 3899</label>
+                    </div>
+                </div>
+                <div class="e">
+                    <div>
+                        <h5>COLOR</h5>
+                    </div>
+                    <div>
+                        <input type="checkbox"><label>Blue</label><br>
+                        <input type="checkbox"><label>Navy Blue</label><br>
+                        <input type="checkbox"><label>Black</label><br>
+                        <input type="checkbox"><label>White</label><br>
+                        <input type="checkbox"><label>Grey</label><br>
+                        <input type="checkbox"><label>Red</label><br>
+                        <input type="checkbox"><label>Green</label>
+                    </div>
+                </div>
+                <div class="f">
+                    <div>
+                        <h5>Discount Range</h5>
+                    </div>
+                    <div>
+                        <input type="checkbox"><label>10% and above</label><br>
+                        <input type="checkbox"><label>20% and above</label><br>
+                        <input type="checkbox"><label>30% and above</label><br>
+                        <input type="checkbox"><label>40% and above</label><br>
+                        <input type="checkbox"><label>50% and above</label><br>
+                        <input type="checkbox"><label>60% and above</label>
+
+                    </div>
+
+                </div>
+            </div>
+            <div id="pm">
+                <div>
+                    <div>
+                        <div>
+                            <label>Bundles</label><select></select>
+                        </div>
+                        <div><label>Country of Origin</label> <select name=" " id=" "></select></div>
+                        <div><label>Size</label><select name=" " id=" "></select></div>
+                    </div>
+                    <div></div>
+                </div>
+                <div id="product"> </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="mens.js"></script>
