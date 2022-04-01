@@ -27,7 +27,13 @@
 //                   strikedoffprice:"Rs. 2599" 
 //               }
 //         ]
+
        var cartarr = JSON.parse(localStorage.getItem("BagListObj")) || [];
+
+
+
+var cartarr = JSON.parse(localStorage.getItem("BagListObj"))||[];
+       
 
         var itemcount =cartarr.length;
 
@@ -126,6 +132,7 @@
 
         function removeitem(ind){
           cartarr.splice(ind,1);
+          localStorage.setItem("BagListObj",JSON.stringify(cartarr))
           window.location.href ="cart.html";
          
         }
