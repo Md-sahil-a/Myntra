@@ -400,9 +400,9 @@ var funitureData = [
       ];
 
 
-    var wishList =[];
+    var wishList =JSON.parse(localStorage.getItem("wishListObj")) || [];
 
-    var bagList =[];
+    var bagList =JSON.parse(localStorage.getItem("BagListObjBagListObj")) || [] ;
    
     funitureData.map(function (element) {
 
