@@ -51,7 +51,7 @@ body{
 }
 #profile,#wishlist,#bag{
 text-align: center;
-color: gray;
+color: #6c2632;
 
 }
 #profile>p,#wishlist>p,#bag>p{
@@ -88,4 +88,9 @@ i{
 }
 img{
     width: 100%;
+}
+
+/* TOGGLE BAR */
+.bx{
+    font-size: 3.5rem;
 }
