@@ -398,7 +398,8 @@ var funitureData = [
           addToBag : "ADD TO BAG",
         },
       ];
-    
+
+
     var wishList =[];
 
     var bagList =[];
@@ -462,6 +463,7 @@ var funitureData = [
     box.append(img, contentBox)
 
     document.querySelector("#container").append(box)
+
 })
 
 function addToWishlist(element) {
@@ -475,6 +477,10 @@ function addToBaglist(element) {
   bagList.push(element)
   localStorage.setItem("BagListObj" , JSON.stringify(bagList))
 }
+
+// Filter
+
+
 
 // LANDING PAGE
 document.getElementById('landingPage').addEventListener('click', function(){
