@@ -106,7 +106,7 @@ var cartarr =JSON.parse(localStorage.getItem("wishListObj"))||[];
           buttonbag.innerText ="MOVE TO BAG";
           
           buttonbag.addEventListener("click", function(){
-           sendtocart(ind)
+           sendtocart(ele,ind)
         })
 
 
@@ -130,16 +130,16 @@ var cartarr =JSON.parse(localStorage.getItem("wishListObj"))||[];
 
         }
 
-        function sendtocart(ind){
+        // localStorage.setItem("BagListObj" , JSON.stringify(bagList))
+        var baglist = JSON.parse(localStorage.getItem("BagListObj"))||[];
 
-            console.log("clickeed the movetobag button")
-            
-            //bag arr.shift this index and update thelocal
-            // storage of cart page thrn 
-            //delete the item from arr and update the 
-            // the local storage of wish list
+        function sendtocart(ele,ind){
 
+          baglist.unshift(ele);
+          localStorage.setItem("BagListObj",JSON.stringify(baglist))
+
+          cartarr.splice(ind,1)
+          localStorage.setItem("wishListObj",JSON.stringify(cartarr))
             window.location.href="wishlist.html"
 
-     
              }
