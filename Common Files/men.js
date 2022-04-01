@@ -84,3 +84,9 @@
       box.append(img); 
       document.getElementById('explore_more').append(box)
   })
+
+
+  // LANDING PAGE
+  document.getElementById('landingPage').addEventListener('click', function(){
+      window.location.href = '/Landingpage/index.html'
+  })

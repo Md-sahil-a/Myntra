@@ -482,3 +482,7 @@ function addToBaglist(element) {
 
 
 
+// LANDING PAGE
+document.getElementById('landingPage').addEventListener('click', function(){
+  window.location.href = "/LandingPage/index.html"
+})

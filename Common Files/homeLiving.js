@@ -98,3 +98,8 @@ for(let i=0; i<z.length; i++){
         window.location.href = "/Home Living Products/home_furnishing.html"
     })
 }
+
+// LANDING PAGE
+document.getElementById('landingPage').addEventListener('click', function(){
+    window.location.href = "/LandingPage/index.html"
+})

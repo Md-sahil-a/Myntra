@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+:root{
+    font-size: 62.5%;
+    --primaryFont : 'DM Sans', sans-serif;
+    --charSpace : 6px; 
+    --primaryColor : #3e4152;
+    --secondaryColor : #fafbfc;
+}
+body{
+    font-family: var(--primaryFont);
+    scroll-behavior: smooth;
+}
+#navbar{
+    background-color: white;
+    font-family:Whitney;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    box-sizing: border-box;
+    padding: 35px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;;
+    font-size: 14px;
+    line-height: 20px;
+    color:#545766;
+    font-weight: bolder;
+}
+
+#myntraIcon{
+    height: 60px;
+    width:  60px;
+    
+}
+#searchbar{
+    display: flex;
+    width: 30%;
+    background-color: #f5f5f6;
+    color: gray;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius:5px;
+    justify-content: space-evenly;
+}
+#searchbar:hover{
+   background: white;
+}
+#magGlass{
+    padding: 10px;
+}
+#profile,#wishlist,#bag{
+text-align: center;
+color: #6c2632;
+
+}
+#profile>p,#wishlist>p,#bag>p{
+    margin-top: -0px;
+    font-size: 12px;
+    color: black;
+}
+#profile>a>i,#wishlist>a>i,#bag>a>i{
+    color:gray;
+}
+img~a>div{
+    color:black;
+}
+a:link{
+    text-decoration: none;
+}
+a>div{
+    color: black;
+}
+
+input {
+    background-color: transparent;
+    border: 0px solid;
+    height: 40px;
+    width: 90%;
+    color: #CCC;
+}
+textarea:focus,input:focus
+{
+    outline: none;
+}
+i{
+    font-size:20px;  
+}
+img{
+    width: 100%;
+}
+
+/* TOGGLE BAR */
+.bx{
+    font-size: 3.5rem;
+}
