@@ -2,10 +2,9 @@ var productData = [{
     image_url: "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/10331501/2020/3/18/d4d07c60-88d9-43d9-aa78-9cc7712816321584508934272-US-Polo-Assn-Men-White-Colourblocked-Sneakers-84015845089331-1.jpg",
     company: "U.S. Polo Assn.",
     product: "Men Colourblocked Sneakers",
-    price_p: "Rs.",
-    price: 1799,
-    strikedoffprice_p: "Rs",
-    strikedoffprice: 2999,
+
+    price: "Rs. 1799",
+    strikedoffprice: "Rs 2999",
     discount: "(40% OFF) ",
     atc: "Add to Bag",
     atw: "Add to Whishlist",
@@ -15,8 +14,8 @@ var productData = [{
     image_url: "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/13031344/2021/2/15/edb298bb-2c55-4b17-be70-b99fa7da98af1613389238510-US-Polo-Assn-Men-Navy-Blue-Printed-Sliders-7711613389237151-1.jpg ",
     company: "U.S. Polo Assn. ",
     product: "Men Printed Sliders ",
-    price: "Rs. 674 ",
-    strikedoffprice: "Rs 1499 ",
+    price: "Rs. 674",
+    strikedoffprice: "Rs 1499",
     discount: "(55% OFF) ",
     atc: "Add to Bag",
     atw: "Add to Whishlist",
@@ -25,8 +24,8 @@ var productData = [{
     image_url: "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/13640716/2021/5/24/48e9e3bc-8fb7-4af5-97fa-46927f68fbd81621838454680JeansRoadsterMenJeansRoadsterMenTrackPantsHRXbyHrithikRoshan1.jpg ",
     company: "U.S. Polo Assn. ",
     product: "Printed Polo Collar Pure Cotton T-Shirt ",
-    price: "Rs. 1259 ",
-    strikedoffprice: "Rs 2099 ",
+    price: "Rs. 1259",
+    strikedoffprice: "Rs 2099",
     discount: "(40% OFF) ",
     atc: "Add to Bag",
     atw: "Add to Whishlist",
@@ -35,7 +34,7 @@ var productData = [{
     image_url: "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/10339033/2019/8/6/df9a712b-a5fc-4a65-870a-0854fb50ea221565093150139-US-Polo-Assn-Men-Casual-Shoes-7391565093148433-1.jpg ",
     company: "U.S. Polo Assn. ",
     product: "Men Sneakers ",
-    price: "Rs. 1949 ",
+    price: "Rs. 1949",
     strikedoffprice: "Rs 2999 ",
     discount: "(35% OFF) ",
     atc: "Add to Bag",
@@ -311,47 +310,82 @@ var bagData = JSON.parse(localStorage.getItem("BagListObj")) || []
 
 productData.map(function(elem) {
     var box = document.createElement("div")
+    box.style.cursor = "pointer"
 
     var img = document.createElement("img")
     img.src = elem.image_url
+
+    var contentBox = document.createElement('div');
+    contentBox.setAttribute('class', 'contentBox')
+
     var name = document.createElement("h4")
     name.textContent = elem.company
+
     var productname = document.createElement("p")
     productname.textContent = elem.product
-    var pricea = document.createElement("b")
-    pricea.textContent = elem.price_p
-    var price = document.createElement("b")
+
+
+    var mix = document.createElement("div")
+    mix.setAttribute("class", "mixbox")
+
+
+    var price = document.createElement("p")
     price.textContent = elem.price
-    var int2 = document.createElement("a")
-    int2.textContent = elem.strikedoffprice_p
-    int2.style.textDecoration = "line-through"
-    var strprice = document.createElement("a")
+
+    var strprice = document.createElement("p")
     strprice.textContent = elem.strikedoffprice
-    strprice.style.textDecoration = "line-through"
-    var discount = document.createElement("a")
+    strprice.setAttribute("class", "strikep")
+
+
+    var discount = document.createElement("p")
     discount.textContent = elem.discount
-    discount.style.color = "red"
-    var atc1 = document.createElement("h4")
-    atc1.innerText = elem.atw
-    atc1.style.cursor = "pointer"
-    atc1.addEventListener("click", function() {
-        addToWishList(elem)
-        atc1.style.color = "green"
-        atc1.innerText = "GO TO WISHLIST"
-    });
-    var atc2 = document.createElement("h4")
-    atc2.innerText = elem.atc
-    atc2.style.cursor = "pointer"
+    discount.setAttribute("class", "offerp")
 
-    atc2.addEventListener("click", function() {
+    mix.append(price, strprice, discount)
+
+    // var atc1 = document.createElement("h4")
+    // atc1.innerText = elem.atw
+    // atc1.style.cursor = "pointer"
+    // atc1.addEventListener("click", function() {
+    //     addToWishList(elem)
+    //     atc1.style.color = "green"
+    //     atc1.innerText = "GO TO WISHLIST"
+    // });
+
+    var atw = document.createElement("p")
+    atw.setAttribute("class", "wishListp")
+    atw.textContent = elem.atw;
+    atw.style.cursor = "pointer"
+
+    atw.addEventListener("click", function() {
+        addToWishlist(elem)
+        atw.style.color = "green"
+        atw.innerText = "GO TO WISHLIST"
+    })
+
+
+    // var atc2 = document.createElement("h4")
+    // atc2.innerText = elem.atc
+    // atc2.style.cursor = "pointer"
+
+    // atc2.addEventListener("click", function() {
+    //     addToBag(elem)
+    //     atc2.innerText = "GO TO BAG >"
+    // });
+    var atc = document.createElement("p")
+    atc.setAttribute("class", "addToBagp")
+    atc.textContent = elem.atc;
+    atc.style.cursor = "pointer"
+
+
+    atc.addEventListener("click", function() {
         addToBag(elem)
-        atc2.innerText = "GO TO BAG >"
-    });
+        atc.innerText = "GO TO BAG >"
+    })
+    contentBox.append(name, productname, mix, atw, atc)
+    box.append(img, contentBox)
 
-
-    box.append(img, name, productname, pricea, price, int2, strprice, discount, atc2, atc1)
-
-    document.querySelector("#product").append(box);
+    document.querySelector("#container").append(box);
 
 
 
@@ -359,18 +393,30 @@ productData.map(function(elem) {
 
 
 
-function addToBag(elem) {
+// function addToBag(elem) {
 
-    bagData.push(elem);
-    localStorage.setItem("BagListObj", JSON.stringify(bagData));
-};
+//     bagData.push(elem);
+//     localStorage.setItem("BagListObj", JSON.stringify(bagData));
+// };
 
-function addToWishList(elem) {
+// function addToWishList(elem) {
 
-    wishListData.push(elem);
-    localStorage.setItem("wishListObj", JSON.stringify(wishListData));
-};
+//     wishListData.push(elem);
+//     localStorage.setItem("wishListObj", JSON.stringify(wishListData));
+// };
 
 
-var btns = document.querySelectorAll(".btn")
-console.log(btns);
+// var btns = document.querySelectorAll(".btn")
+// console.log(btns);
+
+function addToWishlist(element) {
+    // console.log(element)
+    wishListData.push(element)
+    localStorage.setItem("wishListObj", JSON.stringify(wishListData))
+}
+
+function addToBag(element) {
+    // console.log(element)
+    bagData.push(element)
+    localStorage.setItem("BagListObj", JSON.stringify(bagData))
+}
