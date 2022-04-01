@@ -1,12 +1,5 @@
-var counter = 1;
-setInterval(function(){
-document.getElementById('radio' + counter).checked = true;
-counter++;
-if(counter > 4){
-    counter = 1;
-}
-}, 2500);
 
+// <----- OBJECT DATAS -----> //
 var dealsArr = [{
     img: "https://assets.myntassets.com/f_webp,w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/3/29/2eaab0d6-e843-4ad2-b1da-2159d1d30e9e1648537708005-WONDERFUL-DEALS-AHEAD-.jpg"
 },
@@ -431,3 +424,9 @@ trendingArr.map(function (el) {
     box.append(img);
     document.querySelector("#trending").append(box);
 });
+
+
+//LANDING PAGE SCRIPT
+document.getElementById('landingPage').addEventListener('click', function(){
+    window.location.href = "index.html"
+})

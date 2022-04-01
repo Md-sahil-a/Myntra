@@ -208,12 +208,9 @@ header >* {
     }
 
 
-
-
 #toggle{
    display: none;
 }
-
 
 
 
@@ -221,13 +218,13 @@ header >* {
 .slider{
     margin-top: 15rem;
     width: 100%;
-    height: 374px;
+    height: 450px;
     overflow: hidden;
   }
   
   #slides{
     width: 500%;
-    height: 374px;
+    height: 100%;
     display: flex;
   }
   
@@ -242,7 +239,7 @@ header >* {
   
   .slide img{
     width: 100%;
-    height: 374px;
+    height: 100%;
   }
   
   /*css for manual slide navigation*/

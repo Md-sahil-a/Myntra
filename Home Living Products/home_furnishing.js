@@ -475,3 +475,8 @@ function addToBaglist(element) {
   bagList.push(element)
   localStorage.setItem("BagListObj" , JSON.stringify(bagList))
 }
+
+// LANDING PAGE
+document.getElementById('landingPage').addEventListener('click', function(){
+  window.location.href = "/LandingPage/index.html"
+})
