@@ -91,22 +91,10 @@ var anchors_para = [
       document.querySelector('aside').append(asideDiv);
   }
 
-
-  //<------- TOGGLE MENU JS ----------->//
-function myFunction() {
-  var dropDownMenu = document.getElementById("myDropdown")
-  dropDownMenu.classList.toggle("show")
-}
-
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
+//<--------- PRODUCT PAGE HYPERLINK ---------->//
+var z = document.querySelectorAll('img');
+for(let i=0; i<z.length; i++){
+    z[i].addEventListener('click', function(){
+        window.location.href = "/Home Living Products/home_furnishing.html"
+    })
 }

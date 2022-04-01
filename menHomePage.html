@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Men Shopping Online - Shop for Mens Clothing & Accessories in India | Myntra</title>
     <link rel="shortcut icon" type="image/png" href="./Common Files/image/favicon.png">
-    <link rel="stylesheet" href="./Common Files/style.css">
+    <link rel="stylesheet" href="/Common Files/style.css">
     <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -30,10 +30,16 @@
             <i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
         </div>
         <div id="right_icon">
-            <div>
-                <i class="fa-regular fa-user"></i>
-                <span>profile</span>
-            </div>
+            <div id="reggDropdown">
+                <!-- DROPDOWN MENU TO BE CREATED FOR LOGIN AND SIGNUP -->
+              <div id="drop">
+                  <a href="profile.html" class="dropList">login</a>
+                  <a href="signup.html" class="dropList">sign up</a>
+              </div>
+
+              <i class="fa-regular fa-user"></i>
+              <span>profile</span>
+          </div>
             <div>
                 <i class="fa-regular fa-heart"></i>
                 <span>wishlist</span>
@@ -57,14 +63,14 @@
                     <a href="#">studio</a>
                 </div>   
                 <div class="bottom">
-                    <i class="fa-regular fa-user"></i>
+                    <i class="fa-regular fa-user" id="profile"></i>
                     <i class="fa-regular fa-heart"></i>
                     <i class="fa-solid fa-bag-shopping"></i>
                 </div>           
             </div>
         </div>
     </header>
-
+ 
 
     <!-- COROUSEL SECTION -->
     <div class="slider">
@@ -262,9 +268,7 @@
           </footer>
 
     <script src="./Common Files/men.js"></script>
-    <script src="./Common Files/common.js"></script>
-
+    <script src="/Common Files/headerMenu.js"></script>
+    <script src="./Common Files/corousel.js"></script>
 </body>
-
-
 </html>

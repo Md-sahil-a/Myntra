@@ -12,7 +12,7 @@ function sigupfun(){
     var password=document.querySelector("#pass").value;
 
     if(name== "" || mob=="" || mail =="" || password ==""){
-        alert("fill in the empty field")
+        alert("fill in the empty fields")
     }
 
 else {
@@ -37,6 +37,10 @@ else {
 
      window.location.href="profile.html"
      }
-    
-    
 }
+
+
+// HYPERLINK FOR PROFILE
+document.getElementById('profile').addEventListener('click', function(){
+    window.location.href = "profile.html"
+  })

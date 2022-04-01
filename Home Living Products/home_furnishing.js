@@ -411,6 +411,9 @@ var funitureData = [
     var img = document.createElement("img")
     img.src = element.image_url
 
+    var contentBox = document.createElement('div'); 
+    contentBox.setAttribute('class', 'contentBox')
+
     var name = document.createElement("h4")
     name.textContent = element.name
 
@@ -420,18 +423,18 @@ var funitureData = [
     var mix = document.createElement("div")
     mix.setAttribute("class","mixbox")
 
-
-    var price = document.createElement("a")
+    var price = document.createElement("p")
     price.textContent = element.price
 
-    var strikeprice = document.createElement("a")
+    var strikeprice = document.createElement("p")
     strikeprice.textContent = element.strikedoffprice
     strikeprice.setAttribute("class","strikep")
-    mix.append(price,strikeprice)
-
+    
     var offer = document.createElement("p")
     offer.textContent = element.offer
     offer.setAttribute("class","offerp")
+    
+    mix.append(price,strikeprice, offer)
 
     var wishList = document.createElement("p")
     wishList.setAttribute("class", "wishListp")
@@ -446,15 +449,17 @@ var funitureData = [
 
     var addToBag = document.createElement("p")
     addToBag.setAttribute("class" , "addToBagp")
-    addToBag.textContent = element.addToBag
+    addToBag.textContent = element.addToBag;
     addToBag.style.cursor = "pointer"
+
 
     addToBag.addEventListener("click", function() {
       addToBaglist(element)
       addToBag.innerText = "GO TO BAG >"
     })
     
-    box.append(img,name,para,mix,offer,wishList,addToBag)
+    contentBox.append(name, para, mix, wishList, addToBag)
+    box.append(img, contentBox)
 
     document.querySelector("#container").append(box)
 })

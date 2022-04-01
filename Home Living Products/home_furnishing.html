@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Home Decor - Buy Home Furnishing &amp; Accessories Online - Myntra</title>
+
+    <title>Home and Living - Buy Interior Decoration Products and Accessories Online in India</title>
+
     <link rel="shortcut icon" type="image/png" href="/Common Files/image/favicon.png">
     <link rel="stylesheet" href="home_furnishing.css" />
     <link rel="stylesheet" href="/Common Files/style.css">
@@ -17,7 +21,7 @@
   
     <header>
         <div id="logo">
-            <img src="/Common Files/image/myntra-removebg-preview.png" alt="">
+            <img src="/Common Files/image/myntra-removebg-preview.png" alt="brandLogo">
         </div>
         <ul id="nav_bar">
             <li><a href="/menHomePage.html">men</a></li>
@@ -32,10 +36,16 @@
             <i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
         </div>
         <div id="right_icon">
-            <div>
-                <i class="fa-regular fa-user"></i>
-                <span>profile</span>
-            </div>
+              <div id="reggDropdown">
+                <!-- DROPDOWN MENU TO BE CREATED FOR LOGIN AND SIGNUP -->
+              <div id="drop">
+                  <a href="/Profile/profile.html" class="dropList">login</a>
+                  <a href="/Profile/signup.html" class="dropList">sign up</a>
+              </div>
+
+              <i class="fa-regular fa-user"></i>
+              <span>profile</span>
+          </div>
             <div>
                 <i class="fa-regular fa-heart"></i>
                 <span>wishlist</span>
@@ -51,15 +61,15 @@
                     <i class='bx bx-menu dropbtn' onclick="myFunction()"></i>
                     <div id="myDropdown" class="dropdown-content">
                         <div class="top">
-                            <a href="menHomePage.html">men</a>
-                            <a href="womenHomePage.html">women</a>
+                            <a href="/menHomePage.html">men</a>
+                            <a href="/womenHomePage.html">women</a>
                             <a href="#">kids</a>
-                            <a href="homeLiving.html">home & living</a>
+                            <a href="/homeLiving.html">home & living</a>
                             <a href="#">beauty</a>
                             <a href="#">studio</a>
                         </div> 
                         <div class="bottom">
-                            <i class="fa-regular fa-user"></i>
+                            <i class="fa-regular fa-user" id="profile"></i>
                             <i class="fa-regular fa-heart"></i>
                             <i class="fa-solid fa-bag-shopping"></i>
                         </div>              
@@ -67,108 +77,128 @@
                 </div>
 
     </header>
-
+    <div id="wrapper">
          <div id="filter">
-                <h3>FILTERS </h3>
-                <!-- <input type="Submit" style="border: none;"> -->
-                <div class="a">
-                    <input type="radio" id="rb" name="group">
-                    <label for="rb">Men</label><br>
-                    <input type="radio" id="rb" name="group">
-                    <label for="rb">Women</label><br>
-                    <input type="radio" id="rb" name="group">
-                    <label for="rb">Boys</label><br>
-                    <input type="radio" id="rb" name="group">
-                    <label for="rb">Girls</label>
+             <div class="a">
+                    <h3>FILTERS </h3>
+                    <div>
+                        <input type="radio" id="rb" name="group">
+                        <label for="rb">Men</label><br>
+                        <input type="radio" id="rb" name="group">
+                        <label for="rb">Women</label><br>
+                        <input type="radio" id="rb" name="group">
+                        <label for="rb">Boys</label><br>
+                        <input type="radio" id="rb" name="group">
+                        <label for="rb">Girls</label>
+                    </div>
+                    
                 </div>
-                <h3>CATEGORIES</h3>
                 <div class="b">
-                    <input type="checkbox" id="cb" name="group">
-                    <label for="cb">Bedsheets</label><br>
-                    <input type="checkbox" id="cb" name="group">
-                    <label for="cb">Cushion Covers</label><br>
-                    <input type="checkbox" id="cb" name="group">
-                    <label for="cb">Curtain and Sheers</label><br>
-                    <input type="checkbox" id="cb" name="group">
-                    <label for="cb">Wall Art</label><br>
-                    <input type="checkbox" id="cb" name="group">
-                    <label for="cb">Blankets Quits and Dohars</label><br>
-                    <input type="checkbox" id="cb" name="group">
-                    <label for="cb">Clocks</label><br>
-                    <input type="checkbox" id="cb" name="group">
-                    <label for="cb">Orgaisers</label><br>
-                    <input type="checkbox" id="cb" name="group">
-                    <label for="cb">bath Towels</label>
+                    <h3>CATEGORIES</h3>
+                    <div>
+                        <input type="checkbox" id="cb" name="group">
+                        <label for="cb">Bedsheets</label><br>
+                        <input type="checkbox" id="cb" name="group">
+                        <label for="cb">Cushion Covers</label><br>
+                        <input type="checkbox" id="cb" name="group">
+                        <label for="cb">Curtain and Sheers</label><br>
+                        <input type="checkbox" id="cb" name="group">
+                        <label for="cb">Wall Art</label><br>
+                        <input type="checkbox" id="cb" name="group">
+                        <label for="cb">Blankets Quits and Dohars</label><br>
+                        <input type="checkbox" id="cb" name="group">
+                        <label for="cb">Clocks</label><br>
+                        <input type="checkbox" id="cb" name="group">
+                        <label for="cb">Orgaisers</label><br>
+                        <input type="checkbox" id="cb" name="group">
+                        <label for="cb">bath Towels</label>
+                    </div>
+                  
                 </div>
-                    <h3>BRAND</h3>
-                    <div class="b">
-                        <input type="checkbox" id="cb" name="group">
-                        <label for="cb">KLOTTHE</label><br>
-                        <input type="checkbox" id="cb" name="group">
-                        <label for="cb">Story@home</label><br>
-                        <input type="checkbox" id="cb" name="group">
-                        <label for="cb">Arrabi</label><br>
-                        <input type="checkbox" id="cb" name="group">
-                        <label for="cb">Cortina</label><br>
-                        <input type="checkbox" id="cb" name="group">
-                        <label for="cb">BIANCA</label><br>
-                        <input type="checkbox" id="cb" name="group">
-                        <label for="cb">Home Center</label><br>
-                        <input type="checkbox" id="cb" name="group">
-                        <label for="cb">ROMME</label><br>
-                        <input type="checkbox" id="cb" name="group">
-                        <label for="cb">Kuber Industries</label>
+                <div class="b">
+                        <h3>BRAND</h3>
+                        <div>
+                            <input type="checkbox" id="cb" name="group">
+                            <label for="cb">KLOTTHE</label><br>
+                            <input type="checkbox" id="cb" name="group">
+                            <label for="cb">Story@home</label><br>
+                            <input type="checkbox" id="cb" name="group">
+                            <label for="cb">Arrabi</label><br>
+                            <input type="checkbox" id="cb" name="group">
+                            <label for="cb">Cortina</label><br>
+                            <input type="checkbox" id="cb" name="group">
+                            <label for="cb">BIANCA</label><br>
+                            <input type="checkbox" id="cb" name="group">
+                            <label for="cb">Home Center</label><br>
+                            <input type="checkbox" id="cb" name="group">
+                            <label for="cb">ROMME</label><br>
+                            <input type="checkbox" id="cb" name="group">
+                            <label for="cb">Kuber Industries</label>
+                        </div>
+                       
                     </div>
-                    <h3>PRICE</h3>
                     <div class="b">
-                        <input type="checkbox" id="cb" name="group">
-                        <label for="cb">Rs. 50 to Rs. 22838</label><br>
-                        <input type="checkbox" id="cb" name="group">
-                        <label for="cb">Rs. 22838 to Rs. 45626</label><br>
-                        <input type="checkbox" id="cb" name="group">
-                        <label for="cb">Rs. 45626 to Rs. 68414</label><br>
-                        <input type="checkbox" id="cb" name="group">
-                        <label for="cb">Rs. 68414 to Rs. 91202</label><br>
+                        <h3>PRICE</h3>
+                        <div>
+                            <input type="checkbox" id="cb" name="group">
+                            <label for="cb">Rs. 50 to Rs. 22838</label><br>
+                            <input type="checkbox" id="cb" name="group">
+                            <label for="cb">Rs. 22838 to Rs. 45626</label><br>
+                            <input type="checkbox" id="cb" name="group">
+                            <label for="cb">Rs. 45626 to Rs. 68414</label><br>
+                            <input type="checkbox" id="cb" name="group">
+                            <label for="cb">Rs. 68414 to Rs. 91202</label><br>
+                        </div>
+                       
                     </div>
-                    <h3>COLOR</h3>
                     <div class="b">
-                        <input type="checkbox" id="cb" name="group">
-                        <label for="cb">Blue</label><br>
-                        <input type="checkbox" id="cb" name="group">
-                        <label for="cb">White</label><br>
-                        <input type="checkbox" id="cb" name="group">
-                        <label for="cb">Brown</label><br>
-                        <input type="checkbox" id="cb" name="group">
-                        <label for="cb">Multi</label><br>
-                        <input type="checkbox" id="cb" name="group">
-                        <label for="cb">Black</label><br>
-                        <input type="checkbox" id="cb" name="group">
-                        <label for="cb">Gray</label><br>
-                        <input type="checkbox" id="cb" name="group">
-                        <label for="cb">Green</label><br>
+                        <h3>COLOR</h3>
+                        <div>
+                            <input type="checkbox" id="cb" name="group">
+                            <label for="cb">Blue</label><br>
+                            <input type="checkbox" id="cb" name="group">
+                            <label for="cb">White</label><br>
+                            <input type="checkbox" id="cb" name="group">
+                            <label for="cb">Brown</label><br>
+                            <input type="checkbox" id="cb" name="group">
+                            <label for="cb">Multi</label><br>
+                            <input type="checkbox" id="cb" name="group">
+                            <label for="cb">Black</label><br>
+                            <input type="checkbox" id="cb" name="group">
+                            <label for="cb">Gray</label><br>
+                            <input type="checkbox" id="cb" name="group">
+                            <label for="cb">Green</label><br>
+                        </div>
+                        
                     </div>
-                    <h3>DISCOUNT RANGE</h3>
                     <div class="c">
-                        <input type="radio" id="rb" name="group">
-                        <label for="rb">10% and above</label><br>
-                        <input type="radio" id="rb" name="group">
-                        <label for="rb">20% and above</label><br>
-                        <input type="radio" id="rb" name="group">
-                        <label for="rb">30% and aboves</label><br>
-                        <input type="radio" id="rb" name="group">
-                        <label for="rb">40% and above</label><br>
-                        <input type="radio" id="rb" name="group">
-                        <label for="rb">50% and above</label><br>
-                        <input type="radio" id="rb" name="group">
-                        <label for="rb">60% and above</label><br>
-                        <input type="radio" id="rb" name="group">
-                        <label for="rb">70% and above</label><br>
-                        <input type="radio" id="rb" name="group">
-                        <label for="rb">80% and above</label><br>
+                        <h3>DISCOUNT RANGE</h3>
+                        <div>
+                            <input type="radio" id="rb" name="group">
+                            <label for="rb">10% and above</label><br>
+                            <input type="radio" id="rb" name="group">
+                            <label for="rb">20% and above</label><br>
+                            <input type="radio" id="rb" name="group">
+                            <label for="rb">30% and aboves</label><br>
+                            <input type="radio" id="rb" name="group">
+                            <label for="rb">40% and above</label><br>
+                            <input type="radio" id="rb" name="group">
+                            <label for="rb">50% and above</label><br>
+                            <input type="radio" id="rb" name="group">
+                            <label for="rb">60% and above</label><br>
+                            <input type="radio" id="rb" name="group">
+                            <label for="rb">70% and above</label><br>
+                            <input type="radio" id="rb" name="group">
+                            <label for="rb">80% and above</label><br>
+                        </div>
+                        
                     </div>
                 </div>  
                 
-         <div id="container"></div>
+            <div id="container"></div>
+        </div>       
+        
+        
 
          <footer>
             <section id="section_1">
@@ -243,6 +273,6 @@
 </body>
 
 <script src="home_furnishing.js"></script>
-<script src="/Common Files/common.js"></script>
+<script src="/Common Files/headerMenu.js"></script>
 
 </html>
