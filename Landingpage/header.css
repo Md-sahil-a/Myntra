@@ -164,3 +164,55 @@ body>h1{
     grid-template-rows: repeat(1,auto);
    
 }
+
+@media only screen and (min-width: 421px) and (max-width: 780px) {
+    .slider {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(5, auto);
+    }
+
+    #deals{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, auto);
+
+    }
+  
+    #best{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, auto);
+    }
+    #top{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, auto);
+    }
+    #categories{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4,auto);
+    }
+    #dealsTop{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4,auto);
+        
+    }
+    #unmissable{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, auto);
+      
+    }
+    #colours{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, auto);
+    }
+    #topInfluencers{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
+    }
+    #budget{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, auto);
+    }
+    #trending{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, auto);
+    }
+}
