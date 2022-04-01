@@ -1,54 +1,57 @@
-var cartarr =[
-    {
-        image_url: "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/17583708/2022/3/19/7f177aab-9715-4052-b88d-b14e5d27b9c51647683759688JAIPURFABRICUnisexGreenBedsheets1.jpg",
-               name:"JAIPUR FABRIC",
-                offer:"(65% OFF)",
-               para:"Green & White Printed Bedsheet",
-               price:"Rs. 1199",
-            strikedoffprice:"Rs. 2599" 
-        },
-        {
-            image_url: "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/15565160/2021/9/29/30b3ec0b-e7f6-43b1-821f-a5c1afddd16b1632898392141-Louis-Philippe-Men-Shirts-1501632898391574-1.jpg",
-                   name:"JAIPUR FABRIC",
-                    offer:"(65% OFF)",
-                   para:"Green & White Printed Bedsheet",
-                   price:"Rs. 1199",
-                strikedoffprice:"Rs. 2599" 
-            },
-            {
-              image_url: "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/15565160/2021/9/29/30b3ec0b-e7f6-43b1-821f-a5c1afddd16b1632898392141-Louis-Philippe-Men-Shirts-1501632898391574-1.jpg",
-                     name:"JAIPUR FABRIC",
-                      offer:"(65% OFF)",
-                     para:"Green & White Printed Bedsheet",
-                     price:"Rs. 1199",
-                  strikedoffprice:"Rs. 2599" 
-              },
-              {
-                image_url: "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/17583708/2022/3/19/7f177aab-9715-4052-b88d-b14e5d27b9c51647683759688JAIPURFABRICUnisexGreenBedsheets1.jpg",
-                       name:"JAIPUR FABRIC",
-                        offer:"(65% OFF)",
-                       para:"Green & White Printed Bedsheet",
-                       price:"Rs. 1199",
-                    strikedoffprice:"Rs. 2599" 
-                },
-                {
-                    image_url: "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/15565160/2021/9/29/30b3ec0b-e7f6-43b1-821f-a5c1afddd16b1632898392141-Louis-Philippe-Men-Shirts-1501632898391574-1.jpg",
-                           name:"JAIPUR FABRIC",
-                            offer:"(65% OFF)",
-                           para:"Green & White Printed Bedsheet",
-                           price:"Rs. 1199",
-                        strikedoffprice:"Rs. 2599" 
-                    },
-                    {
-                      image_url: "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/15565160/2021/9/29/30b3ec0b-e7f6-43b1-821f-a5c1afddd16b1632898392141-Louis-Philippe-Men-Shirts-1501632898391574-1.jpg",
-                             name:"JAIPUR FABRIC",
-                              offer:"(65% OFF)",
-                             para:"Green & White Printed Bedsheet",
-                             price:"Rs. 1199",
-                          strikedoffprice:"Rs. 2599" 
-                      },
+// var cartarr =
+// [
+//     {
+//         image_url: "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/17583708/2022/3/19/7f177aab-9715-4052-b88d-b14e5d27b9c51647683759688JAIPURFABRICUnisexGreenBedsheets1.jpg",
+//                name:"JAIPUR FABRIC",
+//                 offer:"(65% OFF)",
+//                para:"Green & White Printed Bedsheet",
+//                price:"Rs. 1199",
+//             strikedoffprice:"Rs. 2599" 
+//         },
+//         {
+//             image_url: "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/15565160/2021/9/29/30b3ec0b-e7f6-43b1-821f-a5c1afddd16b1632898392141-Louis-Philippe-Men-Shirts-1501632898391574-1.jpg",
+//                    name:"JAIPUR FABRIC",
+//                     offer:"(65% OFF)",
+//                    para:"Green & White Printed Bedsheet",
+//                    price:"Rs. 1199",
+//                 strikedoffprice:"Rs. 2599" 
+//             },
+//             {
+//               image_url: "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/15565160/2021/9/29/30b3ec0b-e7f6-43b1-821f-a5c1afddd16b1632898392141-Louis-Philippe-Men-Shirts-1501632898391574-1.jpg",
+//                      name:"JAIPUR FABRIC",
+//                       offer:"(65% OFF)",
+//                      para:"Green & White Printed Bedsheet",
+//                      price:"Rs. 1199",
+//                   strikedoffprice:"Rs. 2599" 
+//               },
+//               {
+//                 image_url: "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/17583708/2022/3/19/7f177aab-9715-4052-b88d-b14e5d27b9c51647683759688JAIPURFABRICUnisexGreenBedsheets1.jpg",
+//                        name:"JAIPUR FABRIC",
+//                         offer:"(65% OFF)",
+//                        para:"Green & White Printed Bedsheet",
+//                        price:"Rs. 1199",
+//                     strikedoffprice:"Rs. 2599" 
+//                 },
+//                 {
+//                     image_url: "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/15565160/2021/9/29/30b3ec0b-e7f6-43b1-821f-a5c1afddd16b1632898392141-Louis-Philippe-Men-Shirts-1501632898391574-1.jpg",
+//                            name:"JAIPUR FABRIC",
+//                             offer:"(65% OFF)",
+//                            para:"Green & White Printed Bedsheet",
+//                            price:"Rs. 1199",
+//                         strikedoffprice:"Rs. 2599" 
+//                     },
+//                     {
+//                       image_url: "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/15565160/2021/9/29/30b3ec0b-e7f6-43b1-821f-a5c1afddd16b1632898392141-Louis-Philippe-Men-Shirts-1501632898391574-1.jpg",
+//                              name:"JAIPUR FABRIC",
+//                               offer:"(65% OFF)",
+//                              para:"Green & White Printed Bedsheet",
+//                              price:"Rs. 1199",
+//                           strikedoffprice:"Rs. 2599" 
+//                       },
            
-        ]
+//         ]
+
+var cartarr =JSON.parse(localStorage.getItem("wishListObj"))||[];
 
         var itemcount = cartarr.length;
         document.querySelector(".wishcount").innerText =` ${itemcount} Items`
@@ -120,10 +123,9 @@ var cartarr =[
         
         
         function removefromwish(ind){
-
-       console.log("clickeed the remove button")
-       //delete the item from arr and update the 
-       // the local storage of wishlist
+       
+       cartarr.splice(ind,1)
+       localStorage.setItem("wishListObj",JSON.stringify(cartarr))
        window.location.href="wishlist.html"
 
         }
