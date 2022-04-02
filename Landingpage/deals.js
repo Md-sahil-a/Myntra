@@ -430,3 +430,13 @@ trendingArr.map(function (el) {
 document.getElementById('landingPage').addEventListener('click', function(){
     window.location.href = "index.html"
 })
+
+
+document.querySelector(".fa-heart").addEventListener("click",function(){
+    window.location.href ="../wishlist/wishlist.html"
+})
+
+
+document.querySelector(".fa-bag-shopping").addEventListener("click",function(){
+    window.location.href ="../wishlist/cart.html"
+})

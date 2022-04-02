@@ -84,6 +84,25 @@ z.map(function(ele, index){
 
 
  // LANDING PAGE
- document.getElementById('landingPage').addEventListener('click', function(){
-  window.location.href = '/Landingpage/index.html'
+//  document.getElementById('landingPage').addEventListener('click', function(){
+//   window.location.href = './Landingpage/index.html'
+// })
+
+document.querySelector(".fa-heart").addEventListener("click",function(){
+  window.location.href ="./wishlist/wishlist.html"
 })
+
+
+document.querySelector(".fa-bag-shopping").addEventListener("click",function(){
+  window.location.href ="/wishlist/cart.html"
+})
+
+var images = document.querySelectorAll("img");
+ for( let i =0; i< images.length ;i++){
+
+   images[i].addEventListener("click",function(){
+     window.location.href ="../womensdata/women.html"
+   })
+
+
+ }
