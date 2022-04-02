@@ -75,24 +75,17 @@ p>b{
 
 #cart{
     display: flex;
-    width: 80%;
+    width: 70%;
     margin: auto;
     justify-content: space-between;
     padding:20px;
 }
-#main1{
+#main{
    width:65%;
    padding:10px; 
    border-right:2px solid #e9e9ed;
 }
-#main2{
-   width:35%;
-   padding:10px; 
-   margin-top: 15px;
-   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-   
-}
-#main1>div:first-child{
+#main>div:first-child{
     
     margin-top: 10px;
     border:1px solid #e9e9ed;
@@ -137,12 +130,22 @@ i{
     background-color:#ff3e6c;
     display: flex;
     align-items: center;
+    
     padding-left:30px;
     color: white;
     font-weight: bolder;
 }
 
+ 
 
+#total{
+    color: gray;
+    font-size: 15px;
+    font-weight: 100;
+    width: 40%;
+    display: flex;
+    border:1px solid red
+}
 
 
 
