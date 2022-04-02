@@ -8,7 +8,7 @@
 //                 offer:"(65% OFF)",
 //                para:"Green & White Printed Bedsheet",
 //                price:"Rs. 1199",
-//             strikedoffprice:"Rs. 2599" 
+//             strikedoffprice:"Rs. 2599"
 //         },
 //         {
 //             image_url: "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/15565160/2021/9/29/30b3ec0b-e7f6-43b1-821f-a5c1afddd16b1632898392141-Louis-Philippe-Men-Shirts-1501632898391574-1.jpg",
@@ -16,7 +16,7 @@
 //                     offer:"(65% OFF)",
 //                    para:"Green & White Printed Bedsheet",
 //                    price:"Rs. 1199",
-//                 strikedoffprice:"Rs. 2599" 
+//                 strikedoffprice:"Rs. 2599"
 //             },
 //             {
 //               image_url: "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/15565160/2021/9/29/30b3ec0b-e7f6-43b1-821f-a5c1afddd16b1632898392141-Louis-Philippe-Men-Shirts-1501632898391574-1.jpg",
@@ -24,133 +24,115 @@
 //                       offer:"(65% OFF)",
 //                      para:"Green & White Printed Bedsheet",
 //                      price:"Rs. 1199",
-//                   strikedoffprice:"Rs. 2599" 
+//                   strikedoffprice:"Rs. 2599"
 //               }
 //         ]
 
-       var cartarr = JSON.parse(localStorage.getItem("BagListObj")) || [];
+var cartarr = JSON.parse(localStorage.getItem("BagListObj")) || [];
 
+var cartarr = JSON.parse(localStorage.getItem("BagListObj")) || [];
 
+var itemcount = cartarr.length;
 
-var cartarr = JSON.parse(localStorage.getItem("BagListObj"))||[];
-       
+var MRP = cartarr.reduce(function(sum, a, ind) {
+    return sum + +cartarr[ind].strikedoffprice.split(" ")[1];
+}, 0);
 
-        var itemcount =cartarr.length;
+var amount = cartarr.reduce(function(sum, a, ind) {
+    return sum + +cartarr[ind].price.split(" ")[1];
+}, 0);
+var initial_price = amount;
+var discount = MRP - amount;
 
-        var MRP =  cartarr.reduce(function(sum,a,ind){
-          return sum+ +(cartarr[ind].strikedoffprice.split(" ")[1])
-        },0);
+console.log(amount);
+console.log(MRP);
+console.log(discount);
 
-        var amount = cartarr.reduce(function(sum,a,ind){
-          return sum+ +(cartarr[ind].price.split(" ")[1])
-        },0);
-        var initial_price =amount;
-        var discount = MRP - amount;
+document.querySelector(".amount_pay").innerText = amount;
+document.querySelector(".filldiscount").innerText = "- " + discount;
+document.querySelector(".totalprice").innerText = MRP;
+document.querySelector(
+    ".pricedets"
+).innerText = `PRICE DETAILS ( ${itemcount} Items)`;
 
-        console.log(amount)
-        console.log(MRP)
-        console.log(discount);
+cartarr.map(function(ele, ind) {
+    var box = document.createElement("div");
+    box.className = "main";
 
-        document.querySelector(".amount_pay").innerText= amount;
-        document.querySelector(".filldiscount").innerText= "- "+discount;
-        document.querySelector(".totalprice").innerText= MRP;
-        document.querySelector(".pricedets").innerText= `PRICE DETAILS ( ${itemcount} Items)`;
+    var imgbox = document.createElement("div");
 
+    var image = document.createElement("img");
+    image.src = ele.image_url;
+    imgbox.append(image);
 
-        cartarr.map(function(ele,ind){
-             
-            var box = document.createElement("div");
-            box.className ="main"
-            
+    var detailsbox = document.createElement("div");
 
-            var imgbox = document.createElement("div");
-            
-            var image =document.createElement("img");
-            image.src = ele.image_url
-           imgbox.append(image)
+    var name = document.createElement("p");
+    name.innerText = ele.name;
+    name.style.fontSize = "20px";
+    name.style.marginBottom = "-8px";
 
-          var detailsbox = document.createElement("div");
+    var para = document.createElement("p");
+    para.innerText = ele.para;
+    para.style.color = "gray";
 
-          var name =document.createElement("p");
-          name.innerText=ele.name
-          name.style.fontSize="20px";
-          name.style.marginBottom ="-8px"
+    var price = document.createElement("span");
+    price.innerText = ele.price;
 
+    var strikedprice = document.createElement("span");
+    strikedprice.innerText = ele.strikedoffprice;
+    strikedprice.style.textDecoration = "line-through";
+    strikedprice.style.color = "gray";
 
-          var para =document.createElement("p");
-          para.innerText=ele.para ;
-          para.style.color="gray"
+    var offer = document.createElement("span");
+    offer.innerText = ele.offer;
+    offer.style.color = "red";
 
-          var price = document.createElement("span");
-          price.innerText = ele.price
+    var pricepara = document.createElement("p");
+    pricepara.append(price, strikedprice);
 
-          var strikedprice = document.createElement("span");
-          strikedprice.innerText = ele.strikedoffprice;
-          strikedprice.style.textDecoration = "line-through";
-          strikedprice.style.color ="gray";
+    detailsbox.append(name, para, pricepara, offer);
 
+    var buttonbox = document.createElement("div");
 
-          var offer = document.createElement("span");
-          offer.innerText =ele.offer;
-          offer.style.color="red";
+    var remove = document.createElement("button");
+    // buttonbox.id ="removefromcart"
+    remove.innerText = "REMOVE";
+    remove.addEventListener("click", function() {
+        removeitem(ind);
+    });
 
+    buttonbox.append(remove);
 
-          var pricepara =document.createElement("p");
-          pricepara.append(price,strikedprice)
-          
-          detailsbox.append(name,para,pricepara,offer)
+    box.append(imgbox, detailsbox, buttonbox);
 
-          var buttonbox = document.createElement("div");
-          
-          var remove =document.createElement("button");
-          // buttonbox.id ="removefromcart"
-          remove.innerText ="REMOVE";
-          remove.addEventListener("click",function(){
-            removeitem(ind)
-          })
+    document.querySelector(".container").append(box);
+});
 
-          
-          
-          buttonbox.append (remove)
-          
-          
-          
-          box.append(imgbox,detailsbox,buttonbox)
+document.querySelector(".wishlistlink").addEventListener("click", sendtowish);
 
-        document.querySelector(".container").append(box)
+function sendtowish() {
+    window.location.href = "wishlist.html";
+}
 
-        })
+function removeitem(ind) {
+    cartarr.splice(ind, 1);
+    localStorage.setItem("BagListObj", JSON.stringify(cartarr));
+    window.location.href = "cart.html";
+}
 
+document.querySelector(".makeorder").addEventListener("click", paymentpage);
 
+function paymentpage() {
+    window.location.href = "wishlist.html";
+}
 
-        document.querySelector(".wishlistlink").addEventListener("click",sendtowish)
+document.querySelector(".apply").addEventListener("click", discountfun);
 
-        function sendtowish (){
-          window.location.href ="wishlist.html"
-        }
-
-
-        function removeitem(ind){
-          cartarr.splice(ind,1);
-          localStorage.setItem("BagListObj",JSON.stringify(cartarr))
-          window.location.href ="cart.html";
-         
-        }
-
-        document.querySelector(".makeorder").addEventListener("click",paymentpage)
-
-        function paymentpage(){
-          window.location.href="wishlist.html";
-        }
-
-        document.querySelector(".apply").addEventListener("click",discountfun);
-
-        function discountfun(){
-          var in_promo =document.querySelector("#promo").value
-          if(initial_price=amount && in_promo =="MYNTRA300"){
-            document.querySelector(".amount_pay").innerText= amount-300;
-            document.querySelector("#promo").value="";
-           
-          }
-        }
-       
+function discountfun() {
+    var in_promo = document.querySelector("#promo").value;
+    if ((initial_price = amount && in_promo == "MYNTRA300")) {
+        document.querySelector(".amount_pay").innerText = amount - 300;
+        document.querySelector("#promo").value = "";
+    }
+}
