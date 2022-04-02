@@ -414,7 +414,7 @@ womensData.map(function(element) {
 
     addToBag.addEventListener("click", function() {
         addToBaglist(element);
-        addToBag.innerText = "GO TO BAG >";
+        addToBag.innerText = "GO TO BAG";
     });
 
     contentBox.append(name, para, mix, wishList, addToBag);
