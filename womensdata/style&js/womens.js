@@ -330,7 +330,7 @@ var womensData = [{
     },
     {
         image_url: "https://bit.ly/3wXwlP7",
-        name: "zeaveripearls",
+        name: "zeaveri pearls",
         para: "Gold-Toned & White Kundan & Pearl Studded Ring Bracelet",
         price: "Rs. 949",
         strikedoffprice: "Rs. 2599",
