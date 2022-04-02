@@ -432,14 +432,7 @@ function displayPage(productData) {
 
         mix.append(price, strprice, offer)
 
-        // var atc1 = document.createElement("h4")
-        // atc1.innerText = elem.atw
-        // atc1.style.cursor = "pointer"
-        // atc1.addEventListener("click", function() {
-        //     addToWishList(elem)
-        //     atc1.style.color = "green"
-        //     atc1.innerText = "GO TO WISHLIST"
-        // });
+        
 
         var atw = document.createElement("p")
         atw.setAttribute("class", "wishListp")
@@ -453,14 +446,7 @@ function displayPage(productData) {
         })
 
 
-        // var atc2 = document.createElement("h4")
-        // atc2.innerText = elem.atc
-        // atc2.style.cursor = "pointer"
-
-        // atc2.addEventListener("click", function() {
-        //     addToBag(elem)
-        //     atc2.innerText = "GO TO BAG >"
-        // });
+      
         var atc = document.createElement("p")
         atc.setAttribute("class", "addToBagp")
         atc.textContent = elem.atc;
@@ -484,21 +470,7 @@ function displayPage(productData) {
 
 }
 
-// function addToBag(elem) {
 
-//     bagData.push(elem);
-//     localStorage.setItem("BagListObj", JSON.stringify(bagData));
-// };
-
-// function addToWishList(elem) {
-
-//     wishListData.push(elem);
-//     localStorage.setItem("wishListObj", JSON.stringify(wishListData));
-// };
-
-
-// var btns = document.querySelectorAll(".btn")
-// console.log(btns);
 
 function addToWishlist(element) {
     // console.log(element)
@@ -512,7 +484,6 @@ function addToBag(element) {
     localStorage.setItem("BagListObj", JSON.stringify(bagData))
 }
 
-// document.getElementById('landingPage').addEventListener('click', function() {
-// window.location.href = "../Landingpage/index.html"
-// }) window.location.href = "../Landingpage/index.html"
-// })
+document.getElementById('landingPage').addEventListener('click', function() {
+window.location.href = "../Landingpage/index.html"
+}) 
