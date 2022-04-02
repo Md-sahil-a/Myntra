@@ -28,9 +28,7 @@
 //               }
 //         ]
 
-       var cartarr = JSON.parse(localStorage.getItem("BagListObj")) || [];
-
-
+var cartarr = JSON.parse(localStorage.getItem("BagListObj")) || [];
 
 var cartarr = JSON.parse(localStorage.getItem("BagListObj"))||[];
        
@@ -153,4 +151,9 @@ var cartarr = JSON.parse(localStorage.getItem("BagListObj"))||[];
            
           }
         }
+
+document.getElementById('landingPage').addEventListener('click', function(){
+  window.location.href = "../Landingpage/index.html";
+
+})       
        

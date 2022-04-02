@@ -410,7 +410,7 @@ productData.map(function(elem) {
 // console.log(btns);
 
 function addToWishlist(element) {
-    // console.log(element)
+    console.log(element)
     wishListData.push(element)
     localStorage.setItem("wishListObj", JSON.stringify(wishListData))
 }

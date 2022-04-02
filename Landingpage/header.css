@@ -165,10 +165,11 @@ body>h1{
    
 }
 
-@media only screen and (min-width: 421px) and (max-width: 780px) {
+@media all and (min-width: 551px) and (max-width: 780px) {
     .slider {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(5, auto);
+      height: 400px;
     }
 
     #deals{
@@ -214,5 +215,12 @@ body>h1{
     #trending{
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, auto);
+    }
+}
+
+/* MOBILE MEDIA VIEW */
+@media all and (max-width: 780px){
+    .slider{
+        height: 250px;
     }
 }

@@ -253,7 +253,6 @@ input[type="radio" i] {
 
 
 /* MEDEIA QUERIES FOR TABLET VIEW */
-
 @media all and (min-width: 551px) and (max-width: 850px) {
     #wrapper {
         flex-direction: column;
@@ -281,7 +280,6 @@ input[type="radio" i] {
 
 
 /* MEDEIA QUERIES FOR MOBILE VIEW */
-
 @media all and (max-width: 551px) {
     #wrapper {
         flex-direction: column;
