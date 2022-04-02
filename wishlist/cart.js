@@ -1,7 +1,7 @@
 
 var cartarr = JSON.parse(localStorage.getItem("BagListObj")) || [];
 
-var cartarr = JSON.parse(localStorage.getItem("BagListObj"))||[];
+// var cartarr = JSON.parse(localStorage.getItem("BagListObj"))||[];
        
 
         var itemcount =cartarr.length;
@@ -27,7 +27,7 @@ var cartarr = JSON.parse(localStorage.getItem("BagListObj"))||[];
 
 
         cartarr.map(function(ele,ind){
-             
+          // document.querySelector(".container").innerText = "" 
             var box = document.createElement("div");
             box.className ="main"
             
