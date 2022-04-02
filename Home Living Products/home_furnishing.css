@@ -1,4 +1,20 @@
 
+#sorting {
+    width: 100%;
+    margin-left: 1rem;
+    margin-top: 15rem;
+}
+
+.filter{
+    /* margin-top: 2em;
+    margin-bottom: 2em; */
+    /* justify-content: space-around; */
+    padding: 10px 20px;
+    /* box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; */
+  }
+
+
+
 *{
     box-sizing: border-box;
 }
@@ -13,7 +29,7 @@
     height: 100%;
     width: 23%;
     margin-left: 1rem;
-    margin-top: 15rem;
+    margin-top: 5rem;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     display: flex;
     flex-direction: column;
@@ -59,7 +75,7 @@ input[type="checkbox" i], input[type="radio" i]{
 /* content */
 #container {
     width: 75%;
-    margin-top: 15rem;
+    margin-top: 5rem;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     column-gap: 3rem;
@@ -163,7 +179,7 @@ input[type="checkbox" i], input[type="radio" i]{
            display: grid;
             grid-template-columns: repeat(3, 1fr);
             width: 95%;
-            margin: 15rem auto 0;
+            margin: 5rem auto 0;
 
         }
         #filter > *:hover{
@@ -195,7 +211,7 @@ input[type="checkbox" i], input[type="radio" i]{
        display: grid;
         grid-template-columns: repeat(3, 1fr);
         width: 95%;
-        margin: 15rem auto 0;
+        margin: 5rem auto 0;
     }
     #filter > div:nth-child(2), #filter > div:nth-child(5), #filter > div:nth-child(6){
         display: none;

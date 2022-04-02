@@ -1,11 +1,11 @@
 
 
-var cartarr =JSON.parse(localStorage.getItem("wishListObj"))||[];
+var wisharr =JSON.parse(localStorage.getItem("wishListObj"))||[];
 
 var itemcount = cartarr.length;
 document.querySelector(".wishcount").innerText =` ${itemcount} Items`
 
-cartarr.map(function(ele,ind){
+wisharr.map(function(ele,ind){
 
     var box =document.createElement("div")
     
