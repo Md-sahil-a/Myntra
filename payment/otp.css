@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+:root{
+    font-size: 80%;
+    --primaryFont : 'DM Sans', sans-serif;
+    --charSpace : 6px; 
+    --primaryColor : #3e4152;
+    --secondaryColor : #fafbfc;
+}
+a:link{
+    text-decoration: none;
+}
+body{
+    font-family: var(--primaryFont);
+    scroll-behavior: smooth;
+}
+
+#otpDiv{
+    width:30%;
+    margin: auto;
+    margin-top:2%;
+    padding-bottom: 100px;
+    line-height: 2;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+    background-color: white;
+}
+#otpDiv>img
+{
+    width: 25%;
+    margin: auto;
+    margin-top: 60px;
+    padding:0px 60px;
+}
+#otpline{
+    width: 70%;
+    margin: auto;
+}
+p{
+    font-size: 13px;
+}
+h2+p{
+    color: gray;
+    margin-top: -0px;
+}
+#inputDiv{
+    display: flex;
+    width: 50%;
+    padding-left: 60px;
+    justify-content: space-between;
+}
+#inputDiv>input{
+    border:#e9e9ed solid 2px;
+    width: 25px;
+    color: black;
+    font-size: 20px;
+}
+button{
+    width: 50%;
+    height: 30px;
+    margin-left:60px;
+    margin-top: 40px;
+    border: none;
+    background-color:#ff3e6c ;
+    color: white;
+    font-weight: bold;
+}
+#checkDiv{
+    width: 80%;
+   padding-left: 60px;
+   
+}
+#checkDiv>h4{
+    color: #ff3e6c;
+    margin: 0px 63px;
+}

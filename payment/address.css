@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+:root{
+    font-size: 80%;
+    --primaryFont : 'DM Sans', sans-serif;
+    --charSpace : 6px; 
+    --primaryColor : #3e4152;
+    --secondaryColor : #fafbfc;
+}
+a:link{
+    text-decoration: none;
+}
+body{
+    font-family: var(--primaryFont);
+    scroll-behavior: smooth;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+#navbar{
+    background-color: white;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0px 50px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    font-weight: bold;  
+}
+#logo{
+    width: 60px;
+    height:60px;
+    background-color: white;
+}
+#div2{
+    letter-spacing:3px;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: gray;
+
+}
+#div2>h5:nth-child(3){
+    color:#3cc3a0;
+   border-bottom:#3cc3a0 2px solid;
+}
+#div3{
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: gray;
+}
+#div3>img{
+   width: 30px;
+}
+p>b{
+    letter-spacing:3px;
+}
+.line{
+    border-top: 1px dashed;
+    width: 50px;
+}
+
+/* end of nav bar */
+
+
+#cart{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-content: space-between;
+    padding:20px;
+}
+#Div{
+   width: 60%;
+   padding: 10px 20px; 
+}
+#Div>div:first-child{
+    display: flex;
+    height: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+h3+div{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    height: 30px;
+    border-radius: 5px;
+
+}
+#div>div:nth-child(3){
+    padding: 20px;
+   flex-direction: column;
+    border:2px solid #e9e9ed;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+}
+ #name{
+     width:40%;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+ #home{
+     width: 30%;
+     text-align: center;
+     border: #3cc3a0 1px solid;
+     color: #3cc3a0;
+     border-radius: 20px;
+ }
+#option{
+    display: flex;
+    width:30%;
+    align-items: center;
+    justify-content: space-between;
+}
+#option>div{
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 0px 10px;
+    border: 1px solid;
+}
+#add{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    color: #ff3e6c;
+    font-weight: bold;
+    padding-left: 10px;
+    border: 2px dashed #e9e9ed;
+    height: 80px;
+}
+#checkDiv{
+    padding:0px 20px;
+    width: 30%;
+    border-left: 1PX solid #e9e9ed;
+}
+
+#itemDiv{
+    border: #e9e9ed 2px solid;
+    height:150px;
+    padding: 10px;
+}
+
+#place{
+    width: 100%;
+    height: 40px;
+    margin-top:30px;
+    background-color:#ff3e6c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
