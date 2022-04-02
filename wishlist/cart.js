@@ -28,24 +28,31 @@
 //               }
 //         ]
 
-var cartarr = JSON.parse(localStorage.getItem("BagListObj")) || [];
+// var cartarr = JSON.parse(localStorage.getItem("BagListObj")) || [];
 
 var cartarr = JSON.parse(localStorage.getItem("BagListObj"))||[];
        
 
         var itemcount =cartarr.length;
+        localStorage.setItem("itemcount",itemcount)
 
         var MRP =  cartarr.reduce(function(sum,a,ind){
           return sum+ +(cartarr[ind].strikedoffprice.split(" ")[1])
         },0);
 
+        localStorage.setItem("MRP",MRP)
+
         var amount = cartarr.reduce(function(sum,a,ind){
           return sum+ +(cartarr[ind].price.split(" ")[1])
         },0);
+
+        localStorage.setItem("amount",amount)
+
         var initial_price =amount;
         localStorage.setItem("amount_to_pay",initial_price);
         var discount = MRP - amount;
 
+        localStorage.setItem("discount",discount)
         // console.log(amount)
         // console.log(MRP)
         // console.log(discount);
@@ -149,14 +156,16 @@ var cartarr = JSON.parse(localStorage.getItem("BagListObj"))||[];
           if(initial_price=amount && in_promo =="MYNTRA300"){
             document.querySelector(".amount_pay").innerText= amount-300;
             document.querySelector("#promo").value="";
-            localStorage.setItem("amount_to_pay",initial_price-300);
+            localStorage.setItem("aomunt",initial_price-300);
+            localStorage.setItem("discount",discount+300);
+
           }
         }
 
 document.getElementById('landingPage').addEventListener('click', function(){
   window.location.href = "../Landingpage/index.html";
 
-<
+
         //footer type thing of cart page
         var farr =[
           {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-ssl.png"},

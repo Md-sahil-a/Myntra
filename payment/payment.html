@@ -74,10 +74,47 @@
             </div>
         </div>
         
-        <div id="main2">
-
-         </div>
+        <!--- inserted new box n removed the div id'd "main2"---->
+    
+        <div class="orderbox">
+            <div class="pricedets">PRICE DETAILS</div>
+            <div class="total">
+               <span>Total MRP</span><span class="totalprice">--</span> 
+            </div>
+            <div class="discount">
+              <span>Discount on MRP</span><span class="filldiscount">--</span> 
+           </div>
+      
+           <div class="amount">
+              <span>Total Amount</span><span class="amount_pay">--</span> 
+           </div>
+           
+      
+    
+          </div>
+    
+    
+    
+    
     </div>
 </body>
 
 </html>
+
+<script>
+
+    var amount = localStorage.getItem("amount");
+ 
+        document.querySelector(".amount_pay").innerText= amount;
+
+       var MRP= localStorage.getItem("MRP");
+       document.querySelector(".totalprice").innerText= MRP;
+
+      var discount= localStorage.getItem("discount")
+        document.querySelector(".filldiscount").innerText= "- "+discount;
+
+
+        var itemcount= localStorage.getItem("itemcount")
+        document.querySelector(".pricedets").innerText= `PRICE DETAILS ( ${itemcount} Items)`;
+
+</script>

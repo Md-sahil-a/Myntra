@@ -79,13 +79,7 @@ p>b{
    padding:10px; 
    border-right:2px solid #e9e9ed;
 }
-#main2{
-   width:35%;
-   padding:10px; 
-   margin-top: 15px;
-   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-   
-}
+
 #main1>div:first-child{
     
     margin-top: 10px;
@@ -136,8 +130,30 @@ i{
     font-weight: bolder;
 }
 
+/* added same style from the cart page related to orderbox */
 
+.orderbox{
+    height: 200px;
+    width: 30%;
+    border :2px solid #F5F5F6;
+    margin-top: 80px;
+    margin-left: 50px;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
 
-
-
-
+.orderbox>div{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+    color: #535766;
+    
+}
+.filldiscount{
+    color:limegreen;
+}
+.pricedets,.amount{
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px;
+}
