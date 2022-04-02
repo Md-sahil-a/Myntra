@@ -16,11 +16,11 @@
             alt="logo">
 
         <div id="div2">
-            <h5>BAG</h5>
+            <h5 id="first">BAG</h5>
             <div class="line"></div>
             <h5>ADDRESS</h5>
             <div class="line"></div>
-            <h5>PAYMENT</h5>
+            <h5 id="third">PAYMENT</h5>
         </div>
         <div id="div3">
             <img src="https://constant.myntassets.com/checkout/assets/img/sprite-secure.png" alt="">
@@ -75,4 +75,16 @@
 </body>
 
 </html>
+<script>
+    document.querySelector('img').addEventListener('click', function(){
+        window.location.href = "../Landingpage/index.html"
+    })
+
+document.getElementById('first').addEventListener('click', function(){
+window.location.href = "../wishlist/cart.html"
+})
+  document.getElementById('third').addEventListener('click', function(){
+  window.location.href = "../payment/payment.html"
+})
+</script>
 

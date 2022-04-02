@@ -72,6 +72,7 @@ input[type="checkbox" i], input[type="radio" i]{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 #container  img {
@@ -176,6 +177,9 @@ input[type="checkbox" i], input[type="radio" i]{
             margin-top: 3rem;
             grid-template-columns: repeat(3, 1fr);
         }
+        #container > div{
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        }
         #container .addToBagp:hover::after{
             transform: translateX(1.2rem);
         } 
@@ -206,6 +210,9 @@ input[type="checkbox" i], input[type="radio" i]{
         margin: auto;
         margin-top: 3rem;
         grid-template-columns: repeat(2, 1fr);
+    }
+    #container > div{
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     }
     #container .addToBagp:hover::after{
         transform: translateX(1.2rem);

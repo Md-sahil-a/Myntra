@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+body{
+    font-family:  'DM Sans', sans-serif;
+}
+
 header {
     width: 100%;
     height: 100px;
@@ -314,7 +320,6 @@ footer>#section_1 {
 
 
 /* filter */
-
 #filter {
     height: 100%;
     width: 23%;
@@ -381,6 +386,7 @@ input[type="radio" i] {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 #container img {
@@ -389,7 +395,8 @@ input[type="radio" i] {
 
 #container p:nth-child(2) {
     color: #505055;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
 }
 
 #container .contentBox {
@@ -484,6 +491,9 @@ input[type="radio" i] {
         margin-top: 3rem;
         grid-template-columns: repeat(3, 1fr);
     }
+    #container > div{
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    }
     #container .addToBagp:hover::after {
         transform: translateX(1.2rem);
     }
@@ -513,6 +523,9 @@ input[type="radio" i] {
         margin: auto;
         margin-top: 3rem;
         grid-template-columns: repeat(2, 1fr);
+    }
+    #container > div{
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     }
     #container .addToBagp:hover::after {
         transform: translateX(1.2rem);

@@ -36,22 +36,22 @@ var cartarr = JSON.parse(localStorage.getItem("BagListObj"))||[];
         var itemcount =cartarr.length;
         localStorage.setItem("itemcount",itemcount)
 
+
         var MRP =  cartarr.reduce(function(sum,a,ind){
           return sum+ +(cartarr[ind].strikedoffprice.split(" ")[1])
         },0);
-
         localStorage.setItem("MRP",MRP)
 
+       
+       
         var amount = cartarr.reduce(function(sum,a,ind){
           return sum+ +(cartarr[ind].price.split(" ")[1])
         },0);
-
         localStorage.setItem("amount",amount)
 
-        var initial_price =amount;
-        localStorage.setItem("amount_to_pay",initial_price);
+        
+       
         var discount = MRP - amount;
-
         localStorage.setItem("discount",discount)
         // console.log(amount)
         // console.log(MRP)
@@ -130,13 +130,12 @@ var cartarr = JSON.parse(localStorage.getItem("BagListObj"))||[];
 
 
         document.querySelector(".wishlistlink").addEventListener("click",sendtowish)
-
         function sendtowish (){
           window.location.href ="wishlist.html"
         }
 
 
-        function removeitem(ind){
+          function removeitem(ind){
           cartarr.splice(ind,1);
           localStorage.setItem("BagListObj",JSON.stringify(cartarr))
           window.location.href ="cart.html";
@@ -152,14 +151,23 @@ var cartarr = JSON.parse(localStorage.getItem("BagListObj"))||[];
         document.querySelector(".apply").addEventListener("click",discountfun);
 
         function discountfun(){
-          var in_promo =document.querySelector("#promo").value
-          if(initial_price=amount && in_promo =="MYNTRA300"){
-            document.querySelector(".amount_pay").innerText= amount-300;
-            document.querySelector("#promo").value="";
-            localStorage.setItem("aomunt",initial_price-300);
-            localStorage.setItem("discount",discount+300);
 
-          }
+          var payable_amount = +(localStorage.getItem("amount"));
+          var int_promo = document.querySelector("#promo").value;
+
+          if( payable_amount>300 && int_promo=="MYNTRA300")
+           {
+          amount = amount-300;
+          discount =discount+300;
+          localStorage.setItem("amount",amount)  ;
+          localStorage.setItem("discount",discount)
+          document.querySelector(".amount_pay").innerText= amount;
+          document.querySelector(".filldiscount").innerText= "- "+discount;
+
+          document.querySelector(".apply").removeEventListener("click",discountfun);
+           }
+            // console.log( amount, discount)
+
         }
 
 document.getElementById('landingPage').addEventListener('click', function(){
