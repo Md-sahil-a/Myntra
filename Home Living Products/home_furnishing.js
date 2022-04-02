@@ -398,8 +398,7 @@ var funitureData = [
           addToBag : "ADD TO BAG",
         },
       ];
-
-
+      
     var wishList =JSON.parse(localStorage.getItem("wishListObj")) || [];
 
     var bagList =JSON.parse(localStorage.getItem("BagListObj")) || [] ;
