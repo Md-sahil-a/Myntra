@@ -8,7 +8,7 @@
 //                 offer:"(65% OFF)",
 //                para:"Green & White Printed Bedsheet",
 //                price:"Rs. 1199",
-//             strikedoffprice:"Rs. 2599" 
+//             strikedoffprice:"Rs. 2599"
 //         },
 //         {
 //             image_url: "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/15565160/2021/9/29/30b3ec0b-e7f6-43b1-821f-a5c1afddd16b1632898392141-Louis-Philippe-Men-Shirts-1501632898391574-1.jpg",
@@ -16,7 +16,7 @@
 //                     offer:"(65% OFF)",
 //                    para:"Green & White Printed Bedsheet",
 //                    price:"Rs. 1199",
-//                 strikedoffprice:"Rs. 2599" 
+//                 strikedoffprice:"Rs. 2599"
 //             },
 //             {
 //               image_url: "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/15565160/2021/9/29/30b3ec0b-e7f6-43b1-821f-a5c1afddd16b1632898392141-Louis-Philippe-Men-Shirts-1501632898391574-1.jpg",
@@ -24,159 +24,160 @@
 //                       offer:"(65% OFF)",
 //                      para:"Green & White Printed Bedsheet",
 //                      price:"Rs. 1199",
-//                   strikedoffprice:"Rs. 2599" 
+//                   strikedoffprice:"Rs. 2599"
 //               }
 //         ]
 
 var cartarr = JSON.parse(localStorage.getItem("BagListObj")) || [];
 
-var cartarr = JSON.parse(localStorage.getItem("BagListObj"))||[];
-       
+var cartarr = JSON.parse(localStorage.getItem("BagListObj")) || [];
 
-        var itemcount =cartarr.length;
+var itemcount = cartarr.length;
 
-        var MRP =  cartarr.reduce(function(sum,a,ind){
-          return sum+ +(cartarr[ind].strikedoffprice.split(" ")[1])
-        },0);
+var MRP = cartarr.reduce(function(sum, a, ind) {
+    return sum + +cartarr[ind].strikedoffprice.split(" ")[1];
+}, 0);
 
-        var amount = cartarr.reduce(function(sum,a,ind){
-          return sum+ +(cartarr[ind].price.split(" ")[1])
-        },0);
-        var initial_price =amount;
-        localStorage.setItem("amount_to_pay",initial_price);
-        var discount = MRP - amount;
+var amount = cartarr.reduce(function(sum, a, ind) {
+    return sum + +cartarr[ind].price.split(" ")[1];
+}, 0);
+var initial_price = amount;
+localStorage.setItem("amount_to_pay", initial_price);
+var discount = MRP - amount;
 
-        // console.log(amount)
-        // console.log(MRP)
-        // console.log(discount);
+// console.log(amount)
+// console.log(MRP)
+// console.log(discount);
 
-        document.querySelector(".amount_pay").innerText= amount;
-        document.querySelector(".filldiscount").innerText= "- "+discount;
-        document.querySelector(".totalprice").innerText= MRP;
-        document.querySelector(".pricedets").innerText= `PRICE DETAILS ( ${itemcount} Items)`;
+document.querySelector(".amount_pay").innerText = amount;
+document.querySelector(".filldiscount").innerText = "- " + discount;
+document.querySelector(".totalprice").innerText = MRP;
+document.querySelector(
+    ".pricedets"
+).innerText = `PRICE DETAILS ( ${itemcount} Items)`;
 
+cartarr.map(function(ele, ind) {
+    var box = document.createElement("div");
+    box.className = "main";
 
-        cartarr.map(function(ele,ind){
-             
-            var box = document.createElement("div");
-            box.className ="main"
-            
+    var imgbox = document.createElement("div");
 
-            var imgbox = document.createElement("div");
-            
-            var image =document.createElement("img");
-            image.src = ele.image_url
-           imgbox.append(image)
+    var image = document.createElement("img");
+    image.src = ele.image_url;
+    imgbox.append(image);
 
-          var detailsbox = document.createElement("div");
+    var detailsbox = document.createElement("div");
 
-          var name =document.createElement("p");
-          name.innerText=ele.name
-          name.style.fontSize="20px";
-          name.style.marginBottom ="-8px"
+    var name = document.createElement("p");
+    name.innerText = ele.name;
+    name.style.fontSize = "20px";
+    name.style.marginBottom = "-8px";
 
+    var para = document.createElement("p");
+    para.innerText = ele.para;
+    para.style.color = "gray";
 
-          var para =document.createElement("p");
-          para.innerText=ele.para ;
-          para.style.color="gray"
+    var price = document.createElement("span");
+    price.innerText = ele.price;
 
-          var price = document.createElement("span");
-          price.innerText = ele.price
+    var strikedprice = document.createElement("span");
+    strikedprice.innerText = ele.strikedoffprice;
+    strikedprice.style.textDecoration = "line-through";
+    strikedprice.style.color = "gray";
 
-          var strikedprice = document.createElement("span");
-          strikedprice.innerText = ele.strikedoffprice;
-          strikedprice.style.textDecoration = "line-through";
-          strikedprice.style.color ="gray";
+    var offer = document.createElement("span");
+    offer.innerText = ele.offer;
+    offer.style.color = "red";
 
+    var pricepara = document.createElement("p");
+    pricepara.append(price, strikedprice);
 
-          var offer = document.createElement("span");
-          offer.innerText =ele.offer;
-          offer.style.color="red";
+    detailsbox.append(name, para, pricepara, offer);
 
+    var buttonbox = document.createElement("div");
 
-          var pricepara =document.createElement("p");
-          pricepara.append(price,strikedprice)
-          
-          detailsbox.append(name,para,pricepara,offer)
+    var remove = document.createElement("button");
+    // buttonbox.id ="removefromcart"
+    remove.innerText = "REMOVE";
+    remove.addEventListener("click", function() {
+        removeitem(ind);
+    });
 
-          var buttonbox = document.createElement("div");
-          
-          var remove =document.createElement("button");
-          // buttonbox.id ="removefromcart"
-          remove.innerText ="REMOVE";
-          remove.addEventListener("click",function(){
-            removeitem(ind)
-          })
+    buttonbox.append(remove);
 
-          
-          
-          buttonbox.append (remove)
-          
-          
-          
-          box.append(imgbox,detailsbox,buttonbox)
+    box.append(imgbox, detailsbox, buttonbox);
 
-        document.querySelector(".container").append(box)
+    document.querySelector(".container").append(box);
+});
 
-        })
+document.querySelector(".wishlistlink").addEventListener("click", sendtowish);
 
+function sendtowish() {
+    window.location.href = "wishlist.html";
+}
 
+function removeitem(ind) {
+    cartarr.splice(ind, 1);
+    localStorage.setItem("BagListObj", JSON.stringify(cartarr));
+    window.location.href = "cart.html";
+}
 
-        document.querySelector(".wishlistlink").addEventListener("click",sendtowish)
+document.querySelector(".makeorder").addEventListener("click", paymentpage);
 
-        function sendtowish (){
-          window.location.href ="wishlist.html"
-        }
+function paymentpage() {
+    window.location.href = "payment/payment.html";
+}
 
+document.querySelector(".apply").addEventListener("click", discountfun);
 
-        function removeitem(ind){
-          cartarr.splice(ind,1);
-          localStorage.setItem("BagListObj",JSON.stringify(cartarr))
-          window.location.href ="cart.html";
-         
-        }
+function discountfun() {
+    var in_promo = document.querySelector("#promo").value;
+    if ((initial_price = amount && in_promo == "MYNTRA300")) {
+        document.querySelector(".amount_pay").innerText = amount - 300;
+        document.querySelector("#promo").value = "";
+        localStorage.setItem("amount_to_pay", initial_price - 300);
+    }
+}
 
-        document.querySelector(".makeorder").addEventListener("click",paymentpage)
+document.getElementById("landingPage").addEventListener("click", function() {
+    window.location.href = "../Landingpage/index.html";
 
-        function paymentpage(){
-          window.location.href="payment/payment.html";
-        }
+    //footer type thing of cart page
+    var farr = [{
+            imgurl: "https://constant.myntassets.com/checkout/assets/img/footer-bank-ssl.png",
+        },
+        {
+            imgurl: "https://constant.myntassets.com/checkout/assets/img/footer-bank-visa.png",
+        },
+        {
+            imgurl: "https://constant.myntassets.com/checkout/assets/img/footer-bank-mc.png",
+        },
+        {
+            imgurl: "https://constant.myntassets.com/checkout/assets/img/footer-bank-ae.png",
+        },
+        {
+            imgurl: "https://constant.myntassets.com/checkout/assets/img/footer-bank-dc.png",
+        },
+        {
+            imgurl: "https://constant.myntassets.com/checkout/assets/img/footer-bank-nb.png",
+        },
+        {
+            imgurl: "https://constant.myntassets.com/checkout/assets/img/footer-bank-cod.png",
+        },
+        {
+            imgurl: "https://constant.myntassets.com/checkout/assets/img/footer-bank-rupay.png",
+        },
+        {
+            imgurl: "https://constant.myntassets.com/checkout/assets/img/footer-bank-paypal.png",
+        },
+        {
+            imgurl: "https://constant.myntassets.com/checkout/assets/img/footer-bank-bhim.png",
+        },
+    ];
 
-        document.querySelector(".apply").addEventListener("click",discountfun);
-
-        function discountfun(){
-          var in_promo =document.querySelector("#promo").value
-          if(initial_price=amount && in_promo =="MYNTRA300"){
-            document.querySelector(".amount_pay").innerText= amount-300;
-            document.querySelector("#promo").value="";
-            localStorage.setItem("amount_to_pay",initial_price-300);
-          }
-        }
-
-document.getElementById('landingPage').addEventListener('click', function(){
-  window.location.href = "../Landingpage/index.html";
-
-<
-        //footer type thing of cart page
-        var farr =[
-          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-ssl.png"},
-          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-visa.png"},
-          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-mc.png"},
-          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-ae.png"},
-          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-dc.png"},
-          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-nb.png"},
-          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-cod.png"},
-          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-rupay.png"},
-          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-paypal.png"},
-          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-bhim.png"},
-        ];
-    
-        farr.map(function(ele){
-          var image =document.createElement("img")
-          image.src =ele.imgurl;
-          document.querySelector(".cards").append(image)
-         
-        })
-
-})       
-
+    farr.map(function(ele) {
+        var image = document.createElement("img");
+        image.src = ele.imgurl;
+        document.querySelector(".cards").append(image);
+    });
+});

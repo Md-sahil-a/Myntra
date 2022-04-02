@@ -436,3 +436,13 @@ function addToBaglist(element) {
 document.getElementById("land").addEventListener("click", function() {
     window.location.href = "/LandingPage/index.html";
 });
+
+document.querySelector(".fa-heart").addEventListener("click", function() {
+    window.location.href = "../wishlist/wishlist.html";
+});
+
+document
+    .querySelector(".fa-bag-shopping")
+    .addEventListener("click", function() {
+        window.location.href = "../wishlist/cart.html";
+    });
