@@ -65,7 +65,7 @@ var womensData = [{
         price: "Rs. 1035",
         strikedoffprice: "Rs. 2799",
         offer: "(63% OFF)",
-        wishList: "WISHLIST",
+        wishList: "WISHLIST ♡",
         addToBag: "ADD TO BAG",
     },
     {
@@ -75,7 +75,7 @@ var womensData = [{
         price: "Rs. 1479",
         strikedoffprice: "Rs. 3699",
         offer: "(60% OFF)",
-        wishList: "WISHLIST",
+        wishList: "WISHLIST ♡",
         addToBag: "ADD TO BAG",
     },
     {
@@ -85,7 +85,7 @@ var womensData = [{
         price: "Rs. 805",
         strikedoffprice: "Rs. 1299",
         offer: "(65% OFF)",
-        wishList: "WISHLIST",
+        wishList: "WISHLIST ♡",
         addToBag: "ADD TO BAG",
     },
     {
@@ -95,7 +95,7 @@ var womensData = [{
         price: "Rs. 489",
         strikedoffprice: "Rs. 999",
         offer: "(65% OFF)",
-        wishList: "WISHLIST",
+        wishList: "WISHLIST ♡",
         addToBag: "ADD TO BAG",
     },
     {
@@ -105,7 +105,7 @@ var womensData = [{
         price: "Rs. 799",
         strikedoffprice: "Rs. 1199",
         offer: "(65% OFF)",
-        wishList: "WISHLIST",
+        wishList: "WISHLIST ♡",
         addToBag: "ADD TO BAG",
     },
     {
@@ -115,7 +115,7 @@ var womensData = [{
         price: "Rs. 883",
         strikedoffprice: "Rs. 1699",
         offer: "(43% OFF)",
-        wishList: "WISHLIST",
+        wishList: "WISHLIST ♡",
         addToBag: "ADD TO BAG",
     },
     {
@@ -125,7 +125,7 @@ var womensData = [{
         price: "Rs. 594",
         strikedoffprice: "Rs. 1699",
         offer: "(65% OFF)",
-        wishList: "WISHLIST",
+        wishList: "WISHLIST ♡",
         addToBag: "ADD TO BAG",
     },
     {
@@ -135,7 +135,7 @@ var womensData = [{
         price: "Rs. 499",
         strikedoffprice: "Rs. 1249",
         offer: "(65% OFF)",
-        wishList: "WISHLIST",
+        wishList: "WISHLIST ♡",
         addToBag: "ADD TO BAG",
     },
     {
@@ -145,7 +145,7 @@ var womensData = [{
         price: "Rs. 997",
         strikedoffprice: "Rs. 2850",
         offer: "(65% OFF)",
-        wishList: "WISHLIST",
+        wishList: "WISHLIST ♡",
         addToBag: "ADD TO BAG",
     },
     {
@@ -155,7 +155,7 @@ var womensData = [{
         price: "Rs. 554",
         strikedoffprice: "Rs. 1499",
         offer: "(65% OFF)",
-        wishList: "WISHLIST",
+        wishList: "WISHLIST ♡",
         addToBag: "ADD TO BAG",
     },
     {
@@ -165,7 +165,7 @@ var womensData = [{
         price: "Rs. 3999",
         strikedoffprice: "Rs. 10000",
         offer: "(Rs. 60001 OFF)",
-        wishList: "WISHLIST",
+        wishList: "WISHLIST ♡",
         addToBag: "ADD TO BAG",
     },
     {
@@ -175,7 +175,7 @@ var womensData = [{
         price: "Rs. 5100",
         strikedoffprice: "Rs. 6800",
         offer: "(25% OFF)",
-        wishList: "WISHLIST",
+        wishList: "WISHLIST ♡",
         addToBag: "ADD TO BAG",
     },
     {
@@ -185,7 +185,7 @@ var womensData = [{
         price: "Rs. 2457",
         strikedoffprice: "Rs. 3330",
         offer: "(25% OFF)",
-        wishList: "WISHLIST",
+        wishList: "WISHLIST ♡",
         addToBag: "ADD TO BAG",
     },
     {
@@ -195,7 +195,7 @@ var womensData = [{
         price: "Rs. 2319",
         strikedoffprice: "Rs. 7999",
         offer: "(71% OFF)",
-        wishList: "WISHLIST",
+        wishList: "WISHLIST ♡",
         addToBag: "ADD TO BAG",
     },
     {
@@ -205,7 +205,7 @@ var womensData = [{
         price: "Rs. 2080",
         strikedoffprice: "Rs. 6500",
         offer: "(20% OFF)",
-        wishList: "WISHLIST",
+        wishList: "WISHLIST ♡",
         addToBag: "ADD TO BAG",
     },
     {
@@ -215,7 +215,7 @@ var womensData = [{
         price: "Rs. 4448",
         strikedoffprice: "Rs. 6390",
         offer: "(65% OFF)",
-        wishList: "WISHLIST",
+        wishList: "WISHLIST ♡",
         addToBag: "ADD TO BAG",
     },
     {
@@ -225,7 +225,7 @@ var womensData = [{
         price: "Rs. 539",
         strikedoffprice: "Rs. 2998",
         offer: "(65% OFF)",
-        wishList: "WISHLIST",
+        wishList: "WISHLIST ♡",
         addToBag: "ADD TO BAG",
     },
     {
@@ -235,7 +235,7 @@ var womensData = [{
         price: "Rs. 894",
         strikedoffprice: "Rs. 2360",
         offer: "(65% OFF)",
-        wishList: "WISHLIST",
+        wishList: "WISHLIST ♡",
         addToBag: "ADD TO BAG",
     },
     {
@@ -245,7 +245,7 @@ var womensData = [{
         price: "Rs. 1799",
         strikedoffprice: "Rs. 2199",
         offer: "(65% OFF)",
-        wishList: "WISHLIST",
+        wishList: "WISHLIST ♡",
         addToBag: "ADD TO BAG",
     },
     {
@@ -255,7 +255,7 @@ var womensData = [{
         price: "Rs. 489",
         strikedoffprice: "Rs. 999",
         offer: "(65% OFF)",
-        wishList: "WISHLIST",
+        wishList: "WISHLIST ♡",
         addToBag: "ADD TO BAG",
     },
     {
@@ -265,7 +265,7 @@ var womensData = [{
         price: "Rs. 549",
         strikedoffprice: "Rs. 999",
         offer: "(65% OFF)",
-        wishList: "WISHLIST",
+        wishList: "WISHLIST ♡",
         addToBag: "ADD TO BAG",
     },
     {
@@ -275,7 +275,7 @@ var womensData = [{
         price: "Rs. 599",
         strikedoffprice: "Rs. 1999",
         offer: "(65% OFF)",
-        wishList: "WISHLIST",
+        wishList: "WISHLIST ♡",
         addToBag: "ADD TO BAG",
     },
     {
@@ -285,7 +285,7 @@ var womensData = [{
         price: "Rs. 159",
         strikedoffprice: "Rs. 199",
         offer: "(65% OFF)",
-        wishList: "WISHLIST",
+        wishList: "WISHLIST ♡",
         addToBag: "ADD TO BAG",
     },
     {
@@ -295,7 +295,7 @@ var womensData = [{
         price: "Rs. 879",
         strikedoffprice: "Rs. 1699",
         offer: "(65% OFF)",
-        wishList: "WISHLIST",
+        wishList: "WISHLIST ♡",
         addToBag: "ADD TO BAG",
     },
     {
@@ -305,7 +305,7 @@ var womensData = [{
         price: "Rs. 1049",
         strikedoffprice: "Rs. 2599",
         offer: "(65% OFF)",
-        wishList: "WISHLIST",
+        wishList: "WISHLIST ♡",
         addToBag: "ADD TO BAG",
     },
     {
@@ -315,7 +315,7 @@ var womensData = [{
         price: "Rs. 749",
         strikedoffprice: "Rs. 1599",
         offer: "(65% OFF)",
-        wishList: "WISHLIST",
+        wishList: "WISHLIST ♡",
         addToBag: "ADD TO BAG",
     },
     {
@@ -325,7 +325,7 @@ var womensData = [{
         price: "Rs. 554",
         strikedoffprice: "Rs. 1599",
         offer: "(65% OFF)",
-        wishList: "WISHLIST",
+        wishList: "WISHLIST ♡",
         addToBag: "ADD TO BAG",
     },
     {
@@ -335,7 +335,7 @@ var womensData = [{
         price: "Rs. 949",
         strikedoffprice: "Rs. 2599",
         offer: "(65% OFF)",
-        wishList: "WISHLIST",
+        wishList: "WISHLIST ♡",
         addToBag: "ADD TO BAG",
     },
     {
@@ -345,7 +345,7 @@ var womensData = [{
         price: "Rs. 623",
         strikedoffprice: "Rs. 2599",
         offer: "(65% OFF)",
-        wishList: "WISHLIST",
+        wishList: "WISHLIST ♡",
         addToBag: "ADD TO BAG",
     },
     {
@@ -355,7 +355,7 @@ var womensData = [{
         price: "Rs. 899",
         strikedoffprice: "Rs. 2999",
         offer: "(65% OFF)",
-        wishList: "WISHLIST",
+        wishList: "WISHLIST ♡",
         addToBag: "ADD TO BAG",
     },
 ];
