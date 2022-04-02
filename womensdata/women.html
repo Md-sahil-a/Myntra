@@ -9,6 +9,9 @@
     <link rel="shortcut icon" type="image/png" href="../Common Files/image/favicon.png">
     <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../womensdata/style&js/womestyle.css">
+    <link rel="stylesheet" href="../Common Files/style.css">
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
 
@@ -18,14 +21,10 @@
             <img src="../Common Files/image/myntra-removebg-preview.png" alt="" id="land">
         </div>
         <ul id="nav_bar">
-            <li><a href="../menHomePage.html">men</a></li>
-
-            <li><a href="../womenHomePage.html">women</a></li>
-
-            <li><a href="./womenHomePage.html">women</a></li>
-
+            <li><a href="../Homepages/menHomePage.html">men</a></li>
+            <li><a href="../Homepages/womenHomePage.html">women</a></li>
             <li><a href="#">kids</a></li>
-            <li><a href="./homeLiving.html">home & living</a></li>
+            <li><a href="../Homepages/homeLiving.html">home & living</a></li>
             <li><a href="#">beauty</a></li>
             <li id="studio"><a href="#">studio</a><span>new</span></li>
         </ul>
@@ -36,14 +35,14 @@
         <div id="right_icon">
             <div id="reggDropdown">
                 <div id="drop">
-                    <a href="/Profile/profile.html" class="dropList">login</a>
-                    <a href="/Profile/signup.html" class="dropList">sign up</a>
+                    <a href="../Profile/profile.html" class="dropList">login</a>
+                    <a href="../Profile/signup.html" class="dropList">sign up</a>
                 </div>
                 <i class="fa-regular fa-user"></i>
                 <span>profile</span>
             </div>
             <div>
-                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-heart fa_wishlist"></i>
                 <span>wishlist</span>
             </div>
             <div>
@@ -51,11 +50,26 @@
                 <span>bag</span>
             </div>
         </div>
+          <!-- TOGGLE MENU -->
+          <div id="toggle">
+            <i class='bx bx-menu dropbtn' onclick="myFunction()"></i>
+            <div id="myDropdown" class="dropdown-content">
+                <div class="top">
+                    <a href="../Homepages/menHomePage.html">men</a>
+                    <a href="../Homepages/womenHomePage.html">women</a>
+                    <a href="#">kids</a>
+                    <a href="../Homepages/homeLiving.html">home & living</a>
+                    <a href="#">beauty</a>
+                    <a href="#">studio</a>
+                </div>
+                <div class="bottom">
+                    <i class="fa-regular fa-user fa_user" id="profile"></i>
+                    <i class="fa-regular fa-heart fa_wishlist"></i>
+                    <i class="fa-solid fa-bag-shopping fa_cart"></i>
+                </div> 
+            </div>
+        </div>
     </header>
-
-
-
-
 
 
     <div id="wrapper">
@@ -252,3 +266,6 @@
 
 </html>
 <script src="../womensdata/style&js/womens.js"></script>
+<script src="../Common Files/headerMenu.js"></script>
+<script src="../Common Files/hyperlinks.js"></script>
+

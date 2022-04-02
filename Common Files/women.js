@@ -82,8 +82,13 @@ z.map(function(ele, index){
   document.getElementById('slides').append(slideDiv)
 })
 
-
- // LANDING PAGE
- document.getElementById('landingPage').addEventListener('click', function(){
+var images = document.querySelectorAll('img')
+for(let i=0; i<images.length; i++){
+  images[i].addEventListener('click', function(){
+    window.location.href = "../womensdata/women.html"
+  })
+}
+// LANDING PAGE
+document.getElementById('landingPage').addEventListener('click', function(){
   window.location.href = "../Landingpage/index.html"
 })

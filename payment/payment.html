@@ -12,12 +12,12 @@
 
 <body>
     <div id="navbar">
-        <img id="logo" src="https://bit.ly/3LDsXgz" alt="">
+        <img id="logo" src="https://bit.ly/3LDsXgz" alt="brandLogo" itemid="landingPage">
 
         <div id="nav2">
-            <h5>BAG</h5>
+            <h5 id="first">BAG</h5>
             <div class="line"></div>
-            <h5>ADDRESS</h5>
+            <h5 id="second">ADDRESS</h5>
             <div class="line"></div>
             <h5>PAYMENT</h5>
         </div>
@@ -80,3 +80,14 @@
 </body>
 
 </html>
+<script>
+    document.querySelector('img').addEventListener('click', function(){
+        window.location.href = "../Landingpage/index.html"
+    })
+    document.getElementById('first').addEventListener('click', function(){
+window.location.href = "../wishlist/cart.html"
+})
+  document.getElementById('second').addEventListener('click', function(){
+  window.location.href = "../payment/address.html"
+})
+</script>

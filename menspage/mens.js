@@ -380,7 +380,7 @@ productData.map(function(elem) {
 
     atc.addEventListener("click", function() {
         addToBag(elem)
-        atc.innerText = "GO TO BAG >"
+        atc.innerText = "GO TO BAG"
     })
     contentBox.append(name, productname, mix, atw, atc)
     box.append(img, contentBox)
@@ -421,11 +421,6 @@ function addToBag(element) {
     localStorage.setItem("BagListObj", JSON.stringify(bagData))
 }
 
-document.querySelector(".fa-heart").addEventListener("click",function(){
-    window.location.href ="../wishlist/wishlist.html"
-})
-
-
-document.querySelector(".fa-bag-shopping").addEventListener("click",function(){
-    window.location.href ="../wishlist/cart.html"
+document.getElementById('landingPage').addEventListener('click', function(){
+    window.location.href = "../Landingpage/index.html"
 })

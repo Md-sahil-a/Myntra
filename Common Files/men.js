@@ -91,8 +91,12 @@
       window.location.href = '../Landingpage/index.html'
   })
 
-
-
 document.getElementById('landingPage').addEventListener('click', function(){
     window.location.href = "index.html"
 })
+var images = document.querySelectorAll('img')
+for(let i=0; i<images.length; i++){
+  images[i].addEventListener('click', function(){
+    window.location.href = "../menspage/mens.html"
+  })
+}

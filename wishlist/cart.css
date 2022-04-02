@@ -10,6 +10,7 @@ body{
     color: gray;
     align-items: center;
     height: 79px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 #upperbar >div{
     height: 50px;
@@ -29,10 +30,13 @@ body{
 #upperbar >div:last-child{
     margin-right: 50px;
 }
-#upperbar p >span{
+#upperbar p > #first{
     color: #14cda8;
     border-bottom: 2px solid  #14cda8;
     padding-bottom: 5px;
+}
+#upperbar p > *{
+    cursor: pointer;
 }
 #timerbox{
     text-align: center;
@@ -45,10 +49,7 @@ body{
 }
 .container{
     margin-top: 20px;
-    margin-left: 130px;
-    
     width: 48%;
-    display: -moz-grid-line;
     grid-template-columns: repeat(1,1fr);
     gap: 10px;
     
@@ -57,12 +58,12 @@ body{
 .main{
     height: 180px;
     width: 95%;
-    border :2px solid #F5F5F6;
-    margin: auto;
+    padding: 1rem;
     margin-top: 20px;
     display: flex;
     border-radius: 4px;
-    /* justify-content: space-between; */
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 .main >div>img{
     height: 100%;
@@ -92,19 +93,25 @@ body{
 .wishlistlink >p, .wishlistlink >i{
 margin: 5px;
 }
+.wishlistlink > p:hover{
+    color:#32cd32;
+    font-weight: 900;
+    border-bottom: 2px solid #ff3f6c;
+}
 .container span{
     margin: 4px;
 }
 .orderbox{
     height: 400px;
     width: 30%;
-    border :2px solid #F5F5F6;
     margin-top: 80px;
     padding: 20px;
     border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 .con_ord{
     display:flex;
+    justify-content: space-evenly;
 }
 .orderbox>div{
     display: flex;
@@ -122,14 +129,15 @@ button{
     border: 10px;
     border: none;
     cursor: pointer;
-    padding: 5px 20px;
+    padding: 1rem 2rem;
     border-radius: 5px;
 }
 .amount{
     font-weight: bold;
 }
 .filldiscount{
-    color:limegreen;
+    color:#32cd32;
+    text-decoration: none;
 }
 .pricedets,.amount{
     border-bottom: 1px solid gray;
@@ -138,7 +146,7 @@ button{
 .orderbox .makeorder,.apply{
     justify-content: center;
     background-color: #ff3f6c;
-    padding: 5px 20px;
+    padding: 0.7rem 1.2rem;
     color: white;
     font-weight: bold;
     border-radius: 5px;
@@ -156,4 +164,73 @@ button{
 .amount + p{
     text-align: center;
     font-size: 20px;
+}
+
+
+
+
+/* MEDEIA QUERIES FOR TABLET VIEW */
+@media all and (min-width: 721px) and (max-width: 850px){
+    .container{
+     margin-top: 20px;
+      margin-left: 10px;
+       width: 60%;
+       display: -moz-grid-line;
+       grid-template-columns: repeat(1,1fr);
+       gap: 10px;
+    }
+    .promocode{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .apply{
+        width: 30%;
+        margin: auto;
+        text-align: center;
+        margin-top: 10px;
+    }
+    #promo{
+        height: 30px;
+    }
+       
+}
+
+@media all and (max-width: 720px){
+    .con_ord{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        padding: 5px;
+    }
+    .container{
+        margin: auto;
+          width: 90%;
+          display: -moz-grid-line;
+          grid-template-columns: repeat(1,1fr);
+          gap: 10px;
+       }
+       .orderbox{
+        height: 400px;
+        width: 50%;
+        margin: auto;
+        border :2px solid #F5F5F6;
+        margin-top: 80px;
+        padding: 20px;
+        border-radius: 4px;
+    }
+    #upperbar >div{
+       margin: 5px 5px;
+    
+    }
+    #upperbar >div:first-child{
+        margin-left: 10px;
+    }
+    #upperbar >div:last-child{
+        margin-right: 10px;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+       
 }
