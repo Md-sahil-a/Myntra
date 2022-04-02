@@ -63,7 +63,6 @@ line-height: 2rem;
     background-color: #ff3f6c;
     padding : 8px 15px;
     border-radius: 5px;
-    /* transform: translateX(1.2rem); */
 }
 .pricepara > span{
     margin-left: 10px;
@@ -71,49 +70,5 @@ line-height: 2rem;
 }
 
 
-/* MEDEIA QUERIES FOR TABLET VIEW */
-@media all and (min-width: 551px) and (max-width: 850px){
-    .container{
-        padding-left: 20px;
-        grid-template-columns: repeat(3,1fr);
-    }
-    .buttonholder > button{
-        padding : 8px 10px;
-    }
 
-}
-/* MEDEIA QUERIES FOR MOBILE VIEW */
-@media all and (min-width: 300px) and (max-width: 551px){
-    .container{
-        grid-template-columns: repeat(2,1fr);
-        width: 95%;
-        padding-left:20px ;
-    }
-    .buttonholder{
-        flex-direction: column;
-        
-    }
-    .buttonholder > button{
-        margin-bottom: 5px;
-    }
-
-}
-/* MEDEIA QUERIES FOR REDMI Y2 */
-@media all and (max-width: 300px){
-    .container{
-        grid-template-columns: repeat(1,1fr);
-        padding: 10px 20px;
-        margin-left: 20px;
-    }
-    container>div{
-        border:1px solid gray ;
-        width: 100%;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;   
-     
-    }
-    .buttonholder > button{
-        margin-right: 5px;
-    }
-    
-}
 

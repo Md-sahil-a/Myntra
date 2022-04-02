@@ -44,3 +44,6 @@ else {
 document.getElementById('profile').addEventListener('click', function(){
     window.location.href = "profile.html"
   })
+document.getElementById('landingPage').addEventListener('click', function(){
+    window.location.href = "../Landingpage/index.html"
+})
