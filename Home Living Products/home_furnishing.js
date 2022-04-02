@@ -4,8 +4,9 @@ var funitureData = [
   {
         image_url:
           "https://bit.ly/36VAF6m",
-        name: "DREAM WEAVERZ",
+        brand: "DREAM WEAVERZ",
         para : "300 TC Cotton 1 King BedSheet",
+        rs : 623,
         price: "Rs. 623",
         strikedoffprice: "Rs. 2599",
         offer : "(65% OFF)",
@@ -15,8 +16,9 @@ var funitureData = [
       {
         image_url:
           "https://bit.ly/3wJgLGM",
-        name: "KLOTTHE",
+        brand: "KLOTTHE",
         para : "Purple Geometric King Bedsheet",
+        rs : 758,
         price: "Rs. 758",
         strikedoffprice: "Rs. 3299",
         offer : "(65% OFF)",
@@ -26,8 +28,9 @@ var funitureData = [
       {
         image_url:
           "https://bit.ly/3wR8oZJ",
-        name: "SEJ By Nisha Gupta",
+        brand: "SEJ By Nisha Gupta",
         para : "White & Pink King Bedsheet",
+        rs : 759,
         price: "Rs. 759",
         strikedoffprice: "Rs. 1999",
         offer : "(65% OFF)",
@@ -37,8 +40,9 @@ var funitureData = [
       {
         image_url:
           "https://bit.ly/35khX87",
-        name: "JAIPUR FABRIC",
+        brand: "JAIPUR FABRIC",
         para : "Pink 180TC Cotton Bedsheet",
+        rs : 1199,
         price: "Rs. 1199",
         strikedoffprice: "Rs. 2599",
         offer : "(65% OFF)",
@@ -48,8 +52,9 @@ var funitureData = [
       {
         image_url:
           "https://bit.ly/3tOYYfr",
-        name: "DREAM WEAVERZ",
+        brand: "DREAM WEAVERZ",
         para : "Sea Green & White Bedsheet",
+        rs : 879,
         price: "Rs. 879",
         strikedoffprice: "Rs. 2499",
         offer : "(65% OFF)",
@@ -59,8 +64,9 @@ var funitureData = [
       {
         image_url:
           "https://bit.ly/3NvN01V",
-        name: "Puma",
+        brand: "Puma",
         para : "Unisex Green Solid Anti-Slip",
+        rs : 674,
         price: "Rs. 674",
         strikedoffprice: "Rs. 1499",
         offer : "(65% OFF)",
@@ -70,8 +76,9 @@ var funitureData = [
       {
         image_url:
           "https://bit.ly/3qKLDTt",
-        name: "Arrabi",
+        brand: "Arrabi",
         para : "Beige & Blue Floral Bedsheet", 
+        rs : 998,
         price: "Rs. 998",
         strikedoffprice: "Rs. 3329",
         offer : "(65% OFF)",
@@ -81,8 +88,9 @@ var funitureData = [
       {
         image_url:
           "https://bit.ly/3tOZvxX",
-        name: "Home Ecstasy",
+        brand: "Home Ecstasy",
         para : "300 TC Cotton 1 King BedSheet",
+        rs : 623,
         price: "Rs. 623",
         strikedoffprice: "Rs. 2599",
         offer : "(65% OFF)",
@@ -92,8 +100,9 @@ var funitureData = [
       {
         image_url:
           "https://bit.ly/3JSmSfw",
-        name: "DREAM WEAVERZ",
+        brand: "DREAM WEAVERZ",
         para : "Peach-Coloured & Green cotton",
+        rs : 805,
         price: "Rs. 805",
         strikedoffprice: "Rs. 1299",
         offer : "(65% OFF)",
@@ -103,8 +112,9 @@ var funitureData = [
       {
         image_url:
           "https://bit.ly/3NwqcPO",
-        name: "ELEVANTO",
+        brand: "ELEVANTO",
         para : "Women Purple Solid Bath Robes",
+        rs : 489,
         price: "Rs. 489",
         strikedoffprice: "Rs. 999",
         offer : "(65% OFF)",
@@ -114,8 +124,9 @@ var funitureData = [
       {
         image_url:
           "https://bit.ly/3Lqrha4",
-        name: "LA VERNE",
+        brand: "LA VERNE",
         para : "Set of 5 White Cushion Fillers",
+        rs : 799,
         price: "Rs. 799",
         strikedoffprice: "Rs. 1199",
         offer : "(65% OFF)",
@@ -125,8 +136,9 @@ var funitureData = [
       {
         image_url:
           "https://bit.ly/3wN0jW4",
-        name: "JAIPUR FABRIC",
+        brand: "JAIPUR FABRIC",
         para : "Green & White Printed Bedsheet",
+        rs : 1199,
         price: "Rs. 1199",
         strikedoffprice: "Rs. 2599",
         offer : "(65% OFF)",
@@ -136,8 +148,9 @@ var funitureData = [
       {
         image_url:
           "https://bit.ly/3tOftZ9",
-        name: "KLOTTHE",
+        brand: "KLOTTHE",
         para : "Multicoloured Cotton 1 King",
+        rs : 799,
         price: "Rs. 799",
         strikedoffprice: "Rs. 3999",
         offer : "(65% OFF)",
@@ -147,8 +160,9 @@ var funitureData = [
       {
         image_url:
           "https://bit.ly/3JRvCCK",
-        name: "DREAM WEAVERZ",
+        brand: "DREAM WEAVERZ",
         para : "Pink & Blue Floral Bedsheet",
+        rs : 799,
         price: "Rs. 909",
         strikedoffprice: "Rs. 2599",
         offer : "(65% OFF)",
@@ -158,8 +172,9 @@ var funitureData = [
       {
         image_url:
           "https://bit.ly/3tNxl6m",
-        name: "JAIPUR FABRIC",
+        brand: "JAIPUR FABRIC",
         para : "Purple & Blue Floral Bedsheet",
+        rs : 1599,
         price: "Rs. 1599",
         strikedoffprice: "Rs. 2999",
         offer : "(65% OFF)",
@@ -169,8 +184,9 @@ var funitureData = [
       {
         image_url:
           "https://bit.ly/3wJjTCw",
-        name: "Florida",
+        brand: "Florida",
         para : "Yellow & Blue Geometric Bedsheet",
+        rs : 554,
         price: "Rs. 554",
         strikedoffprice: "Rs. 1499",
         offer : "(65% OFF)",
@@ -180,8 +196,9 @@ var funitureData = [
       {
         image_url:
           "https://bit.ly/36QSKmd",
-        name: "SEJ by Nisha Gupta",
+        brand: "SEJ by Nisha Gupta",
         para : "Off-White Geometric Bedsheet",
+        rs : 759,
         price: "Rs. 759",
         strikedoffprice: "Rs. 1999",
         offer : "(65% OFF)",
@@ -191,8 +208,9 @@ var funitureData = [
       {
         image_url:
           "https://bit.ly/3qLCqdE",
-        name: "Dreamscape",
+        brand: "Dreamscape",
         para : "Blue Ethnic No 1 cotton Bedsheet",
+        rs : 899,
         price: "Rs. 899",
         strikedoffprice: "Rs. 1999",
         offer : "(65% OFF)",
@@ -202,8 +220,9 @@ var funitureData = [
       {
         image_url:
           "https://bit.ly/3tOqXf9",
-        name: "Varde",
+        brand: "Varde",
         para : "Blue 180 TC No 1 Cotton Covers",
+        rs : 749,
         price: "Rs. 749",
         strikedoffprice: "Rs. 849",
         offer : "(65% OFF)",
@@ -213,8 +232,9 @@ var funitureData = [
       {
         image_url:
           "https://bit.ly/3uFBPv4",
-        name: "JAIPUR FABRIC",
+        brand: "JAIPUR FABRIC",
         para : "Blue & Mustard cotton Bedsheet",
+        rs : 999,
         price: "Rs. 999",
         strikedoffprice: "Rs. 3999",
         offer : "(65% OFF)",
@@ -224,8 +244,9 @@ var funitureData = [
       {
         image_url:
           "https://bit.ly/3Lt66nR",
-        name: "DREAM WEAVERZ",
+        brand: "DREAM WEAVERZ",
         para : "Multi Floral Queen Bedsheet",
+        rs : 909,
         price: "Rs. 909",
         strikedoffprice: "Rs. 2599",
         offer : "(65% OFF)",
@@ -235,8 +256,9 @@ var funitureData = [
       {
         image_url:
           "https://bit.ly/3uB6yte",
-        name: "LA VERNE",
+        brand: "LA VERNE",
         para : "Set of 2 White Solid cotton Pillows",
+        rs : 699,
         price: "Rs. 699",
         strikedoffprice: "Rs. 2499",
         offer : "(65% OFF)",
@@ -246,8 +268,9 @@ var funitureData = [
       {
         image_url:
           "https://bit.ly/3wIEUgF",
-        name: "Kuber Industries",
+        brand: "Kuber Industries",
         para : "Set Of 6 Red Printed Storage",
+        rs : 674,
         price: "Rs. 674",
         strikedoffprice: "Rs. 2599",
         offer : "(65% OFF)",
@@ -257,8 +280,9 @@ var funitureData = [
       {
         image_url:
           "https://bit.ly/36TM7j1",
-        name: "Rajasthan Decor",
+        brand: "Rajasthan Decor",
         para : "Black & White Abstract Bedsheet",
+        rs : 866,
         price: "Rs. 866",
         strikedoffprice: "Rs. 1499",
         offer : "(65% OFF)",
@@ -268,8 +292,9 @@ var funitureData = [
       {
         image_url:
           "https://bit.ly/3wMc52R",
-        name: "Trident",
+        brand: "Trident",
         para : "Peach & White Floral Bedsheet",
+        rs : 1799,
         price: "Rs. 1799",
         strikedoffprice: "Rs. 2199",
         offer : "(65% OFF)",
@@ -279,8 +304,9 @@ var funitureData = [
       {
         image_url:
           "https://bit.ly/3NywPBe",
-        name: "ELEVANTO",
+        brand: "ELEVANTO",
         para : "Women Navy Blue Solid Bath Robe",
+        rs : 489,
         price: "Rs. 489",
         strikedoffprice: "Rs. 999",
         offer : "(65% OFF)",
@@ -290,8 +316,9 @@ var funitureData = [
       {
         image_url:
           "https://bit.ly/3wKg6VB",
-        name: "Trident",
+        brand: "Trident",
         para : "Teal Blue Solid Pure Cotton Towel",
+        rs : 549,
         price: "Rs. 549",
         strikedoffprice: "Rs. 999",
         offer : "(65% OFF)",
@@ -301,8 +328,9 @@ var funitureData = [
       {
         image_url:
           "https://bit.ly/3LswG03",
-        name: "LA VERNE",
+        brand: "LA VERNE",
         para : "Set of 2 White Striped Pillow",
+        rs : 599,
         price: "Rs. 599",
         strikedoffprice: "Rs. 1999",
         offer : "(65% OFF)",
@@ -312,8 +340,9 @@ var funitureData = [
       {
         image_url:
           "https://bit.ly/36BnaJr",
-        name: "TRIBAN By Decathlon",
+        brand: "TRIBAN By Decathlon",
         para : "Black Solid Mobility Plastic Bottle",
+        rs : 159,
         price: "Rs. 159",
         strikedoffprice: "Rs. 199",
         offer : "(65% OFF)",
@@ -323,8 +352,9 @@ var funitureData = [
       {
         image_url:
           "https://bit.ly/3uBDaD5",
-        name: "Clasiko",
+        brand: "Clasiko",
         para : "Teal & White Floral Comforter",
+        rs : 1079,
         price: "Rs. 1079",
         strikedoffprice: "Rs. 2699",
         offer : "(65% OFF)",
@@ -334,8 +364,9 @@ var funitureData = [
       {
         image_url:
           "https://bit.ly/36ya7sn",
-        name: "Classic Mosquito Net",
+        brand: "Classic Mosquito Net",
         para : "White & Blue Sheer Mosquito Net",
+        rs : 1049,
         price: "Rs. 1049",
         strikedoffprice: "Rs. 2599",
         offer : "(65% OFF)",
@@ -345,8 +376,9 @@ var funitureData = [
       {
         image_url:
           "https://bit.ly/3uJV72G",
-        name: "ELEVANTO",
+        brand: "ELEVANTO",
         para : "Women Fuchsia Pink Solid Bath Robe",
+        rs : 623,
         price: "Rs. 623",
         strikedoffprice: "Rs. 2599",
         offer : "(65% OFF)",
@@ -356,8 +388,9 @@ var funitureData = [
       {
         image_url:
           "https://bit.ly/3qKqV5Y",
-        name: "Florida",
+        brand: "Florida",
         para : "Yellow & Blue Cartoon Bedsheet",
+        rs : 554,
         price: "Rs. 554",
         strikedoffprice: "Rs. 1599",
         offer : "(65% OFF)",
@@ -367,8 +400,9 @@ var funitureData = [
       {
         image_url:
           "https://bit.ly/3IOA1VQ",
-        name: "SEJ by Nisha Gupta",
+        brand: "SEJ by Nisha Gupta",
         para : "White & Blue Cotton Bedsheet",
+        rs : 949,
         price: "Rs. 949",
         strikedoffprice: "Rs. 2599",
         offer : "(65% OFF)",
@@ -378,8 +412,9 @@ var funitureData = [
       {
         image_url:
           "https://bit.ly/3NvIS29",
-        name: "DREAM WEAVERZ",
+        brand: "DREAM WEAVERZ",
         para : "300 TC Cotton 30 No 1 Covers",
+        rs : 623,
         price: "Rs. 623",
         strikedoffprice: "Rs. 2599",
         offer : "(65% OFF)",
@@ -389,8 +424,9 @@ var funitureData = [
       {
         image_url:
           "https://bit.ly/3LqwmiE",
-        name: "DREAM WEAVERZ",
+        brand: "DREAM WEAVERZ",
         para : "Grey & Pink Ethnic Bedsheet",
+        rs : 899,
         price: "Rs. 899",
         strikedoffprice: "Rs. 2999",
         offer : "(65% OFF)",
@@ -403,68 +439,137 @@ var funitureData = [
   var wishList =JSON.parse(localStorage.getItem("wishListObj")) || [];
 
   var bagList =JSON.parse(localStorage.getItem("BagListObj")) || [] ;
- 
+
+  window.addEventListener('load', function(){
+    displayPage(funitureData)
+  })
+
+  document.getElementById('nameSort').addEventListener('change', sortNames);
+    function sortNames(){
+      var selected = document.getElementById('nameSort').value;
+      if(selected == 'asc'){
+        funitureData.sort(function(a, b){
+            if(a.brand > b.brand) return 1
+            if(a.brand < b.brand) return -1
+            return 0;
+        })
+        
+        displayPage(funitureData); 
+      }
+      else{
+        funitureData.sort(function(a, b){
+          if(a.brand > b.brand) return -1
+          if(a.brand < b.brand) return 1
+          return 0
+        })
+    
+        displayPage(funitureData)
+      }
+    }
+
+    document.getElementById('priceSort').addEventListener('change', sortPrice); 
+    function sortPrice(){
+      var selected = document.getElementById('priceSort').value;
+      if(selected == 'lth'){
+        funitureData.sort(function(a, b){
+          return a.rs-b.rs;
+        })
+        displayPage(funitureData); 
+      }
+      else{
+        funitureData.sort(function(a, b){
+          return b.rs - a.rs
+        })
+        displayPage(funitureData)
+      }
+    }
+
+    document.getElementById('brandFilter').addEventListener('change', filterBrand);
+    function filterBrand(){
+      var selected = document.getElementById('brandFilter').value
+      var newArray = funitureData.filter(function(element){
+          if(element.brand == selected){
+            return element;
+          }
+      })
+      displayPage(newArray);
+    }
+
+
+
+  function displayPage(funitureData) {
+
+  document.getElementById("container").innerHTML = "";
+      
+       //  total
+
   funitureData.map(function (element) {
 
-  var box = document.createElement("div")
-  box.style.cursor = "pointer"
- 
-  var img = document.createElement("img")
-  img.src = element.image_url
-
-  var contentBox = document.createElement('div'); 
-  contentBox.setAttribute('class', 'contentBox')
-
-  var name = document.createElement("h4")
-  name.textContent = element.name
-
-  var para = document.createElement("p")
-  para.textContent = element.para
-
-  var mix = document.createElement("div")
-  mix.setAttribute("class","mixbox")
-
-  var price = document.createElement("p")
-  price.textContent = element.price
-
-  var strikeprice = document.createElement("p")
-  strikeprice.textContent = element.strikedoffprice
-  strikeprice.setAttribute("class","strikep")
+    var box = document.createElement("div")
+    box.style.cursor = "pointer"
+   
+    var img = document.createElement("img")
+    img.src = element.image_url
   
-  var offer = document.createElement("p")
-  offer.textContent = element.offer
-  offer.setAttribute("class","offerp")
+    var contentBox = document.createElement('div'); 
+    contentBox.setAttribute('class', 'contentBox')
   
-  mix.append(price,strikeprice, offer)
+    var brand = document.createElement("h4")
+    brand.textContent = element.brand
+  
+    var para = document.createElement("p")
+    para.textContent = element.para
+  
+    var mix = document.createElement("div")
+    mix.setAttribute("class","mixbox")
+  
+    var price = document.createElement("p")
+    price.textContent = element.price
+  
+    var strikeprice = document.createElement("p")
+    strikeprice.textContent = element.strikedoffprice
+    strikeprice.setAttribute("class","strikep")
+    
+    var offer = document.createElement("p")
+    offer.textContent = element.offer
+    offer.setAttribute("class","offerp")
+    
+    mix.append(price,strikeprice, offer)
+  
+    var wishList = document.createElement("p")
+    wishList.setAttribute("class", "wishListp")
+    wishList.textContent = element.wishList
+    wishList.style.cursor = "pointer"
+    
+    wishList.addEventListener("click", function() {
+      addToWishlist(element)
+      wishList.style.color ="green"
+      wishList.innerText = "GO TO WISHLIST"
+    })
+  
+    var addToBag = document.createElement("p")
+    addToBag.setAttribute("class" , "addToBagp")
+    addToBag.textContent = element.addToBag;
+    addToBag.style.cursor = "pointer"
+  
+  
+    addToBag.addEventListener("click", function() {
+      addToBaglist(element)
+      addToBag.innerText = "GO TO BAG"
+    })
+    
+    contentBox.append(brand, para, mix, wishList, addToBag)
 
-  var wishList = document.createElement("p")
-  wishList.setAttribute("class", "wishListp")
-  wishList.textContent = element.wishList
-  wishList.style.cursor = "pointer"
+    box.append(img, contentBox)
   
-  wishList.addEventListener("click", function() {
-    addToWishlist(element)
-    wishList.style.color ="green"
-    wishList.innerText = "GO TO WISHLIST"
+    document.querySelector("#container").append(box)
+  
   })
-
-  var addToBag = document.createElement("p")
-  addToBag.setAttribute("class" , "addToBagp")
-  addToBag.textContent = element.addToBag;
-  addToBag.style.cursor = "pointer"
-
-
-  addToBag.addEventListener("click", function() {
-    addToBaglist(element)
-    addToBag.innerText = "GO TO BAG"
-  })
   
-  contentBox.append(name, para, mix, wishList, addToBag)
-  box.append(img, contentBox)
+  // total end
+}
 
-  document.querySelector("#container").append(box)
 
-})
 
 function addToWishlist(element) {
 wishList.push(element)
@@ -490,3 +595,13 @@ window.location.href ="../wishlist/wishlist.html"
 document.querySelector(".fa-bag-shopping").addEventListener("click",function(){
 window.location.href ="../wishlist/cart.html"
 })
+
+// document.getElementById("normal").addEventListener("click" , function(){
+//   window.location.reload()
+// })
+
+ var all = document.getElementById("brandFilter").value
+
+ if(all == "all") {
+   window.location.reload
+ }
