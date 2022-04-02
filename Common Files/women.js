@@ -90,7 +90,7 @@ document.getElementById("landingPage").addEventListener("click", function() {
 var z = document.querySelectorAll("img");
 for (let i = 0; i < z.length; i++) {
     z[i].addEventListener("click", function() {
-        window.location.href = "/womensdata / women.html";
+        window.location.href = "../womensdata/women.html";
     });
 }
 
