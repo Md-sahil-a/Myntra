@@ -2,7 +2,7 @@
 
 var wisharr =JSON.parse(localStorage.getItem("wishListObj"))||[];
 
-var itemcount = cartarr.length;
+var itemcount = wisharr.length;
 document.querySelector(".wishcount").innerText =` ${itemcount} Items`
 
 wisharr.map(function(ele,ind){
@@ -73,8 +73,8 @@ wisharr.map(function(ele,ind){
 
 function removefromwish(ind){
 
-cartarr.splice(ind,1)
-localStorage.setItem("wishListObj",JSON.stringify(cartarr))
+wisharr.splice(ind,1)
+localStorage.setItem("wishListObj",JSON.stringify(wisharr))
 window.location.href="wishlist.html"
 
 }
@@ -88,7 +88,7 @@ function sendtocart(ele,ind){
   localStorage.setItem("BagListObj",JSON.stringify(baglist))
 
   cartarr.splice(ind,1)
-  localStorage.setItem("wishListObj",JSON.stringify(cartarr))
+  localStorage.setItem("wishListObj",JSON.stringify(wisharr))
     window.location.href="wishlist.html"
 
      }
