@@ -148,4 +148,27 @@ var cartarr = JSON.parse(localStorage.getItem("BagListObj"))||[];
            
           }
         }
+
+
+        //footer type thing of cart page
+        var farr =[
+          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-ssl.png"},
+          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-visa.png"},
+          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-mc.png"},
+          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-ae.png"},
+          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-dc.png"},
+          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-nb.png"},
+          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-cod.png"},
+          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-rupay.png"},
+          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-paypal.png"},
+          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-bhim.png"},
+        ];
        
+        var a=1;
+        farr.map(function(ele){
+          var image =document.createElement("img")
+          image.src =ele.imgurl;
+          document.querySelector(".cards").append(image)
+          console.log(a);
+          a++;
+        })
