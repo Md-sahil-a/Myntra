@@ -24,7 +24,7 @@
 #upperbar >div:last-child{
     margin-right: 50px;
 }
-#upperbar p >span{
+#upperbar p >span:first-child{
     color: #14cda8;
     border-bottom: 2px solid  #14cda8;
     padding-bottom: 5px;
@@ -240,7 +240,7 @@ button{
        
 }
 /* MEDEIA QUERIES FOR MOBILE VIEW */
-@media all and (max-width: 551px){
+@media all and (max-width: 581px){
 
     .con_ord{
         display:grid;
@@ -282,16 +282,18 @@ button{
         margin: auto;
         margin-top: 25px;
     }
-#upperbar >div{
-   margin: 0px 0px;
+    #upperbar > div>p{
+        display: none;
+    }
+   
+ .main{
+     display: grid;
+     height: auto;
+   }
+   .main >div:first-child{
+       margin: auto;
+   }
+   
+ 
 
-}
-#upperbar >div:first-child{
-    margin-left: 2px;
-    margin-right:5px ;
-}
-#upperbar >div:last-child{
-    margin-right: 0px;
-}
-
-}
+ }

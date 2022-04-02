@@ -45,11 +45,12 @@ var cartarr = JSON.parse(localStorage.getItem("BagListObj"))||[];
           return sum+ +(cartarr[ind].price.split(" ")[1])
         },0);
         var initial_price =amount;
+        localStorage.setItem("amount_to_pay",initial_price);
         var discount = MRP - amount;
 
-        console.log(amount)
-        console.log(MRP)
-        console.log(discount);
+        // console.log(amount)
+        // console.log(MRP)
+        // console.log(discount);
 
         document.querySelector(".amount_pay").innerText= amount;
         document.querySelector(".filldiscount").innerText= "- "+discount;
@@ -140,7 +141,7 @@ var cartarr = JSON.parse(localStorage.getItem("BagListObj"))||[];
         document.querySelector(".makeorder").addEventListener("click",paymentpage)
 
         function paymentpage(){
-          window.location.href="wishlist.html";
+          window.location.href="payment/payment.html";
         }
 
         document.querySelector(".apply").addEventListener("click",discountfun);
@@ -150,7 +151,7 @@ var cartarr = JSON.parse(localStorage.getItem("BagListObj"))||[];
           if(initial_price=amount && in_promo =="MYNTRA300"){
             document.querySelector(".amount_pay").innerText= amount-300;
             document.querySelector("#promo").value="";
-           
+            localStorage.setItem("amount_to_pay",initial_price-300);
           }
         }
 
@@ -168,12 +169,10 @@ var cartarr = JSON.parse(localStorage.getItem("BagListObj"))||[];
           {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-paypal.png"},
           {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-bhim.png"},
         ];
-       
-        var a=1;
+    
         farr.map(function(ele){
           var image =document.createElement("img")
           image.src =ele.imgurl;
           document.querySelector(".cards").append(image)
-          console.log(a);
-          a++;
+         
         })
