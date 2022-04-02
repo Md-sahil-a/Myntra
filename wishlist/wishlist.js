@@ -57,7 +57,7 @@ var cartarr =JSON.parse(localStorage.getItem("wishListObj"))||[];
         document.querySelector(".wishcount").innerText =` ${itemcount} Items`
 
         cartarr.map(function(ele,ind){
-
+        
             var box =document.createElement("div")
             
            
@@ -143,3 +143,7 @@ var cartarr =JSON.parse(localStorage.getItem("wishListObj"))||[];
             window.location.href="wishlist.html"
 
              }
+
+document.getElementById('landingPage').addEventListener('click', function(){
+  window.location.href = "../Landingpage/index.html"
+})

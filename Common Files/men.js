@@ -88,5 +88,11 @@
 
   // LANDING PAGE
   document.getElementById('landingPage').addEventListener('click', function(){
-      window.location.href = '/Landingpage/index.html'
+      window.location.href = '../Landingpage/index.html'
   })
+
+
+
+document.getElementById('landingPage').addEventListener('click', function(){
+    window.location.href = "index.html"
+})

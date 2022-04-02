@@ -93,3 +93,8 @@ for (let i = 0; i < z.length; i++) {
         window.location.href = "/womensdata / women.html";
     });
 }
+
+// LANDING PAGE
+document.getElementById("landingPage").addEventListener("click", function() {
+    window.location.href = "../Landingpage/index.html";
+});
