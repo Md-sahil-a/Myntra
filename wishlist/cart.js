@@ -28,9 +28,7 @@
 //               }
 //         ]
 
-      //  var cartarr = JSON.parse(localStorage.getItem("BagListObj")) || [];
-
-
+var cartarr = JSON.parse(localStorage.getItem("BagListObj")) || [];
 
 var cartarr = JSON.parse(localStorage.getItem("BagListObj"))||[];
        
@@ -155,7 +153,10 @@ var cartarr = JSON.parse(localStorage.getItem("BagListObj"))||[];
           }
         }
 
+document.getElementById('landingPage').addEventListener('click', function(){
+  window.location.href = "../Landingpage/index.html";
 
+<
         //footer type thing of cart page
         var farr =[
           {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-ssl.png"},
@@ -176,3 +177,6 @@ var cartarr = JSON.parse(localStorage.getItem("BagListObj"))||[];
           document.querySelector(".cards").append(image)
          
         })
+
+})       
+

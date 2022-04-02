@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+body{
+    font-family: 'DM Sans', sans-serif; 
+}
 #upperbar{
     display: flex;
     justify-content: space-between;
@@ -16,7 +20,8 @@
 
 }
 #upperbar >div>img{
-    height: 80%;
+    height: 100%;
+    cursor: pointer;
 }
 #upperbar >div:first-child{
     margin-left: 50px;
@@ -152,6 +157,7 @@ button{
     text-align: center;
     font-size: 20px;
 }
+
 
 .footer{
     display: flex;
@@ -297,3 +303,4 @@ button{
  
 
  }
+

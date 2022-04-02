@@ -432,3 +432,7 @@ function addToBaglist(element) {
     bagList.push(element);
     localStorage.setItem("BagListObj", JSON.stringify(bagList));
 }
+
+document.getElementById("land").addEventListener("click", function() {
+    window.location.href = "/LandingPage/index.html";
+});
