@@ -291,7 +291,7 @@ var womensData = [{
     {
         image_url: "https://bit.ly/3v7Vmor",
         name: "Anekaant",
-        para: "https://bit.ly/3v7Vmor",
+        para: "solid iron box cluthes",
         price: "Rs. 879",
         strikedoffprice: "Rs. 1699",
         offer: "(65% OFF)",
