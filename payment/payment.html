@@ -12,12 +12,12 @@
 
 <body>
     <div id="navbar">
-        <img id="logo" src="https://bit.ly/3LDsXgz" alt="brandLogo" itemid="landingPage">
+        <img id="logo" src="https://bit.ly/3LDsXgz" alt="">
 
         <div id="nav2">
-            <h5 id="first">BAG</h5>
+            <h5>BAG</h5>
             <div class="line"></div>
-            <h5 id="second">ADDRESS</h5>
+            <h5>ADDRESS</h5>
             <div class="line"></div>
             <h5>PAYMENT</h5>
         </div>
@@ -27,7 +27,7 @@
         </div>
     </div>
     <div id="cart">
-        <div id="main">
+        <div id="main1">
             <div>
                 <h4>Bank Offer</h4>
                 <p>10% Instant Discount with Standard Chartered Credit & Debit cards on a min spend of Rs 3,000. TCA</p>
@@ -72,22 +72,49 @@
                     </a>
                 </div>
             </div>
-
-            <div id="total">
-
-            </div>
         </div>
+        
+        <!--- inserted new box n removed the div id'd "main2"---->
+    
+        <div class="orderbox">
+            <div class="pricedets">PRICE DETAILS</div>
+            <div class="total">
+               <span>Total MRP</span><span class="totalprice">--</span> 
+            </div>
+            <div class="discount">
+              <span>Discount on MRP</span><span class="filldiscount">--</span> 
+           </div>
+      
+           <div class="amount">
+              <span>Total Amount</span><span class="amount_pay">--</span> 
+           </div>
+           
+      
+    
+          </div>
+    
+    
+    
+    
+    </div>
 </body>
 
 </html>
+
 <script>
-    document.querySelector('img').addEventListener('click', function(){
-        window.location.href = "../Landingpage/index.html"
-    })
-    document.getElementById('first').addEventListener('click', function(){
-window.location.href = "../wishlist/cart.html"
-})
-  document.getElementById('second').addEventListener('click', function(){
-  window.location.href = "../payment/address.html"
-})
+
+    var amount = localStorage.getItem("amount");
+ 
+        document.querySelector(".amount_pay").innerText= amount;
+
+       var MRP= localStorage.getItem("MRP");
+       document.querySelector(".totalprice").innerText= MRP;
+
+      var discount= localStorage.getItem("discount")
+        document.querySelector(".filldiscount").innerText= "- "+discount;
+
+
+        var itemcount= localStorage.getItem("itemcount")
+        document.querySelector(".pricedets").innerText= `PRICE DETAILS ( ${itemcount} Items)`;
+
 </script>

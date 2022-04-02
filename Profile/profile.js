@@ -1,7 +1,6 @@
 document.querySelector("button").addEventListener("click",loginfun)
 
  var userdata =JSON.parse(localStorage.getItem("userarr")) ||[];
-console.log(userdata)
 
 function loginfun(){
     var in_mob =document.querySelector("#mob").value;
@@ -18,7 +17,7 @@ function loginfun(){
              console.log(checkpass(a))
              alert("login successful")
 
-              window.location.href ="menHomePage.html";
+              window.location.href ="/Landingpage/index.html";
               break;
            }else{
              alert("wrong password")

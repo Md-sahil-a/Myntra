@@ -1,8 +1,11 @@
 var userdata =JSON.parse(localStorage.getItem("userarr")) ||[];
 
-document.querySelector("button").addEventListener("click",sigupfun);
+document.querySelector("#signup_button").addEventListener("click",sigupfun);
+
+
 
 function sigupfun(){
+    console.log("inside fun")
     var name=document.querySelector("#name").value;
    
     var mob=document.querySelector("#mob").value;
@@ -26,7 +29,7 @@ else {
         userdata.push(userobj);
         
         localStorage.setItem("userarr",JSON.stringify(userdata));
-
+   
 
         alert("signed up successfully");
 

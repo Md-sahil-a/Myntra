@@ -1,24 +1,61 @@
+//   use wihlist data from local storage  (JSON.pa....)
+//or else []
 
-var cartarr = JSON.parse(localStorage.getItem("BagListObj")) || [];
+// var cartarr =[
+//     {
+//         image_url: "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/17583708/2022/3/19/7f177aab-9715-4052-b88d-b14e5d27b9c51647683759688JAIPURFABRICUnisexGreenBedsheets1.jpg",
+//                name:"JAIPUR FABRIC",
+//                 offer:"(65% OFF)",
+//                para:"Green & White Printed Bedsheet",
+//                price:"Rs. 1199",
+//             strikedoffprice:"Rs. 2599" 
+//         },
+//         {
+//             image_url: "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/15565160/2021/9/29/30b3ec0b-e7f6-43b1-821f-a5c1afddd16b1632898392141-Louis-Philippe-Men-Shirts-1501632898391574-1.jpg",
+//                    name:"JAIPUR FABRIC",
+//                     offer:"(65% OFF)",
+//                    para:"Green & White Printed Bedsheet",
+//                    price:"Rs. 1199",
+//                 strikedoffprice:"Rs. 2599" 
+//             },
+//             {
+//               image_url: "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/15565160/2021/9/29/30b3ec0b-e7f6-43b1-821f-a5c1afddd16b1632898392141-Louis-Philippe-Men-Shirts-1501632898391574-1.jpg",
+//                      name:"JAIPUR FABRIC",
+//                       offer:"(65% OFF)",
+//                      para:"Green & White Printed Bedsheet",
+//                      price:"Rs. 1199",
+//                   strikedoffprice:"Rs. 2599" 
+//               }
+//         ]
+
+// var cartarr = JSON.parse(localStorage.getItem("BagListObj")) || [];
 
 var cartarr = JSON.parse(localStorage.getItem("BagListObj"))||[];
        
 
         var itemcount =cartarr.length;
+        localStorage.setItem("itemcount",itemcount)
+
 
         var MRP =  cartarr.reduce(function(sum,a,ind){
           return sum+ +(cartarr[ind].strikedoffprice.split(" ")[1])
         },0);
+        localStorage.setItem("MRP",MRP)
 
+       
+       
         var amount = cartarr.reduce(function(sum,a,ind){
           return sum+ +(cartarr[ind].price.split(" ")[1])
         },0);
-        var initial_price =amount;
-        var discount = MRP - amount;
+        localStorage.setItem("amount",amount)
 
-        console.log(amount)
-        console.log(MRP)
-        console.log(discount);
+        
+       
+        var discount = MRP - amount;
+        localStorage.setItem("discount",discount)
+        // console.log(amount)
+        // console.log(MRP)
+        // console.log(discount);
 
         document.querySelector(".amount_pay").innerText= amount;
         document.querySelector(".filldiscount").innerText= "- "+discount;
@@ -93,13 +130,12 @@ var cartarr = JSON.parse(localStorage.getItem("BagListObj"))||[];
 
 
         document.querySelector(".wishlistlink").addEventListener("click",sendtowish)
-
         function sendtowish (){
           window.location.href ="wishlist.html"
         }
 
 
-        function removeitem(ind){
+          function removeitem(ind){
           cartarr.splice(ind,1);
           localStorage.setItem("BagListObj",JSON.stringify(cartarr))
           window.location.href ="cart.html";
@@ -109,27 +145,55 @@ var cartarr = JSON.parse(localStorage.getItem("BagListObj"))||[];
         document.querySelector(".makeorder").addEventListener("click",paymentpage)
 
         function paymentpage(){
-          window.location.href="../payment/address.html";
+          window.location.href="payment/payment.html";
         }
 
         document.querySelector(".apply").addEventListener("click",discountfun);
 
         function discountfun(){
-          var in_promo =document.querySelector("#promo").value
-          if(initial_price=amount && in_promo =="MYNTRA300"){
-            document.querySelector(".amount_pay").innerText= amount-300;
-            document.querySelector("#promo").value="";
-           
-          }
+
+          var payable_amount = +(localStorage.getItem("amount"));
+          var int_promo = document.querySelector("#promo").value;
+
+          if( payable_amount>300 && int_promo=="MYNTRA300")
+           {
+          amount = amount-300;
+          discount =discount+300;
+          localStorage.setItem("amount",amount)  ;
+          localStorage.setItem("discount",discount)
+          document.querySelector(".amount_pay").innerText= amount;
+          document.querySelector(".filldiscount").innerText= "- "+discount;
+
+          document.querySelector(".apply").removeEventListener("click",discountfun);
+           }
+            // console.log( amount, discount)
+
         }
 
 document.getElementById('landingPage').addEventListener('click', function(){
   window.location.href = "../Landingpage/index.html";
+
+
+        //footer type thing of cart page
+        var farr =[
+          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-ssl.png"},
+          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-visa.png"},
+          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-mc.png"},
+          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-ae.png"},
+          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-dc.png"},
+          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-nb.png"},
+          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-cod.png"},
+          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-rupay.png"},
+          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-paypal.png"},
+          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-bhim.png"},
+        ];
+    
+        farr.map(function(ele){
+          var image =document.createElement("img")
+          image.src =ele.imgurl;
+          document.querySelector(".cards").append(image)
+         
+        })
+
 })       
 
-document.getElementById('second').addEventListener('click', function(){
-  window.location.href = "../payment/address.html"
-})
-
-
-       
