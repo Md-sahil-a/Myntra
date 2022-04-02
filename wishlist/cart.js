@@ -28,7 +28,7 @@
 //               }
 //         ]
 
-       var cartarr = JSON.parse(localStorage.getItem("BagListObj")) || [];
+      //  var cartarr = JSON.parse(localStorage.getItem("BagListObj")) || [];
 
 
 
