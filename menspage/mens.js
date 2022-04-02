@@ -420,3 +420,12 @@ function addToBag(element) {
     bagData.push(element)
     localStorage.setItem("BagListObj", JSON.stringify(bagData))
 }
+
+document.querySelector(".fa-heart").addEventListener("click",function(){
+    window.location.href ="../wishlist/wishlist.html"
+})
+
+
+document.querySelector(".fa-bag-shopping").addEventListener("click",function(){
+    window.location.href ="../wishlist/cart.html"
+})

@@ -402,7 +402,7 @@ var funitureData = [
 
     var wishList =JSON.parse(localStorage.getItem("wishListObj")) || [];
 
-    var bagList =JSON.parse(localStorage.getItem("BagListObjBagListObj")) || [] ;
+    var bagList =JSON.parse(localStorage.getItem("BagListObj")) || [] ;
    
     funitureData.map(function (element) {
 
@@ -485,4 +485,14 @@ function addToBaglist(element) {
 // LANDING PAGE
 document.getElementById('landingPage').addEventListener('click', function(){
   window.location.href = "/LandingPage/index.html"
+})
+
+
+document.querySelector(".fa-heart").addEventListener("click",function(){
+  window.location.href ="../wishlist/wishlist.html"
+})
+
+
+document.querySelector(".fa-bag-shopping").addEventListener("click",function(){
+  window.location.href ="../wishlist/cart.html"
 })

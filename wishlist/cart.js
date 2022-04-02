@@ -28,7 +28,10 @@
 //               }
 //         ]
 
+
 var cartarr = JSON.parse(localStorage.getItem("BagListObj")) || [];
+
+      //  var cartarr = JSON.parse(localStorage.getItem("BagListObj")) || [];
 
 var cartarr = JSON.parse(localStorage.getItem("BagListObj")) || [];
 
@@ -129,6 +132,7 @@ function paymentpage() {
 
 document.querySelector(".apply").addEventListener("click", discountfun);
 
+
 function discountfun() {
     var in_promo = document.querySelector("#promo").value;
     if ((initial_price = amount && in_promo == "MYNTRA300")) {
@@ -136,3 +140,57 @@ function discountfun() {
         document.querySelector("#promo").value = "";
     }
 }
+
+        function sendtowish (){
+          window.location.href ="wishlist.html"
+        }
+
+
+        function removeitem(ind){
+          cartarr.splice(ind,1);
+          localStorage.setItem("BagListObj",JSON.stringify(cartarr))
+          window.location.href ="cart.html";
+         
+        }
+
+        document.querySelector(".makeorder").addEventListener("click",paymentpage)
+
+        function paymentpage(){
+          window.location.href="wishlist.html";
+        }
+
+        document.querySelector(".apply").addEventListener("click",discountfun);
+
+        function discountfun(){
+          var in_promo =document.querySelector("#promo").value
+          if(initial_price=amount && in_promo =="MYNTRA300"){
+            document.querySelector(".amount_pay").innerText= amount-300;
+            document.querySelector("#promo").value="";
+           
+          }
+        }
+
+
+        //footer type thing of cart page
+        var farr =[
+          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-ssl.png"},
+          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-visa.png"},
+          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-mc.png"},
+          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-ae.png"},
+          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-dc.png"},
+          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-nb.png"},
+          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-cod.png"},
+          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-rupay.png"},
+          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-paypal.png"},
+          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-bhim.png"},
+        ];
+       
+        var a=1;
+        farr.map(function(ele){
+          var image =document.createElement("img")
+          image.src =ele.imgurl;
+          document.querySelector(".cards").append(image)
+          console.log(a);
+          a++;
+        })
+
