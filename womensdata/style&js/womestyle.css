@@ -518,3 +518,57 @@ input[type="radio" i] {
         transform: translateX(1.2rem);
     }
 }
+
+#reggDropdown {
+    position: relative;
+}
+
+#reggDropdown>#drop {
+    width: 20rem;
+    height: 0;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    border-radius: 1.5rem;
+    cursor: default;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all 500ms;
+}
+
+#reggDropdown a {
+    width: 85%;
+    text-decoration: none;
+    color: unset;
+    display: inline-block;
+    text-align: right;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    transition: all 500ms;
+}
+
+#reggDropdown:hover #drop {
+    visibility: visible;
+    width: 20rem;
+    height: 15rem;
+}
+
+#reggDropdown>#drop .dropList {
+    font-size: 0;
+}
+
+#reggDropdown:hover>#drop .dropList {
+    font-size: 2rem;
+}
+
+#reggDropdown a:hover {
+    background-color: #f8d7cf;
+}
