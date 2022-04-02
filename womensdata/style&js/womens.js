@@ -291,7 +291,7 @@ var womensData = [{
     {
         image_url: "https://bit.ly/3v7Vmor",
         name: "Anekaant",
-        para: "https://bit.ly/3v7Vmor",
+        para: "solid iron box cluthes",
         price: "Rs. 879",
         strikedoffprice: "Rs. 1699",
         offer: "(65% OFF)",
@@ -330,7 +330,7 @@ var womensData = [{
     },
     {
         image_url: "https://bit.ly/3wXwlP7",
-        name: "zeaveripearls",
+        name: "zeaveri pearls",
         para: "Gold-Toned & White Kundan & Pearl Studded Ring Bracelet",
         price: "Rs. 949",
         strikedoffprice: "Rs. 2599",
@@ -436,3 +436,13 @@ function addToBaglist(element) {
 document.getElementById("land").addEventListener("click", function() {
     window.location.href = "/LandingPage/index.html";
 });
+
+document.querySelector(".fa-heart").addEventListener("click", function() {
+    window.location.href = "../wishlist/wishlist.html";
+});
+
+document
+    .querySelector(".fa-bag-shopping")
+    .addEventListener("click", function() {
+        window.location.href = "../wishlist/cart.html";
+    });
