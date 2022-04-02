@@ -6,72 +6,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/72215895a8.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="address.css">
+    <link rel="stylesheet" href="payment.css">
     <title>Document</title>
 </head>
 
 <body>
     <div id="navbar">
-        <img id="logo" src="https://bit.ly/3LDsXgz"
-            alt="logo">
+        <img id="logo" src="https://bit.ly/3LDsXgz" alt="brandLogo" itemid="landingPage">
 
-        <div id="div2">
+        <div id="nav2">
             <h5 id="first">BAG</h5>
             <div class="line"></div>
-            <h5>ADDRESS</h5>
+            <h5 id="second">ADDRESS</h5>
             <div class="line"></div>
-            <h5 id="third">PAYMENT</h5>
+            <h5>PAYMENT</h5>
         </div>
-        <div id="div3">
+        <div id="nav3">
             <img src="https://constant.myntassets.com/checkout/assets/img/sprite-secure.png" alt="">
             <p>100 % <b>SECURE</b></p>
         </div>
     </div>
     <div id="cart">
-        <div id="div">
+        <div id="main">
             <div>
-                <h3>Select Delivery Address </h3>
-                <div>
-                    <h5>ADD NEW ADDRESS</h5>
-                </div>
+                <h4>Bank Offer</h4>
+                <p>10% Instant Discount with Standard Chartered Credit & Debit cards on a min spend of Rs 3,000. TCA</p>
+                <P>Show More <i class="fa-solid fa-angle-down"></i></P>
+
             </div>
-            <h5>DEFAULT ADDRESS</h5>
-            <div>
-                <div id="name">
+            <h4>Choose Payment Mode</h4>
+            <div id="payment">
+                <div id="mode">
                     <div>
-                        <h4>Sumit Kumar</h4>
+                        <i class="fa-brands fa-amazon-pay"></i>
+                        <h5>Cash On Delivery (Cash/Card/UPI)</h5>
                     </div>
-                    <div id="home">Home</div>
+                    <div id="card">
+                        <i class="fa-solid fa-credit-card"></i>
+                        <h5>Credit/Debit Card</h5>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-cc-amazon-pay"></i>
+                        <h5>PhonePe/Google Pay/BHIM UPI</h5>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-wallet"></i>
+                        <h5>Paytm/Payzapp/Wallets</h5>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-building-columns"></i>
+                        <h5>Net Banking</h5>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-money-check-dollar"></i>
+                        <h5>EMI/Pay Later</h5>
+                    </div>
                 </div>
-                <p>House No-C12,Old Extension Road,Gandhi Road,Karmik Nagar <br>Dhanbad,Jharkhand,PIN-123456</p>
-                <p>Mobile No: <b>2314567898</b></p>
-                <p>Pay on Delivery</p>
-                <div id="option">
-                   <div>
-                       Remove
-                   </div> 
-                   <div>
-                       EDIT
-                   </div>
+                <div id="paymentDiv">
+                    <h4>Cash On Delivery</h4>
+
+                    <a href="otp.html">
+                        <div id="pay">
+                            PAY
+                        </div>
+                    </a>
                 </div>
             </div>
-            <div id="add">
-                 +Add New Address  
+
+            <div id="total">
+
             </div>
         </div>
-        <div id="checkDiv">
-           
-            <div id="itemDiv">
-                <h5>DELIVERY ESTIMATES</h5>
-                Delivery Between 7Apr to 10Apr
-                <br>
-                
-            </div>
-            <a href="payment.html"> <div id="place">
-            CONTINUE
-         </div></a>
-        </div>
-    </div>
 </body>
 
 </html>
@@ -79,12 +84,10 @@
     document.querySelector('img').addEventListener('click', function(){
         window.location.href = "../Landingpage/index.html"
     })
-
-document.getElementById('first').addEventListener('click', function(){
+    document.getElementById('first').addEventListener('click', function(){
 window.location.href = "../wishlist/cart.html"
 })
-  document.getElementById('third').addEventListener('click', function(){
-  window.location.href = "../payment/payment.html"
+  document.getElementById('second').addEventListener('click', function(){
+  window.location.href = "../payment/address.html"
 })
 </script>
-
