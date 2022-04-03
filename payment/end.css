@@ -47,9 +47,8 @@ body {
 }
 
 #thanks{
-    margin-top: 1rem;
     width: 500px;
-    margin: auto;
+    margin: 2rem auto;
 }
 #thanks img{
     width: 100%;
