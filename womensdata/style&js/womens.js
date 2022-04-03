@@ -320,7 +320,7 @@ var womensData = [{
 {
     image_url: "https://bit.ly/3v7Vmor",
     brand: "MFB",
-    para: "https://bit.ly/3v7Vmor",
+    para: "Women Beige Printed Shirt Dress",
     rs: 879,
     price: "Rs. 879",
     strikedoffprice: "Rs. 1699",

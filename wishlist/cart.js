@@ -48,7 +48,7 @@ var cartarr = JSON.parse(localStorage.getItem("BagListObj"))||[];
           var detailsbox = document.createElement("div");
 
           var name =document.createElement("p");
-          name.innerText=ele.name
+          name.innerText=ele.brand
           name.style.fontSize="20px";
           name.style.marginBottom ="-8px"
 
@@ -143,7 +143,7 @@ var cartarr = JSON.parse(localStorage.getItem("BagListObj"))||[];
 document.getElementById('landingPage').addEventListener('click', function(){
   window.location.href = "../Landingpage/index.html";
 
-
+}) 
         //footer type thing of cart page
         var farr =[
           {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-ssl.png"},
@@ -165,5 +165,5 @@ document.getElementById('landingPage').addEventListener('click', function(){
          
         })
 
-})       
+      
 

@@ -20,7 +20,7 @@ wisharr.map(function(ele,ind){
     box.append(imgbox)
 
     var para =document.createElement("p");
-    para.innerText=ele.para ;
+    para.innerText=ele.brand ;
     para.style.color="gray";
     box.append(para)
 
