@@ -90,5 +90,5 @@ for(let i=0; i<images.length; i++){
 }
 // LANDING PAGE
 document.getElementById('landingPage').addEventListener('click', function(){
-  window.location.href = "../Landingpage/index.html"
+  window.location.href =  "/index.html"
 })

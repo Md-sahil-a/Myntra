@@ -485,5 +485,5 @@ function addToBag(element) {
 }
 
 document.getElementById('landingPage').addEventListener('click', function() {
-window.location.href = "../Landingpage/index.html"
+window.location.href =  "/index.html"
 }) 

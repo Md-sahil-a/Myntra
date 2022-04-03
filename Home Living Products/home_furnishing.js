@@ -587,7 +587,7 @@ localStorage.setItem("BagListObj" , JSON.stringify(bagList))
 
 // LANDING PAGE
 document.getElementById('landingPage').addEventListener('click', function(){
-window.location.href = "/LandingPage/index.html"
+window.location.href = "/index.html"
 })
 document.querySelector(".fa-heart").addEventListener("click",function(){
 window.location.href ="../wishlist/wishlist.html"
@@ -596,9 +596,6 @@ document.querySelector(".fa-bag-shopping").addEventListener("click",function(){
 window.location.href ="../wishlist/cart.html"
 })
 
-// document.getElementById("normal").addEventListener("click" , function(){
-//   window.location.reload()
-// })
 
  var all = document.getElementById("brandFilter").value
 
