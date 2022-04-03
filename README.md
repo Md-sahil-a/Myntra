@@ -110,7 +110,8 @@ Git: Git is software for tracking changes in any set of files, usually used for 
 Github: GitHub, Inc. is a provider of Internet hosting for software development and version control using Git. It offers the distributed version control and source code management functionality of Git, plus its features.
 https://github.com/Md-sahil-a/myntra this is our project git hub link.
 We all became proficient in reading the code of team members. and we learned How to work and communicate with a team. and how to keep motivated each other throughout the problems.
-At last, I would like to thank our mentors and my team members for their support & guidance during the project.
+
+**At last, I would like to thank our mentors and my team members for their support & guidance during the project.**
 
 
 
