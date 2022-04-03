@@ -45,3 +45,13 @@ body {
     font-weight: bolder;
     border-radius: 20px;
 }
+
+#thanks{
+    margin-top: 1rem;
+    width: 500px;
+    margin: auto;
+}
+#thanks img{
+    width: 100%;
+    display: block;
+}
