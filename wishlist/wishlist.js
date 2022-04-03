@@ -87,7 +87,7 @@ function sendtocart(ele,ind){
   baglist.unshift(ele);
   localStorage.setItem("BagListObj",JSON.stringify(baglist))
 
-  cartarr.splice(ind,1)
+  wisharr.splice(ind,1)
   localStorage.setItem("wishListObj",JSON.stringify(wisharr))
     window.location.href="wishlist.html"
 

@@ -97,7 +97,7 @@ var cartarr = JSON.parse(localStorage.getItem("BagListObj"))||[];
 
         })
 
-
+// ABOVE FROM HERE IS MAPPING OF DATA, NO ISSUE TILL HERE
 
         document.querySelector(".wishlistlink").addEventListener("click",sendtowish)
         function sendtowish (){
@@ -115,8 +115,10 @@ var cartarr = JSON.parse(localStorage.getItem("BagListObj"))||[];
         document.querySelector(".makeorder").addEventListener("click",paymentpage)
 
         function paymentpage(){
-          window.location.href="payment/payment.html";
+          window.location.href="/payment/address.html";
         }
+
+      
 
         document.querySelector(".apply").addEventListener("click",discountfun);
 
@@ -144,26 +146,14 @@ document.getElementById('landingPage').addEventListener('click', function(){
   window.location.href = "../Landingpage/index.html";
 
 }) 
-        //footer type thing of cart page
-        var farr =[
-          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-ssl.png"},
-          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-visa.png"},
-          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-mc.png"},
-          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-ae.png"},
-          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-dc.png"},
-          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-nb.png"},
-          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-cod.png"},
-          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-rupay.png"},
-          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-paypal.png"},
-          {imgurl:"https://constant.myntassets.com/checkout/assets/img/footer-bank-bhim.png"},
-        ];
-    
-        farr.map(function(ele){
-          var image =document.createElement("img")
-          image.src =ele.imgurl;
-          document.querySelector(".cards").append(image)
-         
-        })
+
+document.querySelector("#second").addEventListener("click",function(){
+  window.location.href ="../payment/address.html"
+})
+
+
+
+        
 
       
 

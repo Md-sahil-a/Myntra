@@ -502,7 +502,7 @@ womensData.map(function(element) {
     wishList.addEventListener("click", function() {
         addToWishlist(element);
         wishList.style.color = "green";
-        wishList.innerText = "GO TO WISHLIST";
+        wishList.innerText = "ADDED TO WISHLIST";
     });
     
     var addToBag = document.createElement("p");
@@ -512,7 +512,7 @@ womensData.map(function(element) {
     
     addToBag.addEventListener("click", function() {
         addToBaglist(element);
-        addToBag.innerText = "GO TO BAG";
+        addToBag.innerText = "ADDED TO BAG";
     });
     
     contentBox.append(brand, para, mix, wishList, addToBag);

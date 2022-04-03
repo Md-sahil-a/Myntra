@@ -442,7 +442,7 @@ function displayPage(productData) {
         atw.addEventListener("click", function() {
             addToWishlist(elem)
             atw.style.color = "green"
-            atw.innerText = "GO TO WISHLIST"
+            atw.innerText = "ADDED TO WISHLIST"
         })
 
 
@@ -455,7 +455,7 @@ function displayPage(productData) {
 
         atc.addEventListener("click", function() {
             addToBag(elem)
-            atc.innerText = "GO TO BAG"
+            atc.innerText = "ADDED TO BAG"
         })
 
         contentBox.append(brand, productname, mix, atw, atc)
