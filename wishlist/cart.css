@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+*{
+    box-sizing: border-box;
+}
 body{
     font-family: 'DM Sans', sans-serif; 
 }
@@ -49,35 +52,36 @@ body{
 }
 .container{
     margin-top: 20px;
-    width: 48%;
+    display: grid;
     grid-template-columns: repeat(1,1fr);
-    gap: 10px;
-    
-    
 }
 .main{
-    height: 180px;
-    width: 95%;
+    width: 80%;
     padding: 1rem;
     margin-top: 20px;
     display: flex;
     border-radius: 4px;
     justify-content: space-between;
+    align-items: center;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
-.main >div>img{
-    height: 100%;
-}
 .main >div{
-    padding: 8px;
-    
+    padding: 8px ;
+    width: 30%;
+}
+.main img{
+    width: 100%;
 }
 .main >div:last-child{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
+.main button{
+    width: 80%;
+}
+
 .wishlistlink{
  margin-top: 40px;
  height: 40px;
@@ -102,16 +106,16 @@ margin: 5px;
     margin: 4px;
 }
 .orderbox{
-    height: 400px;
-    width: 30%;
+    align-self: flex-start;
     margin-top: 80px;
     padding: 20px;
     border-radius: 4px;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 .con_ord{
-    display:flex;
-    justify-content: space-evenly;
+    display:grid;
+    grid-template-columns: 60% 35%;
+    justify-content: center;
 }
 .orderbox>div{
     display: flex;
@@ -127,7 +131,7 @@ button{
     background-color: #ff3f6c;
     color: white;
     border: 10px;
-    border: none;
+    outline: none;
     cursor: pointer;
     padding: 1rem 2rem;
     border-radius: 5px;

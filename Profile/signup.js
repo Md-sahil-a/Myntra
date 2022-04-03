@@ -50,3 +50,7 @@ document.getElementById('profile').addEventListener('click', function(){
 document.getElementById('landingPage').addEventListener('click', function(){
     window.location.href = "../Landingpage/index.html"
 })
+
+document.getElementById('logIn').addEventListener('click', function(){
+    window.location.href = "../Profile/profile.html"
+})

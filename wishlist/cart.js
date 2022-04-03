@@ -23,9 +23,6 @@ var cartarr = JSON.parse(localStorage.getItem("BagListObj"))||[];
        
         var discount = MRP - amount;
         localStorage.setItem("discount",discount)
-        // console.log(amount)
-        // console.log(MRP)
-        // console.log(discount);
 
         document.querySelector(".amount_pay").innerText= amount;
         document.querySelector(".filldiscount").innerText= "- "+discount;
@@ -79,7 +76,7 @@ var cartarr = JSON.parse(localStorage.getItem("BagListObj"))||[];
           var buttonbox = document.createElement("div");
           
           var remove =document.createElement("button");
-          // buttonbox.id ="removefromcart"
+
           remove.innerText ="REMOVE";
           remove.addEventListener("click",function(){
             removeitem(ind)
@@ -97,8 +94,6 @@ var cartarr = JSON.parse(localStorage.getItem("BagListObj"))||[];
 
         })
 
-// ABOVE FROM HERE IS MAPPING OF DATA, NO ISSUE TILL HERE
-
         document.querySelector(".wishlistlink").addEventListener("click",sendtowish)
         function sendtowish (){
           window.location.href ="wishlist.html"
@@ -112,13 +107,11 @@ var cartarr = JSON.parse(localStorage.getItem("BagListObj"))||[];
          
         }
 
-        document.querySelector(".makeorder").addEventListener("click",paymentpage)
+        document.querySelector(".makeorder").addEventListener("click",profile)
 
-        function paymentpage(){
-          window.location.href="/payment/address.html";
+        function profile(){
+          window.location.href="../Profile/signup.html";
         }
-
-      
 
         document.querySelector(".apply").addEventListener("click",discountfun);
 
@@ -148,7 +141,7 @@ document.getElementById('landingPage').addEventListener('click', function(){
 }) 
 
 document.querySelector("#second").addEventListener("click",function(){
-  window.location.href ="../payment/address.html"
+  window.location.href="../Profile/signup.html";
 })
 
 

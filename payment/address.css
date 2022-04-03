@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 
+
 :root{
-    font-size: 80%;
     --primaryFont : 'DM Sans', sans-serif;
     --charSpace : 6px; 
     --primaryColor : #3e4152;
     --secondaryColor : #fafbfc;
+}
+body{
+    padding: 0;    
+}
+*{
+    padding: 0.5rem 1rem;
 }
 a:link{
     text-decoration: none;
@@ -27,6 +33,7 @@ a:link{
     justify-content: space-between;
     box-sizing: border-box;
     padding: 0px 50px;
+    margin-top: -10px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     font-weight: bold;  
 }
