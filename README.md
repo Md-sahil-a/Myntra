@@ -100,7 +100,7 @@ This is our payment page after placing an order, the user will have some options
 
 This is our order confirmed page, after placing and choosing the payment method it will redirect to this page.
 
-![image](https://user-images.githubusercontent.com/77974484/161418919-a3e539c3-9eaf-4971-8a75-87e1570e8593.png)
+![image](https://user-images.githubusercontent.com/77974484/161433073-291a3727-c191-42ad-be92-dd453264de10.png)
 
 **Collaboration tools.**
 
