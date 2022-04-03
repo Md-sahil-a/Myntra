@@ -5,11 +5,7 @@
 }
 
 .filter {
-    /* margin-top: 2em;
-    margin-bottom: 2em; */
-    /* justify-content: space-around; */
     padding: 10px 20px;
-    /* box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; */
 }
 
 * {
@@ -83,7 +79,7 @@ input[type="radio" i] {
     margin-top: 5rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: minmax(auto, 650px);
+    grid-auto-rows: minmax(550px, 650px);
     column-gap: 3rem;
     row-gap: 7rem;
     padding: 0 2.2rem;
@@ -91,6 +87,7 @@ input[type="radio" i] {
 }
 
 #container>div {
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -184,14 +181,7 @@ input[type="radio" i] {
         flex-direction: column;
     }
     #filter {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        width: 95%;
-        margin: 15rem auto 0;
-    }
-    #filter>*:hover {
-        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-        cursor: pointer;
+        display: none;
     }
     #container {
         width: 95%;
@@ -212,19 +202,7 @@ input[type="radio" i] {
         flex-direction: column;
     }
     #filter {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        width: 95%;
-        margin: 15rem auto 0;
-    }
-    #filter>div:nth-child(2),
-    #filter>div:nth-child(5),
-    #filter>div:nth-child(6) {
-        display: none;
-    }
-    #filter>*:hover {
-        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-        cursor: pointer;
+       display: none;
     }
     #container {
         width: 95%;

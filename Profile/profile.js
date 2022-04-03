@@ -16,8 +16,10 @@ function loginfun(){
            if( checkpass(a)){
              console.log(checkpass(a))
              alert("login successful")
+             document.querySelector("#mob").value = ""; 
+             document.querySelector("#pass").value = "";
 
-              window.location.href ="/Landingpage/index.html";
+              window.location.href ="../payment/address.html";
               break;
            }else{
              alert("wrong password")
@@ -50,4 +52,7 @@ document.getElementById('profile').addEventListener('click', function(){
 })
 document.getElementById('landingPage').addEventListener('click', function(){
   window.location.href = "../Landingpage/index.html"
+})
+document.getElementById('signUp').addEventListener('click', function(){
+  window.location.href = "../Profile/signup.html"
 })

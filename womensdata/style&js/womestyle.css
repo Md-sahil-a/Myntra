@@ -486,14 +486,7 @@ input[type="radio" i] {
         flex-direction: column;
     }
     #filter {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        width: 95%;
-        margin: 15rem auto 0;
-    }
-    #filter>*:hover {
-        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-        cursor: pointer;
+        display: none;
     }
     #container {
         width: 95%;
@@ -514,19 +507,7 @@ input[type="radio" i] {
         flex-direction: column;
     }
     #filter {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        width: 95%;
-        margin: 15rem auto 0;
-    }
-    #filter>div:nth-child(2),
-    #filter>div:nth-child(5),
-    #filter>div:nth-child(6) {
         display: none;
-    }
-    #filter>*:hover {
-        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-        cursor: pointer;
     }
     #container {
         width: 95%;
