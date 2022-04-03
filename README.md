@@ -111,6 +111,10 @@ Github: GitHub, Inc. is a provider of Internet hosting for software development 
 https://github.com/Md-sahil-a/myntra this is our project git hub link.
 We all became proficient in reading the code of team members. and we learned How to work and communicate with a team. and how to keep motivated each other throughout the problems.
 
+**Blog Link**
+
+https://mdsahilamaan2017.medium.com/a-collaborative-project-from-masai-school-e255331475
+
 **At last, I would like to thank our mentors and my team members for their support & guidance during the project.**
 
 
