@@ -15,9 +15,9 @@
         <img id="logo" src="https://bit.ly/3LDsXgz" alt="">
 
         <div id="nav2">
-            <h5>BAG</h5>
+            <h5 id="first">BAG</h5>
             <div class="line"></div>
-            <h5>ADDRESS</h5>
+            <h5 id="second">ADDRESS</h5>
             <div class="line"></div>
             <h5>PAYMENT</h5>
         </div>
@@ -117,4 +117,13 @@
         var itemcount= localStorage.getItem("itemcount")
         document.querySelector(".pricedets").innerText= `PRICE DETAILS ( ${itemcount} Items)`;
 
+           
+
+        document.querySelector("#first").addEventListener("click",function(){
+            window.location.href ="../wishlist/cart.html"
+        })
+
+        document.querySelector("#second").addEventListener("click",function(){
+            window.location.href ="../payment/address.html"
+        })
 </script>
