@@ -76,10 +76,11 @@ input[type="radio" i] {
 
 #container {
     width: 75%;
+    height: 50%;
     margin-top: 5rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: minmax(550px, 650px);
+    /* grid-auto-rows: minmax(550px, 650px); */
     column-gap: 3rem;
     row-gap: 7rem;
     padding: 0 2.2rem;

@@ -71,10 +71,11 @@ input[type="checkbox" i], input[type="radio" i]{
 /* content */
 #container {
     width: 75%;
+    height: 50%;
     margin-top: 5rem;
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-auto-rows: minmax(550px,650px);
+    /* grid-auto-rows: minmax(550px,650px); */
     column-gap: 3rem;
     row-gap: 7rem;
     padding: 0 2.2rem;
@@ -95,6 +96,7 @@ input[type="checkbox" i], input[type="radio" i]{
 #container  p:nth-child(2){
     color: #505055; 
     font-size: 1.3rem;
+    
 }
 
 #container .contentBox{
@@ -102,7 +104,6 @@ input[type="checkbox" i], input[type="radio" i]{
     display: flex;
     flex-direction: column;
     gap:1.3rem;
-
 }
 
 #container .mixbox {
@@ -114,6 +115,7 @@ input[type="checkbox" i], input[type="radio" i]{
 }
 #container .mixbox p:nth-child(1){
     font-size: 1.8rem;
+    
 }
 
 #container .strikep {
