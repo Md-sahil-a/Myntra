@@ -1,7 +1,5 @@
 
-**Images of project.**
-
-This a Group Project.
+**Output of project.**
 
 
 
